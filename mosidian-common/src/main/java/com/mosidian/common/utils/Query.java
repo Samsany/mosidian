@@ -1,9 +1,9 @@
-package com.samphanie.common.utils;
+package com.mosidian.common.utils;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.samphanie.common.xss.SQLFilter;
+import com.mosidian.common.xss.SQLFilter;
 import org.apache.commons.lang.StringUtils;
 
 import java.util.Map;

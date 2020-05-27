@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.samphanie.common.utils;
+package com.mosidian.common.utils;
 
 import org.apache.http.HttpStatus;
 

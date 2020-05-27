@@ -1,4 +1,4 @@
-package com.samphanie.common.xss;
+package com.mosidian.common.xss;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

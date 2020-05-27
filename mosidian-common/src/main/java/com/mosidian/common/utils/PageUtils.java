@@ -1,12 +1,4 @@
-/**
- * Copyright (c) 2016-2019 人人开源 All rights reserved.
- *
- * https://www.mosidian.com
- *
- * 版权所有，侵权必究！
- */
-
-package com.samphanie.common.utils;
+package com.mosidian.common.utils;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 

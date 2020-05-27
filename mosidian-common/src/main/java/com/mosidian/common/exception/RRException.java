@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.samphanie.common.exception;
+package com.mosidian.common.exception;
 
 /**
  * 自定义异常

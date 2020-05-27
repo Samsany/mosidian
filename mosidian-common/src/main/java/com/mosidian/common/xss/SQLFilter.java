@@ -6,9 +6,9 @@
  * 版权所有，侵权必究！
  */
 
-package com.samphanie.common.xss;
+package com.mosidian.common.xss;
 
-import com.samphanie.common.exception.RRException;
+import com.mosidian.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**
