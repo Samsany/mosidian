@@ -1,11 +1,14 @@
 package io.mosidian.modules.sys.controller;
 
 import cn.hutool.http.HttpUtil;
+import cn.hutool.json.JSONObject;
 import io.mosidian.common.utils.PageUtils;
 import io.mosidian.common.utils.R;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,13 +20,13 @@ import java.util.Map;
 @RequestMapping("/member")
 public class MemberController {
 
+    @Resource
+    private RestTemplate restTemplate;
+
     @RequestMapping("/list")
     public R list(@RequestParam Map<String, Object> params){
 
-        RestTemplate restTemplate = new RestTemplate();
-        PageUtils page = restTemplate.getForObject("http://localhost:8083/member/list", PageUtils.class, params);
-
-        return R.ok().put("page", page);
+        return  restTemplate.getForObject("http://localhost:8083/member/list", R.class, params);
     }
 
 }

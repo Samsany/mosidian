@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 @SpringBootTest
@@ -31,6 +33,17 @@ class MosidianMemberApplicationTests {
 
         log.info("【result】->" + save);
 
+
+    }
+
+    @Test
+    void memberList() {
+
+        List<MemberEntity> list = memberService.list();
+
+        for (MemberEntity memberEntity : list) {
+            System.out.println(memberEntity.getId());
+        }
 
     }
 
