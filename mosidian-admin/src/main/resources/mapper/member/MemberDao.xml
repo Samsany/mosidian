@@ -33,5 +33,11 @@
 		WHERE me.user_id=#{id}
     </select>
 
+    <select id="getMaxMemberByUserId" resultType="io.mosidian.modules.member.entity.MemberEntity">
+        select member_id,user_id
+        from tb_member
+        where user_id = (select max(user_id) from tb_member)
+    </select>
+
 
 </mapper>

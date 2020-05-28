@@ -2,8 +2,10 @@ package io.mosidian.modules.member.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import io.mosidian.common.utils.PageUtils;
+import io.mosidian.common.utils.R;
 import io.mosidian.modules.member.entity.MemberEntity;
 import io.mosidian.modules.member.vo.MemberVo;
+import io.mosidian.modules.sys.entity.SysUserEntity;
 
 import java.util.List;
 import java.util.Map;
@@ -23,7 +25,9 @@ public interface MemberService extends IService<MemberEntity> {
 
     MemberVo getMemberById(String id);
 
-    MemberVo saveMemberVo(MemberVo memberVo);
+    R saveMemberVo(MemberVo memberVo, SysUserEntity user);
+
+    MemberEntity getMaxMemberByUserId();
 }
 
 

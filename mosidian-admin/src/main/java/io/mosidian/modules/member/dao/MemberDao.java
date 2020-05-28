@@ -20,4 +20,6 @@ public interface MemberDao extends BaseMapper<MemberEntity> {
     List<MemberVo> queryPageVo();
 
     MemberVo getMemberById(String id);
+
+    MemberEntity getMaxMemberByUserId();
 }

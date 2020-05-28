@@ -13,9 +13,9 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>会员名称：</label>
+                            <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>用户名：</label>
                             <div class="col-sm-9">
-                                <input type="text" name="name"
+                                <input type="text" name="username"
                                        class="form-control">
                             </div>
                         </div>
@@ -24,7 +24,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>手机号：</label>
                             <div class="col-sm-9">
-                                <input type="text" name="phone" class="form-control">
+                                <input type="text" name="mobile" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -32,16 +32,16 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>收货地址：</label>
                             <div class="col-sm-9">
-                                <input type="text" name="address" class="form-control">
+                                <input type="text" name="domicile" class="form-control">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label me-t-r"><span
-                                        style="color: red">*</span>收货联系电话：</label>
+                                        style="color: red">*</span>身份证号：</label>
                             <div class="col-sm-9">
-                                <input type="text" name="tell" class="form-control">
+                                <input type="text" name="card" class="form-control">
                             </div>
                         </div>
                     </div>

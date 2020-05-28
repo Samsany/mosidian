@@ -10,6 +10,7 @@ package io.mosidian.modules.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -35,6 +36,4 @@ public class SysUserRoleEntity implements Serializable {
 	 * 角色ID
 	 */
 	private Long roleId;
-
-	
 }

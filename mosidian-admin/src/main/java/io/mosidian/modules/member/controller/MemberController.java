@@ -1,6 +1,7 @@
 package io.mosidian.modules.member.controller;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 import com.github.pagehelper.PageHelper;
@@ -9,7 +10,12 @@ import io.mosidian.common.utils.R;
 import io.mosidian.modules.member.entity.MemberEntity;
 import io.mosidian.modules.member.service.MemberService;
 import io.mosidian.modules.member.vo.MemberVo;
+import io.mosidian.modules.sys.controller.AbstractController;
+import io.mosidian.modules.sys.entity.SysUserEntity;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.RandomStringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,7 +34,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/member")
-public class MemberController {
+@Slf4j
+public class MemberController extends AbstractController {
     @Autowired
     private MemberService memberService;
 
@@ -63,10 +70,17 @@ public class MemberController {
      */
     @RequestMapping("/save")
     @RequiresPermissions("member:save")
-    public R save(@RequestBody MemberEntity member){
-		memberService.save(member);
+    public R save(@RequestBody MemberVo member){
 
-        return R.ok();
+        SysUserEntity user = new SysUserEntity();
+        user.setPassword("2020");
+        //sha256加密
+        String salt = RandomStringUtils.randomAlphanumeric(20);
+        user.setPassword(new Sha256Hash(user.getPassword(), salt).toHex());
+        user.setSalt(salt);
+
+        return memberService.saveMemberVo(member, user);
+
     }
 
     /**

@@ -52,4 +52,22 @@ public class MemberVo {
     /*** 消费总金额（默认：600）*/
     private BigDecimal monetary;
 
+    public MemberVo(Long userId, String username, String email, String mobile, Integer status, String memberId, String name, String nickname, String card, String domicile, String avatar, Integer gender, Integer level, Integer credits, BigDecimal balance, BigDecimal monetary) {
+        this.userId = userId;
+        this.username = username;
+        this.email = email;
+        this.mobile = mobile;
+        this.status = status;
+        this.memberId = memberId;
+        this.name = name;
+        this.nickname = nickname;
+        this.card = card;
+        this.domicile = domicile;
+        this.avatar = avatar;
+        this.gender = gender;
+        this.level = level;
+        this.credits = credits;
+        this.balance = balance;
+        this.monetary = monetary;
+    }
 }

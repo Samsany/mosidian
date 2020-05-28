@@ -1,5 +1,6 @@
 package io.mosidian.modules.member.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
@@ -26,7 +27,7 @@ public class MemberEntity implements Serializable {
 	/**
 	 * 会员卡号（如：AIC2020-0000-0000）
 	 */
-	@TableId
+	@TableId(type= IdType.INPUT)
 	private String memberId;
 
 	private Long userId;
