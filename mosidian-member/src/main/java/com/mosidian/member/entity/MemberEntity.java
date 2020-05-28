@@ -28,7 +28,9 @@ public class MemberEntity implements Serializable {
 	 * 会员卡号（如：AIC2020-0000-0000）
 	 */
 	@TableId
-	private String id;
+	private String memberId;
+
+	private Long userId;
 	/**
 	 * 会员真实姓名
 	 */
@@ -37,22 +39,12 @@ public class MemberEntity implements Serializable {
 	 * 昵称
 	 */
 	private String nickname;
-	/**
-	 * 会员密码
-	 */
-	private String password;
+
 	/**
 	 * 身份证号
 	 */
 	private String card;
-	/**
-	 * 手机号
-	 */
-	private String phone;
-	/**
-	 * 邮箱
-	 */
-	private String email;
+
 	/**
 	 * 等级：1- Cu（铜），2-Ag（银），3-Au（金），4-Pt（铂），5-Zu（钻），6-MS（曜【白】），6-MS（曜【黑】），7-Ti（晶）
 	 */
@@ -61,10 +53,7 @@ public class MemberEntity implements Serializable {
 	 * 信誉分（默认：600）
 	 */
 	private Integer credits;
-	/**
-	 * 状态（0-正常，1-失效）
-	 */
-	private Integer status;
+
 	/**
 	 * 创建时间
 	 */

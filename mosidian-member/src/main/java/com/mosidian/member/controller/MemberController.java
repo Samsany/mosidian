@@ -1,14 +1,21 @@
 package com.mosidian.member.controller;
 
-import com.mosidian.member.entity.MemberEntity;
-import com.mosidian.member.service.MemberService;
-import com.mosidian.common.utils.PageUtils;
-import com.mosidian.common.utils.R;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.Arrays;
 import java.util.Map;
+
+import com.mosidian.common.utils.PageUtils;
+import com.mosidian.common.utils.R;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mosidian.member.entity.MemberEntity;
+import com.mosidian.member.service.MemberService;
+
 
 
 /**
@@ -16,19 +23,19 @@ import java.util.Map;
  *
  * @author zsy
  * @email samphsanie@gmail.com
- * @date 2020-05-27 18:09:11
+ * @date 2020-05-28 10:42:41
  */
 @RestController
 @RequestMapping("/member")
 public class MemberController {
-
     @Autowired
     private MemberService memberService;
 
     /**
      * 列表
      */
-    @GetMapping("/list")
+    @RequestMapping("/list")
+    @RequiresPermissions("member:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = memberService.queryPage(params);
 
@@ -40,6 +47,7 @@ public class MemberController {
      * 信息
      */
     @RequestMapping("/info/{id}")
+    @RequiresPermissions("member:info")
     public R info(@PathVariable("id") String id){
 		MemberEntity member = memberService.getById(id);
 
@@ -50,6 +58,7 @@ public class MemberController {
      * 保存
      */
     @RequestMapping("/save")
+    @RequiresPermissions("member:save")
     public R save(@RequestBody MemberEntity member){
 		memberService.save(member);
 
@@ -60,6 +69,7 @@ public class MemberController {
      * 修改
      */
     @RequestMapping("/update")
+    @RequiresPermissions("member:update")
     public R update(@RequestBody MemberEntity member){
 		memberService.updateById(member);
 
@@ -70,6 +80,7 @@ public class MemberController {
      * 删除
      */
     @RequestMapping("/delete")
+    @RequiresPermissions("member:delete")
     public R delete(@RequestBody String[] ids){
 		memberService.removeByIds(Arrays.asList(ids));
 

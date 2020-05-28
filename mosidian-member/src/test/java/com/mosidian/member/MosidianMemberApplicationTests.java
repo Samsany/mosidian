@@ -24,14 +24,14 @@ class MosidianMemberApplicationTests {
 
     @Test
     void addMember() {
-        MemberEntity memberEntity = new MemberEntity(
-                "AIC2020-0000-0000","刘纬易","sean","123456","xxxxxxxxxxxxxxxxx", "17354056086","sean@qq.com",
-                null, null, null, null, null
-        );
-
-        boolean save = memberService.save(memberEntity);
-
-        log.info("【result】->" + save);
+//        MemberEntity memberEntity = new MemberEntity(
+//                "AIC2020-0000-0000", 2,"刘纬易","sean","123456","xxxxxxxxxxxxxxxxx",
+//                null, null, null, null, null
+//        );
+//
+//        boolean save = memberService.save(memberEntity);
+//
+//        log.info("【result】->" + save);
 
 
     }
@@ -42,7 +42,7 @@ class MosidianMemberApplicationTests {
         List<MemberEntity> list = memberService.list();
 
         for (MemberEntity memberEntity : list) {
-            System.out.println(memberEntity.getId());
+            System.out.println(memberEntity.getMemberId());
         }
 
     }
