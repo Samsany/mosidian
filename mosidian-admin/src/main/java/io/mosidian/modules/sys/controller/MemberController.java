@@ -27,6 +27,7 @@ public class MemberController {
     public R list(@RequestParam Map<String, Object> params){
 
         return  restTemplate.getForObject("http://localhost:8083/member/list", R.class, params);
+
     }
 
 }
