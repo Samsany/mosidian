@@ -56,7 +56,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/*.ftl",
                         "/**/*.ftl",
                         "/swagger-resources/**",
-                        "/v2/api-docs/**"
+                        "/v2/api-docs/**",
+                        "/css/**",
+                        "/js/**",
+                        "/fonts/**",
+                        "/img/**",
+                        "/images/**",
+                        "/layui/**"
+
                 )
                 .permitAll()
                 // 对登录注册要允许匿名访问
