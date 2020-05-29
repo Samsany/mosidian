@@ -11,10 +11,10 @@
 
     <modules>
         <module>mosidian-generator</module>
-        <module>mosidian-web</module>
+<!--        <module>mosidian-web</module>-->
         <module>mosidian-common</module>
         <module>mosidian-admin</module>
-        <module>mosidian-member</module>
+        <module>demo</module>
     </modules>
 
     <build>

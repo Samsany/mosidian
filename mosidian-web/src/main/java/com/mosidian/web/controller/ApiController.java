@@ -1,17 +1,16 @@
 package com.mosidian.web.controller;
 
-import cn.hutool.core.convert.Convert;
-import cn.hutool.core.util.StrUtil;
-import com.mosidian.web.model.mms.Member;
-import com.mosidian.web.model.sys.ContactUs;
-import com.mosidian.web.model.sys.User;
-import com.mosidian.web.service.mms.MemberService;
+
 import com.mosidian.web.service.sys.ContactUsService;
 import com.mosidian.web.service.sys.SysCaptchaService;
-import com.mosidian.web.service.sys.UserService;
-import com.mosidian.web.utils.Const;
+import io.mosidian.common.utils.R;
+import io.mosidian.modules.member.service.MemberService;
+import io.mosidian.modules.member.vo.MemberVo;
+import io.mosidian.modules.sys.entity.SysUserEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang.RandomStringUtils;
+import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -35,135 +34,152 @@ public class ApiController extends com.mosidian.web.controller.BaseController {
     private ContactUsService contactUsService;
 
     @Resource
-    private MemberService memberService;
+    private MemberService saveMemberVo;
 
-    @Resource
-    private UserService userService;
+//    @Resource
+//    private UserService userService;
 
     @Resource
     private SysCaptchaService sysCaptchaService;
 
-    @PostMapping(value = "/contactUs/update")
-    @ResponseBody
-    public Object contactUpdate(@RequestParam(name = "ticket") String ticket,
-                                @RequestParam(name = "randstr") String randstr,
-                                @RequestParam(name = "name", required = false) String name,
-                                @RequestParam(name = "email", required = false) String email,
-                                @RequestParam(name = "phone", required = false) String phone,
-                                @RequestParam(name = "feedbackMessage", required = false) String feedbackMessage) {
+    /**
+     * 保存
+     */
+    @PostMapping("/save")
+    public R save(MemberVo member){
 
-        if (ticket != null && randstr != null) {
-            ContactUs contactUs = new ContactUs();
-            contactUs.setCreatedate(new Date());
-            contactUs.setName(name);
-            contactUs.setEmail(email);
-            contactUs.setPhone(phone);
-            contactUs.setFeedbackMessage(feedbackMessage);
-            boolean save = contactUsService.save(contactUs);
-            return this.getMessage(Const.ADDTYPE, save);
-        } else {
-            return this.success("提交失败！");
-        }
-    }
+        SysUserEntity user = new SysUserEntity();
+        user.setPassword("2020");
+        //sha256加密
+        String salt = RandomStringUtils.randomAlphanumeric(20);
+        user.setPassword(new Sha256Hash(user.getPassword(), salt).toHex());
+        user.setSalt(salt);
 
-    @PostMapping(value = "/member/update")
-    @ResponseBody
-    public Object memberUpdate(@RequestParam("code") String code,
-                               @RequestParam("uuid") String uuid,
-                               @RequestParam(name = "name", required = false) String name,
-                               @RequestParam(name = "email", required = false) String email,
-                               @RequestParam(name = "id", required = false) String ids,
-                               @RequestParam(name = "address", required = false) String address,
-                               @RequestParam(name = "phone", required = false) String phone,
-                               @RequestParam(name = "tell", required = false) String tell) {
-
-        boolean validate = sysCaptchaService.validate(uuid, code);
-        if (!validate) {
-            return this.error("验证码错误！");
-        } else {
-            Member member = new Member();
-            boolean flag;
-            if (StrUtil.isNotEmpty(ids)) {
-                int id = Convert.toInt(ids);
-                member.setName(name);
-                member.setBase1(email);
-                member.setRecordstatus(true);
-                member.setId(id);
-                member.setPhone(phone);
-                member.setEditdate(new Date());
-                flag = memberService.updateById(member);
-            } else {
-                String maxMemberNo = memberService.getMaxMemberNo();
-                member.setCreatedate(new Date());
-                member.setName(name);
-                member.setBase1(address);
-                member.setBase2(tell);
-                member.setRecordstatus(true);
-                member.setNo(maxMemberNo);
-                member.setPhone(phone);
-                flag = memberService.save(member);
-            }
-            if (flag) {
-                return this.success("操作成功");
-            } else {
-                return this.error("操作失败");
-            }
-        }
-
+        return saveMemberVo.saveMemberVo(member, user);
 
     }
 
-    @PostMapping(value = "/user/update")
-    @ResponseBody
-    public Object userUpdate(@RequestParam(name = "username", required = false) String username,
-                             @RequestParam(name = "phone", required = false) String phone,
-                             @RequestParam(name = "id", required = false) String ids) {
-        User user = new User();
-        user.setUsername(username);
-        user.setRecordstatus(true);
-        user.setPhone(phone);
-        boolean status;
-        if (StrUtil.isNotEmpty(ids)) {
-            int id = Convert.toInt(ids);
-            user.setId(id);
-            user.setEditdate(new Date());
-            status = userService.updateById(user);
-        } else {
-            user.setCreatedate(new Date());
-            status = userService.save(user);
-        }
-        if (status) {
-            return this.success("操作成功");
-        } else {
-            return this.error("操作失败");
-        }
-    }
-
-    @PostMapping("/register")
-    @ResponseBody
-    public Object userRegister(@RequestParam("userNo") String userNo,
-                               @RequestParam("password") String password,
-                               @RequestParam("memo") String memo,
-                               @RequestParam("code") String code,
-                               @RequestParam("uuid") String uuid) {
-
-        boolean validate = sysCaptchaService.validate(uuid, code);
-        if (validate) {
-            int register = userService.register(userNo, password, memo);
-            if (register == 2) {
-                return this.error("该会员不存在！");
-            } else if (register == 1) {
-                return this.success("申请成功，待审核！");
-            } else if (register == 0) {
-                return this.error("申请失败，请稍后再试！");
-            } else {
-                return this.error("该企业已入住");
-            }
-        } else {
-            return this.error("验证码错误，请重新输入！");
-        }
-
-    }
+//    @PostMapping(value = "/contactUs/update")
+//    @ResponseBody
+//    public Object contactUpdate(@RequestParam(name = "ticket") String ticket,
+//                                @RequestParam(name = "randstr") String randstr,
+//                                @RequestParam(name = "name", required = false) String name,
+//                                @RequestParam(name = "email", required = false) String email,
+//                                @RequestParam(name = "phone", required = false) String phone,
+//                                @RequestParam(name = "feedbackMessage", required = false) String feedbackMessage) {
+//
+//        if (ticket != null && randstr != null) {
+//            ContactUs contactUs = new ContactUs();
+//            contactUs.setCreatedate(new Date());
+//            contactUs.setName(name);
+//            contactUs.setEmail(email);
+//            contactUs.setPhone(phone);
+//            contactUs.setFeedbackMessage(feedbackMessage);
+//            boolean save = contactUsService.save(contactUs);
+//            return this.getMessage(Const.ADDTYPE, save);
+//        } else {
+//            return this.success("提交失败！");
+//        }
+//    }
+//
+//    @PostMapping(value = "/member/update")
+//    @ResponseBody
+//    public Object memberUpdate(@RequestParam("code") String code,
+//                               @RequestParam("uuid") String uuid,
+//                               @RequestParam(name = "name", required = false) String name,
+//                               @RequestParam(name = "email", required = false) String email,
+//                               @RequestParam(name = "id", required = false) String ids,
+//                               @RequestParam(name = "address", required = false) String address,
+//                               @RequestParam(name = "phone", required = false) String phone,
+//                               @RequestParam(name = "tell", required = false) String tell) {
+//
+//        boolean validate = sysCaptchaService.validate(uuid, code);
+//        if (!validate) {
+//            return this.error("验证码错误！");
+//        } else {
+//            Member member = new Member();
+//            boolean flag;
+//            if (StrUtil.isNotEmpty(ids)) {
+//                int id = Convert.toInt(ids);
+//                member.setName(name);
+//                member.setBase1(email);
+//                member.setRecordstatus(true);
+//                member.setId(id);
+//                member.setPhone(phone);
+//                member.setEditdate(new Date());
+//                flag = memberService.updateById(member);
+//            } else {
+//                String maxMemberNo = memberService.getMaxMemberNo();
+//                member.setCreatedate(new Date());
+//                member.setName(name);
+//                member.setBase1(address);
+//                member.setBase2(tell);
+//                member.setRecordstatus(true);
+//                member.setNo(maxMemberNo);
+//                member.setPhone(phone);
+//                flag = memberService.save(member);
+//            }
+//            if (flag) {
+//                return this.success("操作成功");
+//            } else {
+//                return this.error("操作失败");
+//            }
+//        }
+//
+//
+//    }
+//
+//    @PostMapping(value = "/user/update")
+//    @ResponseBody
+//    public Object userUpdate(@RequestParam(name = "username", required = false) String username,
+//                             @RequestParam(name = "phone", required = false) String phone,
+//                             @RequestParam(name = "id", required = false) String ids) {
+//        User user = new User();
+//        user.setUsername(username);
+//        user.setRecordstatus(true);
+//        user.setPhone(phone);
+//        boolean status;
+//        if (StrUtil.isNotEmpty(ids)) {
+//            int id = Convert.toInt(ids);
+//            user.setId(id);
+//            user.setEditdate(new Date());
+//            status = userService.updateById(user);
+//        } else {
+//            user.setCreatedate(new Date());
+//            status = userService.save(user);
+//        }
+//        if (status) {
+//            return this.success("操作成功");
+//        } else {
+//            return this.error("操作失败");
+//        }
+//    }
+//
+//    @PostMapping("/register")
+//    @ResponseBody
+//    public Object userRegister(@RequestParam("userNo") String userNo,
+//                               @RequestParam("password") String password,
+//                               @RequestParam("memo") String memo,
+//                               @RequestParam("code") String code,
+//                               @RequestParam("uuid") String uuid) {
+//
+//        boolean validate = sysCaptchaService.validate(uuid, code);
+//        if (validate) {
+//            int register = userService.register(userNo, password, memo);
+//            if (register == 2) {
+//                return this.error("该会员不存在！");
+//            } else if (register == 1) {
+//                return this.success("申请成功，待审核！");
+//            } else if (register == 0) {
+//                return this.error("申请失败，请稍后再试！");
+//            } else {
+//                return this.error("该企业已入住");
+//            }
+//        } else {
+//            return this.error("验证码错误，请重新输入！");
+//        }
+//
+//    }
 
 
     /**
