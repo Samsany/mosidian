@@ -86,6 +86,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
         MemberEntity member = memberService.getMaxMemberByUserId();
 
         memberEntity.setMemberId(member.getMemberId());
+        user.setFlag(2);
 
         log.info("【会员卡】========》" + memberEntity.getMemberId());
 
@@ -129,4 +130,30 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
         return memberEntity;
     }
 
+    @Override
+    public int removeByUserIds(List<String> asList) {
+        for (String s : asList) {
+            System.out.println("================>" + s);
+        }
+        return memberDao.removeByUserIds(asList);
+    }
+
+    @Override
+    public R updateByMember(MemberVo member) {
+
+        MemberEntity memberEntity = new MemberEntity();
+        SysUserEntity userEntity = new SysUserEntity();
+
+        BeanUtils.copyProperties(member, memberEntity);
+        BeanUtils.copyProperties(member, userEntity);
+
+        int i = memberDao.updateById(memberEntity);
+        boolean b = sysUserService.updateById(userEntity);
+
+        if (i == 1 && b){
+            return R.ok();
+        } else {
+            return R.error("更新失败");
+        }
+    }
 }

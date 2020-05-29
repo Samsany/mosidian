@@ -78,6 +78,11 @@ public class SysUserEntity implements Serializable {
 	private List<Long> roleIdList;
 
 	/**
+	 * 标志
+	 */
+	private Integer flag;
+
+	/**
 	 * 创建者ID
 	 */
 	private Long createUserId;

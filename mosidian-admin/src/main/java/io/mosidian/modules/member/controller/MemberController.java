@@ -1,9 +1,12 @@
 package io.mosidian.modules.member.controller;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+import com.baomidou.mybatisplus.core.conditions.ISqlSegment;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import io.mosidian.common.utils.R;
@@ -12,17 +15,17 @@ import io.mosidian.modules.member.service.MemberService;
 import io.mosidian.modules.member.vo.MemberVo;
 import io.mosidian.modules.sys.controller.AbstractController;
 import io.mosidian.modules.sys.entity.SysUserEntity;
+import io.mosidian.modules.sys.service.SysUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.crypto.hash.Sha256Hash;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 
 
 /**
@@ -38,6 +41,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class MemberController extends AbstractController {
     @Autowired
     private MemberService memberService;
+
+    @Resource
+    private SysUserService sysUserService;
 
     /**
      * 列表
@@ -66,6 +72,19 @@ public class MemberController extends AbstractController {
     }
 
     /**
+     * 信息
+     */
+    @GetMapping("/info")
+    @RequiresPermissions("member:info")
+    public R info(){
+
+        SysUserEntity user = getUser();
+        MemberVo member = memberService.getMemberById(String.valueOf(user.getUserId()));
+
+        return R.ok().put("member", member);
+    }
+
+    /**
      * 保存
      */
     @RequestMapping("/save")
@@ -86,23 +105,48 @@ public class MemberController extends AbstractController {
     /**
      * 修改
      */
+    @Transactional
     @RequestMapping("/update")
     @RequiresPermissions("member:update")
-    public R update(@RequestBody MemberEntity member){
-		memberService.updateById(member);
+    public R update(@RequestBody MemberVo member) {
 
-        return R.ok();
+        return memberService.updateByMember(member);
+
     }
+//    @RequestMapping("/update")
+//    @RequiresPermissions("member:update")
+//    public R update(@RequestBody MemberEntity member){
+//		memberService.updateById(member);
+//
+//        return R.ok();
+//    }
 
     /**
      * 删除
      */
+    @Transactional
     @RequestMapping("/delete")
     @RequiresPermissions("member:delete")
     public R delete(@RequestBody String[] ids){
-		memberService.removeByIds(Arrays.asList(ids));
 
-        return R.ok();
+        boolean b = sysUserService.removeByIds(Arrays.asList(ids));
+
+        int result = memberService.removeByUserIds(Arrays.asList(ids));
+
+        if ( b && result == 1) {
+            return R.ok();
+        } else {
+            return R.error("删除失败");
+        }
+
+
     }
+//    @RequestMapping("/delete")
+//    @RequiresPermissions("member:delete")
+//    public R delete(@RequestBody String[] ids){
+//		memberService.removeByIds(Arrays.asList(ids));
+//
+//        return R.ok();
+//    }
 
 }

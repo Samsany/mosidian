@@ -28,6 +28,10 @@ public interface MemberService extends IService<MemberEntity> {
     R saveMemberVo(MemberVo memberVo, SysUserEntity user);
 
     MemberEntity getMaxMemberByUserId();
+
+    int removeByUserIds(List<String> asList);
+
+    R updateByMember(MemberVo member);
 }
 
 

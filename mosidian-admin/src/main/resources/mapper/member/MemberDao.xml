@@ -39,5 +39,12 @@
         where user_id = (select max(user_id) from tb_member)
     </select>
 
+    <delete id="removeByUserIds" parameterType="string">
+        delete from tb_member me where me.user_id in
+        <foreach item="item" collection="list" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+
 
 </mapper>

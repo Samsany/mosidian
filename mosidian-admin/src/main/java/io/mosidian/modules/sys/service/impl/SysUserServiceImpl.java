@@ -55,6 +55,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserDao, SysUserEntity> i
 			new QueryWrapper<SysUserEntity>()
 				.like(StringUtils.isNotBlank(username),"username", username)
 				.eq(createUserId != null,"create_user_id", createUserId)
+				.ne("flag", 2).ne("flag", 3).ne("flag", 4)
 		);
 
 		return new PageUtils(page);

@@ -22,4 +22,6 @@ public interface MemberDao extends BaseMapper<MemberEntity> {
     MemberVo getMemberById(String id);
 
     MemberEntity getMaxMemberByUserId();
+
+    int removeByUserIds(List<String> asList);
 }
