@@ -63,7 +63,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/img/**",
                         "/images/**",
                         "/layui/**"
-
                 )
                 .permitAll()
                 // 对登录注册要允许匿名访问

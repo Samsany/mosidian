@@ -14,7 +14,6 @@
         <module>mosidian-web</module>
         <module>mosidian-common</module>
         <module>mosidian-admin</module>
-        <module>mosidian-member</module>
     </modules>
 
     <build>

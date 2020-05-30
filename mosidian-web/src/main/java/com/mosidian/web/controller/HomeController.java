@@ -32,7 +32,7 @@ public class HomeController extends BaseController {
     @GetMapping("/")
     public ModelAndView login(){
         ModelAndView mv=new ModelAndView();
-        mv.setViewName("index");
+        mv.setViewName("index-test");
         return mv;
     }
 
@@ -75,15 +75,14 @@ public class HomeController extends BaseController {
 
     @GetMapping("/bcLogin")
     public ModelAndView bcLogin(){
-        ModelAndView mv=new ModelAndView();
-        mv.setViewName("sys/login/bcLogin");
+        ModelAndView mv=new ModelAndView("redirect:http://localhost:8001/home");
+//        mv.setViewName("sys/login/bcLogin");
         return mv;
     }
 
     @GetMapping("/meLogin")
     public ModelAndView meLogin(){
-        ModelAndView mv=new ModelAndView();
-        mv.setViewName("sys/login/meLogin");
+        ModelAndView mv=new ModelAndView("redirect:http://localhost:8001/home");
         return mv;
     }
 

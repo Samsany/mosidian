@@ -10,7 +10,7 @@
     <!--====== Title ======-->
     <title>Mosidian</title>
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon1.png" type="image/png">
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--====== Fontawesome css ======-->

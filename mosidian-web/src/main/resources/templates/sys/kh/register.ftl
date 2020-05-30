@@ -55,7 +55,6 @@
 <script type="text/javascript">
     $(function () {
         $(".save").click(function () {
-            dolphin.alert("aaaaa")
             dolphin.post('/user/register,
                     $('#form').serialize(),
                     function (result) {

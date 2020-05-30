@@ -9,13 +9,22 @@
             <form id="form">
                 <div class="row">
                     <div class="col-md-12">
-                        <input type="password" id="uuid" name="uuid" placeholder="uuid" hidden>
+                        <input type="text" id="uuid" name="uuid" hidden>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>登录名：</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="username"
+                                       class="form-control">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>用户名：</label>
                             <div class="col-sm-9">
-                                <input type="text" name="username"
+                                <input type="text" name="nickname"
                                        class="form-control">
                             </div>
                         </div>
@@ -73,18 +82,17 @@
         getCaptcha();
 
         $(".save").click(function () {
-            dolphin.post('/api/member/update',
+            dolphin.post('/api/member/save',
                 $('#form').serialize(),
                 function (result) {
-
-                    if (result.status == 1) {
-                        layer.msg(result.info, {icon: 1, time: 2000}, function () {
+                    if (result.code == 1) {
+                        layer.msg(result.msg, {icon: 1, time: 2000}, function () {
                             setTimeout(parent.showCard(), 2000);
                             var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
                             parent.layer.close(index); //再执行关闭
                         })
                     } else {
-                        dolphin.alert(result.info);
+                        dolphin.alert(result.msg);
                         getCaptcha()
                     }
                 })
@@ -98,8 +106,8 @@
 
         function getCaptcha() {
             var uuid = getUUID()
-            var imgUrl = '/api/captcha?uuid=' + uuid
             $("#uuid").val(uuid)
+            var imgUrl = '/api/captcha?uuid=' + uuid
             $("#checkCapt").attr("src", imgUrl)
         }
 

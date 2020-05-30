@@ -70,4 +70,12 @@ public class MemberVo {
         this.balance = balance;
         this.monetary = monetary;
     }
+
+    public MemberVo(String username, String mobile, String nickname, String card, String domicile) {
+        this.username = username;
+        this.mobile = mobile;
+        this.nickname = nickname;
+        this.card = card;
+        this.domicile = domicile;
+    }
 }

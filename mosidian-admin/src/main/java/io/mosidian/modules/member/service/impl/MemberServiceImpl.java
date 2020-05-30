@@ -92,13 +92,13 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
 
         boolean save = sysUserService.save(user);
         if (!save) {
-            return R.error();
+            return R.error("开卡失败");
         }
         memberEntity.setUserId(user.getUserId());
 
         int result = memberDao.insert(memberEntity);
         if (result == 0) {
-            return R.error();
+            return R.error("开卡失败");
         }
 
         //        默认会员权限
@@ -108,7 +108,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
 
         sysUserRoleService.save(userRoleEntity);
 
-        return R.ok();
+        return R.ok("开卡成功");
     }
 
     @Override
