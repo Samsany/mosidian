@@ -97,13 +97,13 @@
                     <a data-scroll-nav="3" href="#">AiOS</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a href="meLogin">MEOS</a>
-                </li>
-                <li class="nav-item navBag1">
                     <a href="bcLogin">BCOS</a>
                 </li>
                 <li class="nav-item navBag1">
                     <a data-scroll-nav="4" href="#">ICOS</a>
+                </li>
+                <li class="nav-item navBag1">
+                    <a href="meLogin">MEOS</a>
                 </li>
                 <li class="nav-item navBag1">
                     <a data-scroll-nav="5" href="#">TMIC</a>

@@ -75,14 +75,14 @@ public class HomeController extends BaseController {
 
     @GetMapping("/bcLogin")
     public ModelAndView bcLogin(){
-        ModelAndView mv=new ModelAndView("redirect:http://localhost:8001/home");
+        ModelAndView mv=new ModelAndView("redirect:http://47.103.64.74");
 //        mv.setViewName("sys/login/bcLogin");
         return mv;
     }
 
     @GetMapping("/meLogin")
     public ModelAndView meLogin(){
-        ModelAndView mv=new ModelAndView("redirect:http://localhost:8001/home");
+        ModelAndView mv=new ModelAndView("redirect:http://47.103.64.74");
         return mv;
     }
 

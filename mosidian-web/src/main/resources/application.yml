@@ -9,6 +9,7 @@ spring:
       max-file-size: 100MB # 单个文件大小
       max-request-size: 1000MB # 设置总上传的数据大小
       enabled: true #开启
+
 server:
   port: 8081
   tomcat:
@@ -16,6 +17,7 @@ server:
   servlet:
     session:
       timeout: 480m
+    context-path: /web
 # 自定义jwt key
 jwt:
   tokenHeader: Authorization #JWT存储的请求头
