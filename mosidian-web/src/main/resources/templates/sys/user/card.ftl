@@ -14,13 +14,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>注意事项：</label>
-                        </div>
-                    </div>
-                </div>
+<#--                <div class="row">-->
+<#--                    <div class="col-md-6">-->
+<#--                        <div class="form-group row">-->
+<#--                            <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>注意事项：</label>-->
+<#--                        </div>-->
+<#--                    </div>-->
+<#--                </div>-->
             </form>
         </div>
 

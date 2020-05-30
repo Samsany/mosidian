@@ -67,9 +67,9 @@ public class HomeController extends BaseController {
     }
 
     @GetMapping("/sys/kh/register")
-    public ModelAndView kh(){
+    public ModelAndView kh1(){
         ModelAndView mv=new ModelAndView();
-        mv.setViewName("sys/kehu/register");
+        mv.setViewName("sys/kh/register");
         return mv;
     }
 

@@ -50,20 +50,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
+                .antMatchers("/**")
                 // 允许对于网站静态资源的无授权访问
-                .antMatchers(HttpMethod.GET,
-                        "/",
-                        "/*.ftl",
-                        "/**/*.ftl",
-                        "/swagger-resources/**",
-                        "/v2/api-docs/**",
-                        "/css/**",
-                        "/js/**",
-                        "/fonts/**",
-                        "/img/**",
-                        "/images/**",
-                        "/layui/**"
-                )
+//                .antMatchers(HttpMethod.GET,
+//                        "/",
+//                        "/*.ftl",
+//                        "/**/*.ftl",
+//                        "/swagger-resources/**",
+//                        "/v2/api-docs/**",
+//                        "/css/**",
+//                        "/js/**",
+//                        "/fonts/**",
+//                        "/img/**",
+//                        "/images/**",
+//                        "/layui/**"
+//                )
                 .permitAll()
                 // 对登录注册要允许匿名访问
                 .antMatchers("/meLogin","/bcLogin","/login", "/register","/sys/**","/index","/api/**")

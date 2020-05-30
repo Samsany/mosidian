@@ -19,7 +19,7 @@ import java.util.List;
 @Mapper
 public interface EnterpriseDao extends BaseMapper<EnterpriseEntity> {
 
-    List<EnterpriseVo> queryPageVo();
+    List<EnterpriseVo> queryPageVo(Integer flag);
 
     EnterpriseEntity getMaxEnterpriseByUserId();
 

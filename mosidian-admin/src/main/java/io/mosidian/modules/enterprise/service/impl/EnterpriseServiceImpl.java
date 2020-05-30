@@ -56,8 +56,8 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
     }
 
     @Override
-    public List<EnterpriseVo> queryPageVo() {
-        return enterpriseDao.queryPageVo();
+    public List<EnterpriseVo> queryPageVo(Integer flag) {
+        return enterpriseDao.queryPageVo(flag);
     }
 
     @Transactional
@@ -134,6 +134,11 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
     @Override
     public EnterpriseVo getEnterpriseById(String id) {
         return enterpriseDao.getEnterpriseById(id);
+    }
+
+    @Override
+    public int removeByUserIds(List<String> asList) {
+        return enterpriseDao.removeByUserIds(asList);
     }
 
 

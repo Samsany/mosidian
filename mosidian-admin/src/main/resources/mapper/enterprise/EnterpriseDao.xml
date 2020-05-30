@@ -35,6 +35,7 @@
 		select * from tb_enterprise en
 		LEFT JOIN sys_user ur
 		on ur.user_id = en.user_id
+		where ur.flag = #{flag}
 	</select>
 
     <select id="getMaxEnterpriseByUserId" resultType="io.mosidian.modules.enterprise.entity.EnterpriseEntity">

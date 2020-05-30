@@ -1913,11 +1913,11 @@
             dolphin.iframe("/register", "会员注册", "750px", "600px")
         })
         $("#registerKH").click(function () {
-            dolphin.iframe("/register", "会员注册", "750px", "600px")
+            dolphin.iframe("/sys/kh/register", "会员注册", "1050px", "600px")
         })
 
         $("#userRegister").click(function () {
-            dolphin.iframe("/sys/kh/register", "企业入驻", "650px", "500px")
+            dolphin.iframe("/sys/kh/register", "企业入驻", "1050px", "600px")
         })
 
         window.showCard = function () {

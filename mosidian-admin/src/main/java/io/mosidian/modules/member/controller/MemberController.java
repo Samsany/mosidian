@@ -79,6 +79,8 @@ public class MemberController extends AbstractController {
     public R info(){
 
         SysUserEntity user = getUser();
+
+        log.info("【=============================》】" + user.getUserId());
         MemberVo member = memberService.getMemberById(String.valueOf(user.getUserId()));
 
         return R.ok().put("member", member);
