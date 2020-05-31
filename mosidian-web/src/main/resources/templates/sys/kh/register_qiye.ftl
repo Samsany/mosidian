@@ -1,5 +1,5 @@
 <#include "/common/header.ftl">
-<title>客户申请流程</title>
+<title>企业申请注册</title>
 </head>
 <body>
 <div class="container me-p-t-25">
@@ -95,8 +95,8 @@
                             <label class="col-sm-4 col-form-label me-t-r"><span style="color: red">*</span>企业类型：</label>
                             <div class="col-sm-8">
                                 <select name="companies">
-                                    <option value="3">物流公司</option>
                                     <option value="4">企业服务公司</option>
+                                    <option value="3">物流公司</option>
                                 </select>
                             </div>
                         </div>
@@ -192,7 +192,7 @@
         getCaptcha();
 
         $(".save").click(function () {
-            dolphin.post('/api/wuliu/save',
+            dolphin.post('/api/qiye/save',
                 $('#form').serialize(),
                 function (result) {
 

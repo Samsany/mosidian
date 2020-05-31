@@ -65,6 +65,7 @@ public class EnterpriseVo {
     /*** 营业执照*/
     private String enlicense;
 
+
     public EnterpriseVo(String username, String email, String mobile, String domicile, String name, String website, String scale, String synopsis, String corporation, String reason, String eserver, String companies, String headName, String sector, String eposition, String headCard, String emobile, String eemail, String modifier, String enlicenseId) {
         this.username = username;
         this.email = email;
@@ -85,6 +86,24 @@ public class EnterpriseVo {
         this.emobile = emobile;
         this.eemail = eemail;
         this.modifier = modifier;
+        this.enlicenseId = enlicenseId;
+    }
+
+    public EnterpriseVo(String username, String website, String scale, String corporation,String reason, String eserver, String companies, String name, String headName, String sector, String eposition, String headCard, String emobile, String eemail,String enlicenseId) {
+        this.username = username;
+        this.name = name;
+        this.website = website;
+        this.scale = scale;
+        this.corporation = corporation;
+        this.reason = reason;
+        this.eserver = eserver;
+        this.companies = companies;
+        this.headName = headName;
+        this.sector = sector;
+        this.eposition = eposition;
+        this.headCard = headCard;
+        this.emobile = emobile;
+        this.eemail = eemail;
         this.enlicenseId = enlicenseId;
     }
 }

@@ -1,11 +1,14 @@
 package io.mosidian.modules.web.controller;
 
 import io.mosidian.common.utils.R;
+import io.mosidian.modules.enterprise.service.EnterpriseService;
+import io.mosidian.modules.enterprise.vo.EnterpriseVo;
 import io.mosidian.modules.member.service.MemberService;
 import io.mosidian.modules.member.vo.MemberVo;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 import io.mosidian.modules.sys.service.SysCaptchaService;
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -35,6 +38,9 @@ public class ApiController {
     @Resource
     private SysCaptchaService sysCaptchaService;
 
+    @Resource
+    private EnterpriseService enterpriseService;
+
     @PostMapping(value = "/member/save")
     @ResponseBody
     public R memberSave(@RequestParam(value = "uuid") String uuid,
@@ -62,6 +68,73 @@ public class ApiController {
 
         return memberService.saveMemberVo(member, user);
 
+    }
+
+    /**
+     * 保存
+     */
+    @RequestMapping("/wuliu/save")
+    @ResponseBody
+    public R saveWuliu(@RequestParam(value = "uuid") String uuid,
+                       @RequestParam(value = "username") String username,
+                       @RequestParam(value = "name") String name,
+                       @RequestParam(value = "website") String website,
+                       @RequestParam(value = "scale") String scale,
+                       @RequestParam(value = "corporation") String corporation,
+                       @RequestParam(value = "reason") String reason,
+                       @RequestParam(value = "eserver") String eserver,
+                       @RequestParam(value = "companies") String companies,
+                       @RequestParam(value = "headName") String headName,
+                       @RequestParam(value = "sector") String sector,
+                       @RequestParam(value = "eposition") String eposition,
+                       @RequestParam(value = "headCard") String headCard,
+                       @RequestParam(value = "emobile") String emobile,
+                       @RequestParam(value = "eemail") String eemail,
+                       @RequestParam(value = "enlicenseId") String enlicenseId) {
+        SysUserEntity user = new SysUserEntity();
+        user.setFlag(3);
+        user.setPassword("2020");
+        //sha256加密
+        String salt = RandomStringUtils.randomAlphanumeric(20);
+        user.setPassword(new Sha256Hash(user.getPassword(), salt).toHex());
+        user.setSalt(salt);
+        EnterpriseVo enterpriseVo = new EnterpriseVo(username, website, scale, corporation, reason, eserver, companies, name, headName, sector, eposition, headCard, emobile, eemail,enlicenseId);
+        enterpriseVo.setSynopsis("物流服务");
+        return enterpriseService.saveEnterpriseVo(enterpriseVo, user);
+    }
+
+
+    /**
+     * 保存
+     */
+    @RequestMapping("/qiye/save")
+    @ResponseBody
+    public R saveQiye(@RequestParam(value = "uuid") String uuid,
+                       @RequestParam(value = "username") String username,
+                       @RequestParam(value = "name") String name,
+                       @RequestParam(value = "website") String website,
+                       @RequestParam(value = "scale") String scale,
+                       @RequestParam(value = "corporation") String corporation,
+                       @RequestParam(value = "reason") String reason,
+                       @RequestParam(value = "eserver") String eserver,
+                       @RequestParam(value = "companies") String companies,
+                       @RequestParam(value = "headName") String headName,
+                       @RequestParam(value = "sector") String sector,
+                       @RequestParam(value = "eposition") String eposition,
+                       @RequestParam(value = "headCard") String headCard,
+                       @RequestParam(value = "emobile") String emobile,
+                       @RequestParam(value = "eemail") String eemail,
+                       @RequestParam(value = "enlicenseId") String enlicenseId) {
+        SysUserEntity user = new SysUserEntity();
+        user.setFlag(4);
+        user.setPassword("2020");
+        //sha256加密
+        String salt = RandomStringUtils.randomAlphanumeric(20);
+        user.setPassword(new Sha256Hash(user.getPassword(), salt).toHex());
+        user.setSalt(salt);
+        EnterpriseVo enterpriseVo = new EnterpriseVo(username, website, scale, corporation, reason, eserver, companies, name, headName, sector, eposition, headCard, emobile, eemail,enlicenseId);
+        enterpriseVo.setSynopsis("企业服务");
+        return enterpriseService.saveEnterpriseVo(enterpriseVo, user);
     }
 
     /**
