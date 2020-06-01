@@ -14,10 +14,10 @@
 
                     <div class="col-md-6">
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label me-t-r"><span
+                            <label class="col-sm-4 col-form-label me-t-r"><span
                                         style="color: red">*</span>申请企业全称:</label>
-                            <div class="col-md-12">
-                                <input type="text" id="name" name="name">
+                            <div class="col-md-8">
+                                <input type="text" id="name" name="name" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -34,20 +34,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group row">
-                            <label class="col-sm-4 col-form-label me-t-r"><span
-                                        style="color: red">*</span>统一社会信用代码：</label>
-                            <div class="col-sm-8">
-                                <input type="text" id="enlicenseId" name="enlicenseId">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group row">
                             <label class="col-sm-4 col-form-label me-t-r"><span style="color: red">*</span>企业规模：</label>
                             <div class="col-sm-8">
-                                <select name="scale">
+                                <select name="scale" style="height:30px;">
                                     <option value="0~20">0~20</option>
                                     <option value="20~99">20~99</option>
                                     <option value="99~500">99~500</option>
@@ -94,7 +83,7 @@
                         <div class="form-group row">
                             <label class="col-sm-4 col-form-label me-t-r"><span style="color: red">*</span>企业类型：</label>
                             <div class="col-sm-8">
-                                <select name="companies">
+                                <select name="companies" style="height:30px;">
                                     <option value="4">企业服务公司</option>
                                     <option value="3">物流公司</option>
                                 </select>
@@ -176,6 +165,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label me-t-r"><span
+                                        style="color: red">*</span>统一社会信用代码：</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="enlicenseId" name="enlicenseId" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="me-btn-toolbar text-center">
                     <button type="button" class="btn btn-primary mr-2 save">申请</button>
@@ -196,7 +197,7 @@
                 $('#form').serialize(),
                 function (result) {
 
-                    if (result.code == 1) {
+                    if (result.code === 0) {
                         layer.msg(result.msg, {icon: 1, time: 2000}, function () {
                             setTimeout(parent.showCard(), 2000);
                             var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引

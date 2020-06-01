@@ -173,7 +173,9 @@ CSS
     right: 0;
     left: auto;
 }
-
+.button-white:hover {
+    color:#fff!important;
+}
 .button:hover {
     color: #fff;
 }
@@ -1571,6 +1573,11 @@ p.form-message.error {
         display: none !important;
     }
 }
+@media(max-width:770px){
+    .navbar-cell .lang-change {
+       display: none;
+    }
+}
 
 /*aios start*/
 .aios {
@@ -1736,4 +1743,30 @@ p.form-message.error {
 }
 .tmic{
     color: white;
+}
+/*导航栏样式*/
+/*.navbar-cell {*/
+/*    position: relative;*/
+/*}*/
+.lang-change {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding:5px 8px;
+    transform: translateY(-50%);
+    border-radius: 40px;
+    border: 1px solid white;
+    color: white;
+    /*background-color: #fff;*/
+}
+.lang-change .lang-zh,
+.lang-change .lang-en{
+    border:none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.language-change-zh {
+    display: none;
 }

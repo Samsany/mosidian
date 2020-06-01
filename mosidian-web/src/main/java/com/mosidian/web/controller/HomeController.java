@@ -3,7 +3,6 @@ package com.mosidian.web.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.mosidian.web.common.redis.RedisService;
 import com.mosidian.web.model.sys.User;
-import com.mosidian.web.service.sys.UserService;
 import com.mosidian.web.utils.PageData;
 import com.mosidian.web.utils.SuperUtils;
 import com.mosidian.web.controller.BaseController;
@@ -20,8 +19,8 @@ import java.util.Objects;
 @Controller
 public class HomeController extends BaseController {
 
-    @Autowired
-    private UserService userService;
+//    @Autowired
+//    private UserService userService;
     @Autowired
     private RedisService redisService;
     @Value("${jwt.tokenHeader}")
@@ -43,10 +42,10 @@ public class HomeController extends BaseController {
         return mv;
     }
 
-    @GetMapping("/sys/megaData/outlet")
+    @GetMapping("/sys/mega/outlet")
     public ModelAndView outlet() {
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("sys/megaData/outlet");
+        mv.setViewName("sys/mega/outlet");
         return mv;
     }
 
@@ -58,7 +57,7 @@ public class HomeController extends BaseController {
     }
 
 
-    @GetMapping("/register")
+    @GetMapping("/sys/register")
     public ModelAndView register() {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("register");
@@ -81,14 +80,14 @@ public class HomeController extends BaseController {
 
     @GetMapping("/bcLogin")
     public ModelAndView bcLogin() {
-        ModelAndView mv = new ModelAndView("redirect:http://47.103.64.74");
+        ModelAndView mv = new ModelAndView("redirect:http://47.103.64.74/mosidian-admin");
 //        mv.setViewName("sys/login/bcLogin");
         return mv;
     }
 
     @GetMapping("/meLogin")
     public ModelAndView meLogin() {
-        ModelAndView mv = new ModelAndView("redirect:http://47.103.64.74");
+        ModelAndView mv = new ModelAndView("redirect:http://47.103.64.74/mosidian-admin");
         return mv;
     }
 

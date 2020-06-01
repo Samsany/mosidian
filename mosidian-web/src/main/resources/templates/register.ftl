@@ -85,7 +85,7 @@
             dolphin.post('/api/member/save',
                 $('#form').serialize(),
                 function (result) {
-                    if (result.code == 1) {
+                    if (result.code === 0) {
                         layer.msg(result.msg, {icon: 1, time: 2000}, function () {
                             setTimeout(parent.showCard(), 2000);
                             var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引

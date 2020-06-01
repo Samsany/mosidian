@@ -64,7 +64,7 @@
 
 <!--====== 导航栏 START ======-->
 <nav class="navbar navbar-expand-lg">
-    <div class="container">
+    <div class="container navbar-cell">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarBag" id="bagBtn1">
             <span style="color: white">N</span>
             <!--            <span class="icon-bar"></span>-->
@@ -85,31 +85,40 @@
         <div class="collapse navbar-collapse" id="navBarBag">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="0" href="#">HOME</a>
+                    <a data-scroll-nav="0" href="#" class="language-change-en">HOME</a>
+                    <a data-scroll-nav="0" href="#" class="language-change-zh">官网首页</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="1" href="#">COSE</a>
+                    <a data-scroll-nav="1" href="#" class="language-change-en">COSE</a>
+                    <a data-scroll-nav="1" href="#" class="language-change-zh">企业服务</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="2" href="#">ACOS</a>
+                    <a data-scroll-nav="2" href="#" class="language-change-en">ACOS</a>
+                    <a data-scroll-nav="2" href="#" class="language-change-zh">业务系统</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="3" href="#">AiOS</a>
+                    <a data-scroll-nav="3" href="#" class="language-change-en">AiOS</a>
+                    <a data-scroll-nav="3" href="#" class="language-change-zh">招商系统</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a href="bcLogin">BCOS</a>
+                    <a href="bcLogin" class="language-change-en">BCOS</a>
+                    <a href="bcLogin" class="language-change-zh">客户系统</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="4" href="#">ICOS</a>
+                    <a data-scroll-nav="4" href="#" class="language-change-en">ICOS</a>
+                    <a data-scroll-nav="4" href="#" class="language-change-zh">保障系统</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a href="meLogin">MEOS</a>
+                    <a href="meLogin" class="language-change-en">MEOS</a>
+                    <a href="meLogin" class="language-change-zh">会员系统</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="5" href="#">TMIC</a>
+                    <a data-scroll-nav="5" href="#" class="language-change-en">TMIC</a>
+                    <a data-scroll-nav="5" href="#" class="language-change-zh">我的团队</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="6" href="#">COWE</a>
+                    <a data-scroll-nav="6" href="#" class="language-change-en">COWE</a>
+                    <a data-scroll-nav="6" href="#" class="language-change-zh">联系我们</a>
                 </li>
                 <li class="nav-item navBag1">
                     <!--                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">-->
@@ -122,21 +131,33 @@
                                 class="iconfont icon56"></i></a>
                 </li>
                 <li class="nav-item navBag2">
-                    <a data-scroll-nav="10" href="#">
+                    <a data-scroll-nav="10" href="#" >
                         <i class='iconfont  iconfriendadd'></i>
                         注册</a>
                 </li>
-                <li class="nav-item navBag2"><a data-scroll-nav="11" href="#"><i class='iconfont  iconfriend'></i>登录</a>
+                <li class="nav-item navBag2">
+                    <a data-scroll-nav="11" href="#" >
+                        <i class='iconfont  iconfriend'></i>登录</a>
                 </li>
-                <li class="nav-item navBag2"><a data-scroll-nav="12" href="#"><i class='iconfont iconsort'></i>订单</a>
+                <li class="nav-item navBag2">
+                    <a data-scroll-nav="12" href="#" >
+                        <i class='iconfont iconsort'></i>订单</a>
                 </li>
-                <li class="nav-item navBag2"><a data-scroll-nav="13" href="#"><i class='iconfont iconlike'></i>收藏</a>
+                <li class="nav-item navBag2">
+                    <a data-scroll-nav="13" href="#" >
+                        <i class='iconfont iconlike'></i>收藏</a>
                 </li>
-                <li class="nav-item navBag2"><a data-scroll-nav="14" href="#"><i class='iconfont icongouwuche'></i>售后服务</a>
+                <li class="nav-item navBag2">
+                    <a data-scroll-nav="14" href="#" >
+                        <i class='iconfont icongouwuche'></i>售后服务</a>
                 </li>
             </ul>
         </div>
-
+        <div class="lang-change">
+            <button id="langZh" class="lang-zh">中文</button>
+            <span>\</span>
+            <button id="langEn" class="lang-en">英文</button>
+        </div>
     </div>
 </nav>
 <!--====== 导航栏 ENDS ======-->
@@ -452,7 +473,7 @@
                 </div>
             </div>
             <div class="page-btn">
-                <a class="button button-bg" id="userRegister">免费申请</a>
+                <a class="button button-bg button-white" id="userRegister">免费申请</a>
             </div>
         </div>
     </div>
@@ -517,7 +538,7 @@
                 <div class="become_contant text-center">
                     <h5>与我们一起获得成功</h5>
                     <h2>是否想从今天开始增加业务量？</h2>
-                    <a id="registerKH" class="button button-bg">成为客户</a>
+                    <a id="registerKH" class="button button-bg button-white">成为客户</a>
                 </div>
             </div>
         </div>
@@ -1906,11 +1927,11 @@
 <script type="text/javascript">
     $(function () {
         $("#outlet").click(function () {
-            dolphin.iframe("/sys/megaData/outlet", "商家数据分析")
+            dolphin.iframe("/sys/mega/outlet", "商家数据分析")
         })
 
         $("#register").click(function () {
-            dolphin.iframe("/register", "会员注册", "750px", "600px")
+            dolphin.iframe("/sys/register", "会员注册", "750px", "600px")
         })
         $("#registerKH").click(function () {
             dolphin.iframe("/sys/kh/register", "会员注册", "1050px", "600px")
@@ -1918,6 +1939,16 @@
 
         $("#userRegister").click(function () {
             dolphin.iframe("/sys/kh/register_qiye", "企业入驻", "1050px", "600px")
+        })
+        //中文点击
+        $("#langZh").on('click',function () {
+            $(".language-change-en").hide()
+            $(".language-change-zh").show()
+        })
+        //英文点击
+        $("#langEn").on('click',function () {
+            $(".language-change-zh").hide()
+            $(".language-change-en").show()
         })
 
         window.showCard = function () {

@@ -8,10 +8,10 @@
 <#--    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
 	<#-- 取得 应用的绝对根路径 -->
 	<#assign basePath=request.contextPath>
-	<link rel="stylesheet" href="css/bootstrap.css">
-    <link href="js/pluginsPackage/swiper/swiper.min.css" rel="stylesheet" type="text/css">
-    <link href="css/letout.css" rel="stylesheet" type="text/css"></link>
-	<link href="css/office_efficiency_index.css" rel="stylesheet" type="text/css"></link>
+	<link rel="stylesheet" href="${basePath}/css/bootstrap.css">
+    <link href="${basePath}/js/pluginsPackage/swiper/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="${basePath}/css/letout.css" rel="stylesheet" type="text/css"></link>
+	<link href="${basePath}/css/office_efficiency_index.css" rel="stylesheet" type="text/css"></link>
 	<script type="text/javascript">
       //  埋点全局变量
       var gDataGather={
@@ -76,7 +76,7 @@
 	               <div class="content base-info" id="base-info">
 	                 <table>
 	                    <tr>
-                           <td colspan="4"><div class="channel-name">XXXX</div></td>
+                           <td colspan="4"><div class="channe l-name">XXXX</div></td>
                         </tr>
 	                    <tr>
 	                       <td rowspan="2"><div id="integral_echart" class="integral-echart"></div></td>
@@ -184,11 +184,11 @@
     </div>
     <!--特效动画效果-->
 	<div id="query-page-data" style="display:none" onclick="loadPageData()"  sa-gatherClick="true" elementCode="dataanalysis-m001-p0007-e00001"  elementName="查询数据"></div>
-    <script src="js/pluginsPackage/jquery/jquery.1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/pluginsPackage/swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${basePath}/js/pluginsPackage/jquery/jquery.1.11.3.min.js"></script>
+    <script src="${basePath}/js/bootstrap.min.js"></script>
+	<script src="${basePath}/js/pluginsPackage/swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js"></script>
-	<script src="js/office_efficiency_data.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/office_efficiency_index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="${basePath}/js/office_efficiency_data.js" type="text/javascript" charset="utf-8"></script>
+  <script src="${basePath}/js/office_efficiency_index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
