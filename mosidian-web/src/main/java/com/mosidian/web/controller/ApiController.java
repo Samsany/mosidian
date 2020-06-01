@@ -54,7 +54,6 @@ public class ApiController extends com.mosidian.web.controller.BaseController {
 
         if (ticket != null && randstr != null) {
             ContactUs contactUs = new ContactUs();
-            contactUs.setCreatedate(new Date());
             contactUs.setName(name);
             contactUs.setEmail(email);
             contactUs.setPhone(phone);

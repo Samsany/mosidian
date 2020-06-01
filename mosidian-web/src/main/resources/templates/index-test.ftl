@@ -1930,17 +1930,17 @@
             // res（验证成功） = {ret: 0, ticket: "String", randstr: "String"}
             if (res.ret === 0) {
                 // alert(res.ticket)   // 票据
-                $("ticket").val(res.ticket)
-                $("randstr").val(res.randstr)
-                dolphin.post('/api/contactUs/update',
+                $("#ticket").val(res.ticket)
+                $("#randstr").val(res.randstr)
+                dolphin.post('/api/contact/us',
                     $('#contact-form').serialize(),
                     function (result) {
-                        if (result.status == 1) {
-                            layer.msg(result.info, {icon: 1, time: 2000}, function () {
+                        if (result.code === 0) {
+                            layer.msg(result.msg, {icon: 1, time: 2000}, function () {
                                 $('#contact-form')[0].reset()
                             })
                         } else {
-                            dolphin.alert(result.info);
+                            dolphin.alert(result.msg);
                         }
                     })
             }

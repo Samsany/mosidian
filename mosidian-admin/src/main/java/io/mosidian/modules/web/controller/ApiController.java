@@ -1,6 +1,8 @@
 package io.mosidian.modules.web.controller;
 
 import io.mosidian.common.utils.R;
+import io.mosidian.modules.contact.entity.ContactUsEntity;
+import io.mosidian.modules.contact.service.ContactUsService;
 import io.mosidian.modules.enterprise.service.EnterpriseService;
 import io.mosidian.modules.enterprise.vo.EnterpriseVo;
 import io.mosidian.modules.member.service.MemberService;
@@ -22,6 +24,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * @Author ZSY
@@ -40,6 +43,37 @@ public class ApiController {
 
     @Resource
     private EnterpriseService enterpriseService;
+
+    @Resource
+    private ContactUsService contactUsService;
+
+    @PostMapping(value = "/contact/us")
+    @ResponseBody
+    public Object contactUpdate(@RequestParam(name = "ticket") String ticket,
+                                @RequestParam(name = "randstr") String randstr,
+                                @RequestParam(name = "name", required = false) String name,
+                                @RequestParam(name = "email", required = false) String email,
+                                @RequestParam(name = "phone", required = false) String phone,
+                                @RequestParam(name = "feedbackMessage", required = false) String feedbackMessage) {
+
+        if (ticket != null && randstr != null) {
+            ContactUsEntity contactUs = new ContactUsEntity();
+            contactUs.setCreatedate(new Date());
+            contactUs.setName(name);
+            contactUs.setEmail(email);
+            contactUs.setPhone(phone);
+            contactUs.setFeedbackMessage(feedbackMessage);
+            boolean save = contactUsService.save(contactUs);
+            if (save) {
+                return R.ok("反馈成功");
+            } else {
+                return R.error("反馈失败！");
+            }
+
+        } else {
+            return R.error("反馈失败！");
+        }
+    }
 
     @PostMapping(value = "/member/save")
     @ResponseBody

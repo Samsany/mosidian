@@ -1,6 +1,8 @@
 package io.mosidian.modules.enterprise.vo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -9,6 +11,8 @@ import java.util.Date;
  * @createTime 2020/5/29 16:04
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class EnterpriseVo {
 
     /*** 用户ID*/

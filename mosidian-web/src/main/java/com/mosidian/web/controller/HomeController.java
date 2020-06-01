@@ -93,19 +93,19 @@ public class HomeController extends BaseController {
     }
 
 
-    @RequestMapping(value = "/index-member", method = RequestMethod.GET)
-    public ModelAndView indexMember() {
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("index-member");
-        return mv;
-    }
-
-    @RequestMapping(value = "/index-admin", method = RequestMethod.GET)
-    public ModelAndView indexAdmin() {
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("index-admin");
-        return mv;
-    }
+//    @RequestMapping(value = "/index-member", method = RequestMethod.GET)
+//    public ModelAndView indexMember() {
+//        ModelAndView mv = new ModelAndView();
+//        mv.setViewName("index-member");
+//        return mv;
+//    }
+//
+//    @RequestMapping(value = "/index-admin", method = RequestMethod.GET)
+//    public ModelAndView indexAdmin() {
+//        ModelAndView mv = new ModelAndView();
+//        mv.setViewName("index-admin");
+//        return mv;
+//    }
 
 //    @RequestMapping(value = "/index-user",method = RequestMethod.GET)
 //    public ModelAndView indexUser(){
