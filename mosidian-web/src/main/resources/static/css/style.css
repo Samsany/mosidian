@@ -1767,6 +1767,9 @@ p.form-message.error {
     cursor: pointer;
     color: white;
 }
+#langEn .lang-en {
+    color:#1f8fff;
+}
 .language-change-zh {
     display: none;
 }

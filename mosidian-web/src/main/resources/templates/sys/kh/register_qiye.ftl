@@ -85,7 +85,7 @@
                             <div class="col-sm-8">
                                 <select name="companies" style="height:30px;">
                                     <option value="4">企业服务公司</option>
-                                    <option value="3">物流公司</option>
+                                    <option value="3">物流服务公司</option>
                                 </select>
                             </div>
                         </div>

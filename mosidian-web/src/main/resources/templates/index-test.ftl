@@ -156,7 +156,7 @@
         <div class="lang-change">
             <button id="langZh" class="lang-zh">中文</button>
             <span>\</span>
-            <button id="langEn" class="lang-en">英文</button>
+            <button id="langEn" class="lang-en" style="color:#1f8fff">EN</button>
         </div>
     </div>
 </nav>
@@ -180,7 +180,7 @@
         </div>
     </div>
     <div class="singel_slider d-flex align-items-center bg_cover" data-overlay="7"
-         style="background-image: url(img/swiper/swiper2.jpg)">
+         style="background-image: url(img/swiper/swiper2.png)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -292,33 +292,32 @@
 
 <!--====== ACOS 业务系统 ======-->
 <div style="background-color: #0b0b0b" data-scroll-index="2">
-    <div class="acosPC"
-         style="width: 1140px;height: 900px;display:block; margin:0 auto;margin-top: 40px;}">
-        <h2 style="text-align: center;color: white;padding-top: 50px">业务系统</h2>
-        <p style="text-align: center;font-size: 20px;color: white">本方案提供财务、进销存、批量订货、
+    <div class="acosPC section_title text-center">
+        <h2 style="color: white">业务系统</h2>
+        <p style="color: white">本方案提供财务、进销存、批量订货、
             生产管理、多门店经营、风险预警、智能记帐等常见功能，打通企业管理的“人财货客”全链条</p>
         <div class="Grid"
-             style="display: flex;width: 1140px;height: 200px; display: -webkit-flex;align-items:center;justify-content:space-around;">
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp1.png) 260px 150px">
+             style="margin:0 auto; display: flex;width: 1140px;height: 200px; align-items:center;justify-content:space-around;">
+            <div style="width: 260px;height: 150px;background: url(img/business/businessMp1.jpg) 260px 150px">
                 <p id="slide1" style="color: white;text-align: center;position:
                 relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
                  30%;padding: 6px;font-weight: 400;font-size: 14px;">科技为先</p>
 
             </div>
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp2.png) 260px 150px">
+            <div style="width: 260px;height: 150px;background: url(img/business/businessMp2.jpg) 260px 150px">
                 <p id="slide2" style="color: white;text-align: center;position:
                 relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
                  30%;padding: 6px;font-weight: 400;font-size: 14px;">以人为本</p>
 
             </div>
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp3.png) 260px 150px">
+            <div style="width: 260px;height: 150px;background: url(img/business/businessMp3.jpg) 260px 150px">
                 <p id="slide3" style="color: white;text-align: center;position:
                 relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
                  30%;padding: 6px;font-weight: 400;font-size: 14px;">随时办公</p>
 
 
             </div>
-            <div style="width: 260px;height: 159px;background: url(img/business/businessMp4.png) 260px 150px">
+            <div style="width: 260px;height: 159px;background: url(img/business/businessMp4.jpg) 260px 150px">
                 <p id="slide4" style="color: white;text-align: center;position:
                 relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
                  30%;padding: 6px;font-weight: 400;font-size: 14px;">即时业务</p>
@@ -326,37 +325,38 @@
             </div>
         </div>
         <div id="show"
-             style="width: 1120px;height: 300px; position: relative;display:block; margin:0 auto;background: url(img/business/businessPc1.jpg) 1120px 300px">
-            <div style="width:900px;height: 200px;display:block;position: absolute;left: 0;top: 0;bottom: 0;right: 0;margin: auto;">
+             style="width: 1120px;height: 100px; position: relative;display:block; margin:0 auto;">
+            <div style="width:900px;height: 100px;display:block;position: absolute;left: 0;top: 0;bottom: 0;right: 0;margin: auto;">
                 <h3 id="showh" style="color: white">科技为先</h3>
                 <p id="showp1" style="color: white"></p>
                 <p id="showp2" style="color: white">财富不能创造文化,文化却能创造财富</p>
             </div>
         </div>
         <div class="Grid"
-             style="display: flex;width: 1140px;height: 200px; display: -webkit-flex;align-items:center;justify-content:space-around;">
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp1.png) 260px 150px">
+             style="margin: 0 auto;display: flex;width: 1140px;height: 200px; align-items:center;justify-content:space-around;">
+            <div style="width: 260px;height: 150px;background: url(img/business/businessMp5.jpg) 260px 150px">
                 <p id="slide5" style="color: white;text-align: center;position:
                 relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
                  30%;padding: 6px;font-weight: 400;font-size: 14px;">精准推广</p>
             </div>
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp2.png) 260px 150px">
+            <div style="width: 260px;height: 150px;background: url(img/business/businessMp6.jpg) 260px 150px">
                 <p id="slide6" style="color: white;text-align: center;position:
                 relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
                  30%;padding: 6px;font-weight: 400;font-size: 14px;">专业后台</p>
             </div>
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp3.png) 260px 150px">
+            <div style="width: 260px;height: 150px;background: url(img/business/businessMp7.jpg) 260px 150px">
                 <p id="slide7" style="color: white;text-align: center;position:
                 relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
                  30%;padding: 6px;font-weight: 400;font-size: 14px;">科技改变</p>
             </div>
-            <div style="width: 260px;height: 159px;background: url(img/business/businessMp4.png) 260px 150px">
+            <div style="width: 260px;height: 159px;background: url(img/business/businessMp8.jpg) 260px 150px">
                 <p id="slide8" style="color: white;text-align: center;position:
                 relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
                  30%;padding: 6px;font-weight: 400;font-size: 14px;">专属客服</p>
             </div>
         </div>
     </div>
+
     <!--====== ACOS 业务系统  ======-->
     <div data-scroll-index="2" class="acosMP pb-10 pt-50">
         <div class="container">
@@ -364,7 +364,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="section_title text-center">
                         <h2>业务系统</h2>
-                        <p>本方案提供财务、进销存、批量订货、 生产管理、多门店经营、风险预警、智能记帐等常见功能，打通企业管理的“人财货客”全链条。</p>
+                        <p style="padding-top: 20px;font-size: 10px">本方案提供财务、进销存、批量订货、 生产管理、多门店经营、风险预警、智能记帐等常见功能，打通企业管理的“人财货客”全链条。</p>
                     </div>
                 </div>
             </div>
@@ -432,7 +432,7 @@
                     <img src="img/AIOS/service-advantages-pic1.png" alt=""/>
                     <h4>资源优势</h4>
                     <!-- <p>三大运营商直连通道，提供全网、全<br>周期的各种卡型</p>-->
-                    <p>三大运营商直连通道，提供全<br>网、全周期的各种卡型，获得政府<br>和民众的支持</p>
+                    <p>三大运营商直连通道，提供全<br>网、全周期的各种数据保护，获得政府<br>和民众的支持</p>
                 </div>
                 <div class="aios-ul">
                     <img src="img/AIOS/service-advantages-pic2.png" alt="">
@@ -442,7 +442,7 @@
                 <div class="aios-ul">
                     <img src="img/AIOS/service-advantages-pic3.png" alt="">
                     <h4>信誉保障</h4>
-                    <p>12年通信行业经验；新三板创新层<br>企业，信息透明、管理规范</p>
+                    <p>拥有通信行业经验；新三板创新层<br>企业，信息透明、管理规范</p>
                 </div>
                 <div class="aios-ul">
                     <img src="img/AIOS/service-advantages-pic4.png" alt="">
@@ -556,7 +556,11 @@
                 </div>
             </div>
         </div>
-        <div class="client-slied">
+        <div class="client-slied" style="margin-top:50px;">
+            <img src="img/logobg.png" alt="" >
+        </div>
+<#--        需保存的原始代码 --------->
+        <div class="client-slied" style="display: none">
             <div class="col-lg-12">
                 <div class="singel_client mt-100 text-center">
                     <div class="client_image">
@@ -610,7 +614,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -622,29 +625,32 @@
     <div class="container">
         <div class="brand_slied">
             <div class="singel_brand">
-                <img src="img/brand/douyin.jpg" alt="Envato" style="width: 164px;height: 70px">
+                <img src="img/logo.png" alt="Envato" style="width: 164px;height: 70px">
             </div>
-            <div class="singel_brand">
-                <img src="img/brand/kuaishou.jpg" alt="Envato" style="width: 164px;height: 70px">
-            </div>
-            <div class="singel_brand">
-                <img src="img/brand/douyu.jpg" alt="Envato" style="width: 164px;height: 70px">
-            </div>
-            <div class="singel_brand">
-                <img src="img/brand/huya.jpg" alt="Envato" style="width: 164px;height: 70px">
-            </div>
-            <div class="singel_brand">
-                <img src="img/brand/weibo.jpg" alt="Envato" style="width: 164px;height: 70px">
-            </div>
-            <div class="singel_brand">
-                <img src="img/brand/apple.jpg" alt="Envato" style="width: 164px;height: 70px">
-            </div>
-            <div class="singel_brand">
-                <img src="img/brand/xiaomi.jpg" alt="Envato" style="width: 164px;height: 70px">
-            </div>
-            <div class="singel_brand">
-                <img src="img/brand/huawei.jpg" alt="Envato" style="width: 164px;height: 70px">
-            </div>
+<#--            <div class="singel_brand">-->
+<#--                <img src="img/brand/douyin.jpg" alt="Envato" style="width: 164px;height: 70px">-->
+<#--            </div>-->
+<#--            <div class="singel_brand">-->
+<#--                <img src="img/brand/kuaishou.jpg" alt="Envato" style="width: 164px;height: 70px">-->
+<#--            </div>-->
+<#--            <div class="singel_brand">-->
+<#--                <img src="img/brand/douyu.jpg" alt="Envato" style="width: 164px;height: 70px">-->
+<#--            </div>-->
+<#--            <div class="singel_brand">-->
+<#--                <img src="img/brand/huya.jpg" alt="Envato" style="width: 164px;height: 70px">-->
+<#--            </div>-->
+<#--            <div class="singel_brand">-->
+<#--                <img src="img/brand/weibo.jpg" alt="Envato" style="width: 164px;height: 70px">-->
+<#--            </div>-->
+<#--            <div class="singel_brand">-->
+<#--                <img src="img/brand/apple.jpg" alt="Envato" style="width: 164px;height: 70px">-->
+<#--            </div>-->
+<#--            <div class="singel_brand">-->
+<#--                <img src="img/brand/xiaomi.jpg" alt="Envato" style="width: 164px;height: 70px">-->
+<#--            </div>-->
+<#--            <div class="singel_brand">-->
+<#--                <img src="img/brand/huawei.jpg" alt="Envato" style="width: 164px;height: 70px">-->
+<#--            </div>-->
 
         </div>
     </div>
@@ -716,127 +722,63 @@
             <div class="col-lg-12">
                 <div class="singel_team text-center mt-70">
                     <div class="team_img">
-                        <img src="img/team/Dries.jpg" alt="Team">
+                        <img width="300" height="600" src="img/team/tm01.png" alt="Team">
                     </div>
-                    <div class="team_content">
-                        <h5>Dries</h5>
-                        <span>联合创始人</span>
-                        <p>Dries(郑祥祥) 精通大数据，深刻理解JavaWEB技术体系架构，精通SSH、SpringMVC、Spring Boot、JBPM、MyBatis、EJB等多种流行框架</p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
-                        </ul>
-                    </div>
+<#--                    <div class="team_content">-->
+<#--                        <h5>Dries</h5>-->
+<#--                        <span>联合创始人</span>-->
+<#--                        <p>Dries(郑祥祥) 精通大数据，深刻理解JavaWEB技术体系架构，精通SSH、SpringMVC、Spring Boot、JBPM、MyBatis、EJB等多种流行框架</p>-->
+<#--                        <ul>-->
+<#--                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>-->
+<#--                        </ul>-->
+<#--                    </div>-->
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="singel_team text-center mt-70">
                     <div class="team_img">
-                        <img src="img/team/2.jpg" alt="Team">
+                        <img width="300" height="600" src="img/team/tm02.png" alt="Team">
                     </div>
-                    <div class="team_content">
-                        <h5>Tic</h5>
-                        <span>创始人</span>
-                        <p>坐下来，一直保持良好的状态。持久的弹性，尤其是在此之前。</p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
-                        </ul>
-                    </div>
+<#--                    <div class="team_content">-->
+<#--                        <h5>Tic</h5>-->
+<#--                        <span>创始人</span>-->
+<#--                        <p>坐下来，一直保持良好的状态。持久的弹性，尤其是在此之前。</p>-->
+<#--                        <ul>-->
+<#--                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>-->
+<#--                        </ul>-->
+<#--                    </div>-->
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="singel_team text-center mt-70 ">
                     <div class="team_img">
-                        <img src="img/team/ShenZhen.jpg" alt="Team">
-                    </div>
-                    <div class="team_content">
-                        <h5>ShenZhen</h5>
-                        <span>联合创始人</span>
-                        <p>ShenZhen(邢深圳）CTO 有过十几个大中型项目的开发经验。对SSH、SSM、Spring Boot等主流框架,通过分析源码，设计框架。
-                        </p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
-                        </ul>
+                        <img width="300" height="600" src="img/team/tm03.png" alt="Team">
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="row team_slide">
             <div class="col-lg-12">
                 <div class="singel_team text-center mt-70 ">
                     <div class="team_img">
-                        <img src="img/team/Able.jpg" alt="Team">
+                        <img width="300" height="600" src="img/team/tm06.png" alt="Team">
                     </div>
-                    <div class="team_content">
-                        <h5>Able</h5>
-                        <span>联合创始人</span>
-                        <p>Able(杨震）熟练掌握JavaEE技术及架构体系、SpringMVC、Spring、 Mybatis、Redis、Spring Boot、Spring Cloud 等框架</p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
-                        </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="singel_team text-center mt-70 ">
+                    <div class="team_img">
+                        <img width="300" height="600" src="img/team/tm04.png" alt="Team">
                     </div>
+
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="singel_team text-center mt-70 ">
                     <div class="team_img">
-                        <img src="img/team/Able.jpg" alt="Team">
-                    </div>
-                    <div class="team_content">
-                        <h5>xxx</h5>
-                        <span>首席设计师</span>
-                        <p>Able(杨震）熟练掌握JavaEE技术及架构体系、SpringMVC、Spring、 Mybatis、Redis、Spring Boot、Spring Cloud 等框架</p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row team_slide">
-            <div class="col-lg-12">
-                <div class="singel_team text-center mt-70 ">
-                    <div class="team_img">
-                        <img src="img/team/Sean.jpg" alt="Team">
-                    </div>
-                    <div class="team_content">
-                        <h5>Sean</h5>
-                        <span>核心技术员</span>
-                        <p>Sean(刘玮易)对JavaEE 技术体系结构、JavaWeb 原理有深刻理解，精通多种主流框架以及 Maven构建工具。</p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="singel_team text-center mt-70 ">
-                    <div class="team_img">
-                        <img src="img/team/Ashley.jpg" alt="Team">
-                    </div>
-                    <div class="team_content">
-                        <h5>Ashley</h5>
-                        <span>核心技术员</span>
-                        <p>Ashley（侯宁宁）掌握SpringBoot、Mybatis、Spring等主流框架，熟悉Vue、BootStrap前端框架。</p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="singel_team text-center mt-70 ">
-                    <div class="team_img">
-                        <img src="img/team/Brown.jpg" alt="Team">
-                    </div>
-                    <div class="team_content">
-                        <h5>Brown</h5>
-                        <span>核心技术员</span>
-                        <p>Brown(刘欢欢）
-                            熟练掌握ssm，spring boot+mybatis等整合框架得运用，熟练掌握mysql、sql server数据库
-                        </p>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-weibo"></i></a></li>
-                        </ul>
+                        <img width="300" height="600" src="img/team/tm05.png" alt="Team">
                     </div>
                 </div>
             </div>
@@ -1944,11 +1886,16 @@
         $("#langZh").on('click',function () {
             $(".language-change-en").hide()
             $(".language-change-zh").show()
+            $(".lang-zh").css('color','#1f8fff')
+            $(".lang-en").css('color','#fff')
         })
         //英文点击
         $("#langEn").on('click',function () {
             $(".language-change-zh").hide()
             $(".language-change-en").show()
+            $(".lang-zh").css('color','#fff')
+            $(".lang-en").css('color','#1f8fff')
+
         })
 
         window.showCard = function () {

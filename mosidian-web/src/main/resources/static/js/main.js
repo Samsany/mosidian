@@ -308,49 +308,41 @@ $(function(){
 
     // 业务系统
     $("#slide1").bind("mouseover",function(){
-        $("#show").css("background","url(img/business/businessPc1.jpg)  1120px 300px");
         $("#showh").html("科技为先");
         $("#showp1").html("");
         $("#showp2").html("财富不能创造文化,文化却能创造财富\"");
     })
     $("#slide2").bind("mouseover",function(){
-        $("#show").css("background","url(img/business/businessPc2.png) 1120px 300px");
         $("#showh").html("以人为本");
         $("#showp1").html("满足初创需求");
         $("#showp2").html("初创公司的核心不是技术能力，提供满足需求的ERP等心选产品。");
     })
     $("#slide3").bind("mouseover",function(){
-        $("#show").css("background","url(img/business/businessPc3.png) 1120px 300px");
         $("#showh").html("随时随地移动办公");
         $("#showp1").html("成为用户体验最佳的互联网金融平台");
         $("#showp2").html("随时随地管理企业需求，打通企业管理的“人财货客”全链条。");
     })
     $("#slide4").bind("mouseover",function(){
-        $("#show").css("background","url(img/business/businessPc4.png) 1120px 300px");
         $("#showh").html("即时业务洞察");
         $("#showp1").html("随时掌握业务情况");
         $("#showp2").html("简易搭建专业水准的可视化大屏，进行即时业务洞察。");
     })
     $("#slide5").bind("mouseover",function(){
-        $("#show").css("background","url(img/business/businessPc1.jpg) 1120px 300px");
         $("#showh").html("精准推广");
         $("#showp1").html("推广精准细致");
         $("#showp2").html("汇聚腾讯优质资源，精准定位受众");
     })
     $("#slide6").bind("mouseover",function(){
-        $("#show").css("background","url(img/business/businessPc2.png) 1120px 300px");
         $("#showh").html("专业后台");
         $("#showp1").html("");
         $("#showp2").html("后台操作简单方便，推广效果随时展现");
     })
     $("#slide7").bind("mouseover",function(){
-        $("#show").css("background","url(img/business/businessPc3.png) 1120px 300px");
         $("#showh").html("车载物联—专属客服、车载MiFi、北斗定位导航、后视镜等");
         $("#showp1").html("客户诉求：车内设备多，要求可定制流量资费套餐和价格；信号覆盖要求稳定、 定位精确度高");
         $("#showp2").html("解决方案：移动/电信2-15G超低资费；工业级sim卡");
     })
     $("#slide8").bind("mouseover",function(){
-        $("#show").css("background","url(img/business/businessPc4.png) 1120px 300px");
         $("#showh").html("专属客服");
         $("#showp1").html("");
         $("#showp2").html("客服团队专业指导系统使用，为您量身打造推广方");
