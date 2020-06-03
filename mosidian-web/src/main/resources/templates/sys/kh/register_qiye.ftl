@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>官网：</label>
+                            <label class="col-sm-3 col-form-label me-t-r">官网：</label>
                             <div class="col-sm-9">
                                 <input type="text" name="website"
                                        class="form-control">
@@ -199,7 +199,7 @@
 
                     if (result.code === 0) {
                         layer.msg(result.msg, {icon: 1, time: 2000}, function () {
-                            setTimeout(parent.showCard(), 2000);
+                            setTimeout(parent.showCard(3), 2000);
                             var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
                             parent.layer.close(index); //再执行关闭
                         })

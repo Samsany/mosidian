@@ -5,7 +5,7 @@
 <div class="container me-p-t-25">
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">企业申请流程</h5>
+            <h5 class="card-title">客户申请流程</h5>
             <form id="form">
                 <div class="row banner-cell">
                     <div class="col-md-12">
@@ -23,7 +23,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>官网：</label>
+                            <label class="col-sm-3 col-form-label me-t-r">官网：</label>
                             <div class="col-sm-9">
                                 <input type="text" name="website"
                                        class="form-control">
@@ -84,8 +84,8 @@
                             <label class="col-sm-4 col-form-label me-t-r"><span style="color: red">*</span>企业类型：</label>
                             <div class="col-sm-8">
                                 <select name="companies" style="height:30px;">
-                                    <option value="3">物流服务公司</option>
                                     <option value="4">企业服务公司</option>
+                                    <option value="3">物流服务公司</option>
                                 </select>
                             </div>
                         </div>
@@ -176,6 +176,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="me-btn-toolbar text-center">
                     <button type="button" class="btn btn-primary mr-2 save">申请</button>
                     <button type="button" class="btn btn-primary mr-2 cancel">取消</button>
@@ -197,7 +199,7 @@
 
                     if (result.code === 0) {
                         layer.msg(result.msg, {icon: 1, time: 2000}, function () {
-                            setTimeout(parent.showCard(), 2000);
+                            setTimeout(parent.showCard(2), 2000);
                             var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
                             parent.layer.close(index); //再执行关闭
                         })

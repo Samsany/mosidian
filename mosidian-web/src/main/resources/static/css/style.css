@@ -43,7 +43,10 @@ body {
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
 }
-
+/*.row {*/
+/*    margin-right:0!important;*/
+/*    margin-left:0!important;*/
+/*}*/
 a:focus,
 input:focus,
 textarea:focus,
@@ -407,8 +410,8 @@ PREALODER
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    /*-webkit-transition: all 0.3s linear;*/
+    /*transition: all 0.3s linear;*/
     position: relative;
 }
 
@@ -559,16 +562,16 @@ PREALODER
 
 .about_text h3 {
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .about_text .nav.nav-tabs {
     border: 0;
 }
 
-.about_text .nav.nav-tabs li {
-    margin-right: 20px;
-}
+/*.about_text .nav.nav-tabs li {*/
+/*    margin-right: 20px;*/
+/*}*/
 
 .about_text .nav.nav-tabs li a {
     font-size: 16px;
@@ -578,6 +581,21 @@ PREALODER
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     position: relative;
+}
+.about_text .nav-tabs li {
+    width:33%;
+}
+.about_text .nav-tabs {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .about_text .nav.nav-tabs li a::before {
@@ -764,6 +782,9 @@ PREALODER
 .team_slide {
     text-align: center;
 }
+/*.h5-adapter-team-info {*/
+/*    width:100%!important;*/
+/*}*/
 
 .singel_team {
     width: 95%;
@@ -778,14 +799,17 @@ PREALODER
     box-shadow: 0px 3px 30px -5px rgba(0, 0, 0, 0.25);
 }
 
-.singel_team .team_img {
-    overflow: hidden;
+.h5-adapter-team-info .team_img {
+    /*width:300px;*/
+    height:600px;
+    margin-bottom:15px;
 }
 
-.singel_team .team_img img {
+.h5-adapter-team-info .team_img img {
     width: 100%;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    height:100%;
+    /*-webkit-transition: all 0.3s ease-in;*/
+    /*transition: all 0.3s ease-in;*/
 }
 
 .singel_team:hover .team_img img {
@@ -839,36 +863,36 @@ PREALODER
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
-.team_slide .slick-arrow {
-    position: absolute;
-    left: -30px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #006ed9;
-    color: #006ed9;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    z-index: 5;
-}
+/*.team_slide .slick-arrow {*/
+/*    position: absolute;*/
+/*    left: -30px;*/
+/*    top: 50%;*/
+/*    -webkit-transform: translateY(-50%);*/
+/*    transform: translateY(-50%);*/
+/*    font-size: 24px;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    line-height: 35px;*/
+/*    text-align: center;*/
+/*    border-radius: 50%;*/
+/*    border: 1px solid #006ed9;*/
+/*    color: #006ed9;*/
+/*    cursor: pointer;*/
+/*    -webkit-transition: all 0.3s ease-in;*/
+/*    transition: all 0.3s ease-in;*/
+/*    z-index: 5;*/
+/*}*/
 
-.team_slide .fa-angle-right.slick-arrow {
-    left: auto;
-    right: -30px;
-}
+/*.team_slide .fa-angle-right.slick-arrow {*/
+/*    left: auto;*/
+/*    right: -30px;*/
+/*}*/
 
-.team_slide .slick-arrow:hover {
-    color: #fff;
-    background-color: #006ed9;
-    border-color: #006ed9;
-}
+/*.team_slide .slick-arrow:hover {*/
+/*    color: #fff;*/
+/*    background-color: #006ed9;*/
+/*    border-color: #006ed9;*/
+/*}*/
 
 /*===========================
     8.PRICE TABLE css
@@ -1295,9 +1319,9 @@ p.form-message.error {
     line-height: 40px;
     font-size: 14px;
     color: #a9a9a9;
+    cursor: pointer;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
-
 }
 
 .footer .footer-widget-list ul li a i {
@@ -1567,6 +1591,9 @@ p.form-message.error {
     .acosPC {
         display: none !important;
     }
+    .business-system-color {
+        color:#fff!important;
+    }
 }
 @media (min-width: 990px) {
     .acosMP {
@@ -1576,6 +1603,11 @@ p.form-message.error {
 @media(max-width:770px){
     .navbar-cell .lang-change {
        display: none;
+    }
+}
+@media(max-width:500px){
+    .h5-adapter {
+        font-size: 14px!important;
     }
 }
 
@@ -1604,6 +1636,7 @@ p.form-message.error {
 }
 
 .aios-ul {
+    padding-top: 50px;
     margin: 20px 0;
     border-top: 12px solid #0061E6;
     width: 250px;
@@ -1616,7 +1649,7 @@ p.form-message.error {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .aios-ul p {
     font-size: 14px;
@@ -1700,9 +1733,13 @@ p.form-message.error {
 
 /*=========foot==========*/
 .foot-font {
-    display: block;
+    display: flex;
     margin-bottom: 15px;
     color: gainsboro
+}
+.foot-title {
+    display: inline-block;
+    width:50px;
 }
 
 .foot-numf {
@@ -1773,3 +1810,52 @@ p.form-message.error {
 .language-change-zh {
     display: none;
 }
+/*-----新版样式代码------2020-6-2start 作者蔡东*/
+/*企业服务*/
+.enterprise-service-title {
+    text-align: center;
+}
+/*我们的团队*/
+.team_main {
+    margin: 20px 0;
+}
+.team_services {
+    position: relative;
+    /*border: 1px solid #006ed9;*/
+    height: 650px;
+    border-radius: 5px;
+    padding: 20px 15px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    display: inline-block;
+}
+
+.team_services:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.team {
+    color: white;
+    background-color: white;
+    padding: 0 10px
+}
+.team_img img {
+    width: 320px;
+    height: 360px;
+}
+.team_content {
+}
+
+.team_content h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+}
+.team_content h5 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #00A8FE
+}
+

@@ -10,20 +10,18 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group row">
-                            <img src="../../img/card/card.jpg" style="height: 260px;width: 400px"/>
+                            <#if id == 1 >
+                                <img src="http://localhost/web/img/card/aps-aic.png" style="height: 260px;width: 400px"/>
+                            <#elseif id == 2>
+                                <img src="http://localhost/web/img/card/bps-bic.png" style="height: 260px;width: 400px"/>
+                            <#else>
+                                <img src="http://localhost/web/img/card/cps-cic.png" style="height: 260px;width: 400px"/>
+                            </#if>
                         </div>
                     </div>
                 </div>
-<#--                <div class="row">-->
-<#--                    <div class="col-md-6">-->
-<#--                        <div class="form-group row">-->
-<#--                            <label class="col-sm-3 col-form-label me-t-r"><span style="color: red">*</span>注意事项：</label>-->
-<#--                        </div>-->
-<#--                    </div>-->
-<#--                </div>-->
             </form>
         </div>
-
         <div class="me-btn-toolbar text-center">
             <button type="button" class="btn btn-primary mr-2 cancel">关闭</button>
         </div>

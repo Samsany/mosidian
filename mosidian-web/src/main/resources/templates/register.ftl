@@ -87,7 +87,7 @@
                 function (result) {
                     if (result.code === 0) {
                         layer.msg(result.msg, {icon: 1, time: 2000}, function () {
-                            setTimeout(parent.showCard(), 2000);
+                            setTimeout(parent.showCard(1), 2000);
                             var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
                             parent.layer.close(index); //再执行关闭
                         })

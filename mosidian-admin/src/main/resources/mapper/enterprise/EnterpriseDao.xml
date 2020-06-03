@@ -28,7 +28,10 @@
         <result property="avatar" column="avatar"/>
         <result property="domicile" column="domicile"/>
         <result property="enlicense" column="enlicense"/>
+        <result property="balance" column="balance" />
+        <result property="monetary" column="monetary" />
         <result property="updateTime" column="update_time"/>
+        <result property="level" column="level"/>
     </resultMap>
 
     <select id="queryPageVo" resultType="io.mosidian.modules.enterprise.vo.EnterpriseVo">

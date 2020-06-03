@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -68,9 +69,18 @@ public class EnterpriseVo {
     private String enlicenseId;
     /*** 营业执照*/
     private String enlicense;
+    /**
+     * 账户余额（默认：288）
+     */
+    private BigDecimal balance;
 
+    /**
+     * 消费总金额（默认：600）
+     */
+    private BigDecimal monetary;
 
-    public EnterpriseVo(String username, String email, String mobile, String domicile, String name, String website, String scale, String synopsis, String corporation, String reason, String eserver, String companies, String headName, String sector, String eposition, String headCard, String emobile, String eemail, String modifier, String enlicenseId) {
+    public EnterpriseVo(String enId,String username, String email, String mobile, String domicile, String name, String website, String scale, String synopsis, String corporation, String reason, String eserver, String companies, String headName, String sector, String eposition, String headCard, String emobile, String eemail, String modifier, String enlicenseId,BigDecimal banlance,BigDecimal monetary,Integer level) {
+        this.enId = enId;
         this.username = username;
         this.email = email;
         this.mobile = mobile;
@@ -91,6 +101,9 @@ public class EnterpriseVo {
         this.eemail = eemail;
         this.modifier = modifier;
         this.enlicenseId = enlicenseId;
+        this.balance = banlance;
+        this.monetary = monetary;
+        this.level = level;
     }
 
     public EnterpriseVo(String username, String website, String scale, String corporation,String reason, String eserver, String companies, String name, String headName, String sector, String eposition, String headCard, String emobile, String eemail,String enlicenseId) {

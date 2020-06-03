@@ -3,6 +3,7 @@ package io.mosidian.modules.member.service.impl;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
 import io.mosidian.common.utils.R;
+import io.mosidian.modules.enterprise.entity.EnterpriseEntity;
 import io.mosidian.modules.member.vo.MemberVo;
 import io.mosidian.modules.sys.controller.AbstractController;
 import io.mosidian.modules.sys.entity.SysUserEntity;
@@ -76,7 +77,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
 
     @Transactional
     @Override
-    public synchronized R saveMemberVo(MemberVo memberVo,SysUserEntity user) {
+    public synchronized R saveMemberVo(MemberVo memberVo, SysUserEntity user) {
 
         MemberEntity memberEntity = new MemberEntity();
 
@@ -86,6 +87,8 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
         MemberEntity member = memberService.getMaxMemberByUserId();
 
         memberEntity.setMemberId(member.getMemberId());
+
+
         user.setFlag(2);
 
         log.info("【会员卡】========》" + memberEntity.getMemberId());
@@ -108,26 +111,33 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
 
         sysUserRoleService.save(userRoleEntity);
 
+
         return R.ok("开卡成功");
     }
 
     @Override
     public MemberEntity getMaxMemberByUserId() {
         MemberEntity memberEntity = memberDao.getMaxMemberByUserId();
-        String regEx="[^0-9]";
-        Pattern p = Pattern.compile(regEx);
-        Matcher matcher = p.matcher(memberEntity.getMemberId());
-        String num = matcher.replaceAll("").trim();
-        BigInteger b = new BigInteger(num);
-        String memberNum = String.valueOf(b.add(BigInteger.ONE));
-        String str1 = StrUtil.sub(memberNum,0, 4);
-        String str2 = StrUtil.sub(memberNum,4, 8);
-        String str3 = StrUtil.sub(memberNum,8, 12);
-        String template = "AIC{}-{}-{}";
-        String memberId = StrUtil.format(template,str1, str2, str3);
-        memberEntity.setMemberId(memberId);
+        if (memberEntity == null) {
+            MemberEntity entity = new MemberEntity();
+            entity.setMemberId("AIC2020-0000-0000");
+            return entity;
+        } else {
+            String regEx = "[^0-9]";
+            Pattern p = Pattern.compile(regEx);
+            Matcher matcher = p.matcher(memberEntity.getMemberId());
+            String num = matcher.replaceAll("").trim();
+            BigInteger b = new BigInteger(num);
+            String memberNum = String.valueOf(b.add(BigInteger.ONE));
+            String str1 = StrUtil.sub(memberNum, 0, 4);
+            String str2 = StrUtil.sub(memberNum, 4, 8);
+            String str3 = StrUtil.sub(memberNum, 8, 12);
+            String template = "AIC{}-{}-{}";
+            String memberId = StrUtil.format(template, str1, str2, str3);
+            memberEntity.setMemberId(memberId);
 
-        return memberEntity;
+            return memberEntity;
+        }
     }
 
     @Override
@@ -150,7 +160,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
         int i = memberDao.updateById(memberEntity);
         boolean b = sysUserService.updateById(userEntity);
 
-        if (i == 1 && b){
+        if (i == 1 && b) {
             return R.ok();
         } else {
             return R.error("更新失败");

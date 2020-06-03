@@ -49,10 +49,11 @@ public class HomeController extends BaseController {
         return mv;
     }
 
-    @GetMapping("/sys/user/card")
-    public ModelAndView meCard() {
+    @GetMapping("/sys/user/card/{id}")
+    public ModelAndView meCard(@PathVariable("id") Integer id) {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("sys/user/card");
+        mv.getModel().put("id",id);
         return mv;
     }
 

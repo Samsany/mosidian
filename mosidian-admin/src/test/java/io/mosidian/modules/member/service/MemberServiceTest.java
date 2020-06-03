@@ -1,7 +1,5 @@
 package io.mosidian.modules.member.service;
 
-import io.mosidian.common.utils.R;
-import io.mosidian.modules.member.Utils.GeneratorMember;
 import io.mosidian.modules.member.Utils.IDCardGenerator;
 import io.mosidian.modules.member.entity.MemberEntity;
 import io.mosidian.modules.member.vo.MemberVo;
@@ -46,14 +44,21 @@ class MemberServiceTest extends AbstractController {
     @Test
     void addMember() {
 
-        BigDecimal balance = new BigDecimal(288);
-        String randomJianHan;
-        for (int i= 0; i< 5; i++) {
-            if (i % 2 == 0){
-                randomJianHan = GeneratorMember.getRandomJianHan(2);
+
+
+        BigDecimal balance = new BigDecimal(1218000000);
+        for (int i = 120; i< 140; i++) {
+            int sex= 0;
+            int level = 0;
+            if (i % 2 ==0) {
+                sex = 0;
+                level= 6;
             } else {
-                randomJianHan = GeneratorMember.getRandomJianHan(3);
+                sex = 1;
+                level = 7;
             }
+
+
 
             SysUserEntity user = new SysUserEntity();
             user.setPassword("2020");
@@ -63,10 +68,9 @@ class MemberServiceTest extends AbstractController {
             user.setSalt(salt);
 
             MemberVo memberVo = new MemberVo(
-                    null, GeneratorMember.getStringRandom(6), "test@mosidian.com", "173xxxxxxxx",
-                    null, null,
-                    randomJianHan, randomJianHan, IDCardGenerator.generator(),"","",
-                    0,1,600, balance, BigDecimal.ZERO);
+                    null, "cic" + i, "cic" + i + "@mosidian.com", "18888888888",
+                    1, null, "cic" + i, "cic" + i, IDCardGenerator.generator(),"","",
+                    sex,8,600, balance, BigDecimal.ZERO);
             memberService.saveMemberVo(memberVo, user);
         }
 

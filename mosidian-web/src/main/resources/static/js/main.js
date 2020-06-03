@@ -310,7 +310,7 @@ $(function(){
     $("#slide1").bind("mouseover",function(){
         $("#showh").html("科技为先");
         $("#showp1").html("");
-        $("#showp2").html("财富不能创造文化,文化却能创造财富\"");
+        $("#showp2").html("财富不能创造文化,文化却能创造财富");
     })
     $("#slide2").bind("mouseover",function(){
         $("#showh").html("以人为本");
@@ -330,7 +330,7 @@ $(function(){
     $("#slide5").bind("mouseover",function(){
         $("#showh").html("精准推广");
         $("#showp1").html("推广精准细致");
-        $("#showp2").html("汇聚腾讯优质资源，精准定位受众");
+        $("#showp2").html("汇聚全网优质资源，精准定位受众");
     })
     $("#slide6").bind("mouseover",function(){
         $("#showh").html("专业后台");
@@ -338,9 +338,9 @@ $(function(){
         $("#showp2").html("后台操作简单方便，推广效果随时展现");
     })
     $("#slide7").bind("mouseover",function(){
-        $("#showh").html("车载物联—专属客服、车载MiFi、北斗定位导航、后视镜等");
-        $("#showp1").html("客户诉求：车内设备多，要求可定制流量资费套餐和价格；信号覆盖要求稳定、 定位精确度高");
-        $("#showp2").html("解决方案：移动/电信2-15G超低资费；工业级sim卡");
+        $("#showh").html("专业的会员管理系统");
+        $("#showp1").html("");
+        $("#showp2").html("为企业提供一站式的会员管理服务（权限管理、会员列表、会员信息等等），打破传统会员模式，轻易获取海量用户");
     })
     $("#slide8").bind("mouseover",function(){
         $("#showh").html("专属客服");

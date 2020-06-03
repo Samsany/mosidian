@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -116,5 +117,20 @@ public class EnterpriseEntity implements Serializable {
 	 * 更新时间
 	 */
 	private Date updateTime;
+
+	/**
+	 * 账户余额（默认：288）
+	 */
+	private BigDecimal balance;
+
+	/**
+	 * 消费总金额（默认：600）
+	 */
+	private BigDecimal monetary;
+
+	/**
+	 * 消费总金额（默认：600）
+	 */
+	private Integer level;
 
 }

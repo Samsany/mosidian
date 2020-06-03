@@ -76,13 +76,13 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
 
         boolean save = sysUserService.save(user);
         if (!save) {
-            return R.error();
+            return R.error("开卡失败");
         }
         enterpriseEntity.setUserId(user.getUserId());
 
         int result = enterpriseDao.insert(enterpriseEntity);
         if (result == 0) {
-            return R.error();
+            return R.error("开卡失败");
         }
 
         //        默认会员权限
@@ -92,7 +92,7 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
 
         sysUserRoleService.save(userRoleEntity);
 
-        return R.ok();
+        return R.ok("开卡成功");
 
     }
 
