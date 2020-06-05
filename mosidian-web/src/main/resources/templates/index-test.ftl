@@ -100,29 +100,27 @@
                     <a data-scroll-nav="3" href="#" class="language-change-zh">招商系统</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a href="bcLogin" class="language-change-en">BCOS</a>
-                    <a href="bcLogin" class="language-change-zh">客户系统</a>
+<#--                    bcLogin-->
+                    <a href="#" data-scroll-nav="4"  class="language-change-en">BCOS</a>
+                    <a href="#" data-scroll-nav="4"  class="language-change-zh">客户系统</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="4" href="#" class="language-change-en">ICOS</a>
-                    <a data-scroll-nav="4" href="#" class="language-change-zh">保障系统</a>
+                    <a data-scroll-nav="5" href="#" class="language-change-en">ICOS</a>
+                    <a data-scroll-nav="5" href="#" class="language-change-zh">保障系统</a>
                 </li>
                 <li class="nav-item navBag1">
                     <a href="meLogin" class="language-change-en">MEOS</a>
                     <a href="meLogin" class="language-change-zh">会员系统</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="5" href="#" class="language-change-en">TMIC</a>
-                    <a data-scroll-nav="5" href="#" class="language-change-zh">我的团队</a>
+                    <a data-scroll-nav="6" href="#" class="language-change-en">TMIC</a>
+                    <a data-scroll-nav="6" href="#" class="language-change-zh">我的团队</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <a data-scroll-nav="6" href="#" class="language-change-en">COWE</a>
-                    <a data-scroll-nav="6" href="#" class="language-change-zh">联系我们</a>
+                    <a data-scroll-nav="7" href="#" class="language-change-en">COWE</a>
+                    <a data-scroll-nav="7" href="#" class="language-change-zh">联系我们</a>
                 </li>
                 <li class="nav-item navBag1">
-                    <!--                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">-->
-
-                    <!--                    </a>-->
                     <a tabindex="0"
                        id="popup-box"
                        data-toggle="popover"
@@ -130,12 +128,12 @@
                                 class="iconfont icon56"></i></a>
                 </li>
                 <li class="nav-item navBag2">
-                    <a data-scroll-nav="10" href="#" >
+                    <a data-scroll-nav="10" href="#" id="registerUser">
                         <i class='iconfont  iconfriendadd'></i>
                         注册</a>
                 </li>
                 <li class="nav-item navBag2">
-                    <a data-scroll-nav="11" href="#" >
+                    <a data-scroll-nav="11" href="meLogin" >
                         <i class='iconfont  iconfriend'></i>登录</a>
                 </li>
                 <li class="nav-item navBag2">
@@ -574,7 +572,7 @@
 <!--会员系统-->
 
 <!--====== 客户系统 BCOS ======-->
-<div style="background: #0b0b0b" class="become bg_cover pt-95 pb-100">
+<div data-scroll-index="4" style="background: #0b0b0b" class="become bg_cover pt-95 pb-100">
     <!--     style="background-image: url(img/bg.jpg)">-->
     <div class="container">
         <div class="row">
@@ -703,7 +701,7 @@
 <!--====== BRAND PART ENDS ======-->
 <!--====== 保障系统 ======-->
 <!--====== 保障系统 ======-->
-<div  data-scroll-index="4" class="pb-40">
+<div  data-scroll-index="5" class="pb-40">
     <div class="col-lg-12">
         <div class="project_menu text-center pt-60 pb-40">
             <h2>保障系统</h2>
@@ -749,7 +747,7 @@
 
 <!--====== 团队 PART START ======-->
 <!--====== TMIC 我们的团队 ======-->
-<div data-scroll-index="5" class="our_team pt-90 pb-50" id="abstart">
+<div data-scroll-index="6" class="our_team pt-90 pb-50" id="abstart">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -958,7 +956,7 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
     </div>
 </div>
 <!--====== COWE 联系我们 ======-->
-<div  data-scroll-index="6" class="contact pb-50 pt-50">
+<div  data-scroll-index="7" class="contact pb-50 pt-50">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -1963,7 +1961,7 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
 <!--====== COPYRIGHT PART START ======-->
 <div   class="copyright text-center pt-15 pb-15">
     <p>法律声明 隐私政策 版权所有 &copy; 2020 <span><a href="#"></a>Mosidian</span> All rights reserved. </p>
-    <!--    <p style="font-size: 10px">苏ICP备17040376号-32 苏B2-20130048号 苏公网安备 32011402010636号</p>-->
+    <p style="font-size: 10px"><a style="color: #9a9a9a" href="http://beian.miit.gov.cn">沪ICP备20015652号-1</a></p>
 </div>
 <!--====== COPYRIGHT PART ENDS ======-->
 
@@ -1999,6 +1997,11 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
         $("#register").click(function () {
             dolphin.iframe("/sys/register", "会员注册", "750px", "600px")
         })
+
+        $("#registerUser").click(function () {
+            dolphin.iframe("/sys/register", "会员注册", "750px", "600px")
+        })
+
         $("#registerKH").click(function () {
             dolphin.iframe("/sys/kh/register", "会员注册", "1050px", "600px")
         })
@@ -2006,6 +2009,7 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
         $("#userRegister").click(function () {
             dolphin.iframe("/sys/kh/register_qiye", "企业入驻", "1050px", "600px")
         })
+
         //中文点击
         $("#langZh").on('click',function () {
             $(".language-change-en").hide()

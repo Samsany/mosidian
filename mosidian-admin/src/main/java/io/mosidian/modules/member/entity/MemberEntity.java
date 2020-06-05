@@ -79,6 +79,11 @@ public class MemberEntity implements Serializable {
 	private String domicile;
 
 	/**
+	 * 账户激活状态
+	 */
+	private Integer accountStatus;
+
+	/**
 	 * 修改时间
 	 */
 	private Date updateTime;

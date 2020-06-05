@@ -81,13 +81,13 @@ public class HomeController extends BaseController {
 
     @GetMapping("/bcLogin")
     public ModelAndView bcLogin() {
-        ModelAndView mv = new ModelAndView("redirect:http://www.mosidian.com/mosidian-admin/#/login");
+        ModelAndView mv = new ModelAndView("redirect:http://www.mosidian.com/mosidian-admin/#/home");
         return mv;
     }
 
     @GetMapping("/meLogin")
     public ModelAndView meLogin() {
-        ModelAndView mv = new ModelAndView("redirect:http://www.mosidian.com/mosidian-admin/#/login");
+        ModelAndView mv = new ModelAndView("redirect:http://www.mosidian.com/mosidian-admin/#/home");
         return mv;
     }
 

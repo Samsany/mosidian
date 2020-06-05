@@ -84,11 +84,10 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
         BeanUtils.copyProperties(memberVo, user);
         BeanUtils.copyProperties(memberVo, memberEntity);
 
+        // 获取会员卡号
         MemberEntity member = memberService.getMaxMemberByUserId();
-
         memberEntity.setMemberId(member.getMemberId());
-
-
+        // 设置用户标识
         user.setFlag(2);
 
         log.info("【会员卡】========》" + memberEntity.getMemberId());
@@ -98,13 +97,15 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
             return R.error("开卡失败");
         }
         memberEntity.setUserId(user.getUserId());
+        // 设置账户状态 0 未激活
+        memberEntity.setAccountStatus(0);
 
         int result = memberDao.insert(memberEntity);
         if (result == 0) {
             return R.error("开卡失败");
         }
 
-        //        默认会员权限
+        // 默认会员权限
         SysUserRoleEntity userRoleEntity = new SysUserRoleEntity();
         userRoleEntity.setUserId(user.getUserId());
         userRoleEntity.setRoleId(Long.parseLong("2"));

@@ -51,6 +51,8 @@ public class MemberVo {
     private BigDecimal balance;
     /*** 消费总金额（默认：600）*/
     private BigDecimal monetary;
+    /*** 账户激活状态*/
+    private Integer accountStatus;
 
     public MemberVo(Long userId, String username, String email, String mobile, Integer status, String memberId, String name, String nickname, String card, String domicile, String avatar, Integer gender, Integer level, Integer credits, BigDecimal balance, BigDecimal monetary) {
         this.userId = userId;
