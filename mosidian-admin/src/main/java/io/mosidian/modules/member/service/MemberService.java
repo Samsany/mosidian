@@ -21,7 +21,7 @@ public interface MemberService extends IService<MemberEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
 
-    List<MemberVo> queryPageVo();
+    List<MemberVo> queryPageVo(String key, String value);
 
     MemberVo getMemberById(String id);
 

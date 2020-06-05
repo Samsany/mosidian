@@ -1858,4 +1858,29 @@ p.form-message.error {
     font-weight: 400;
     color: #00A8FE
 }
+/*业务系统样式*/
+.business-system-item {
+    color: white;
+    text-align: center;
+    position:relative;
+    background: rgba(0,0,0,0.6);
+    font-size: 14px;
+    top: 40%;
+    left: 37% ;
+    width:30%;
+    padding: 6px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.business-system-item a {
+    color:#fff;
+}
+.business-system-item:hover {
+    background: #fff!important;
+}
+.business-system-item:hover a {
+    color:#1f8fff;
+    transition: all .3s linear;
+    transform: scale(1.2);
 
+}

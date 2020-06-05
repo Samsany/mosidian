@@ -66,8 +66,8 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
     }
 
     @Override
-    public List<MemberVo> queryPageVo() {
-        return memberDao.queryPageVo();
+    public List<MemberVo> queryPageVo(String key,String value) {
+        return memberDao.queryPageVo(key, value);
     }
 
     @Override

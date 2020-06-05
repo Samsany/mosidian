@@ -51,10 +51,14 @@ public class MemberController extends AbstractController {
     @RequestMapping("/list")
     @RequiresPermissions("member:list")
     public R list(@RequestParam(value = "page", defaultValue = "1") Integer pageNum,
-                  @RequestParam(value = "limit", defaultValue = "10") Integer pageSize){
+                  @RequestParam(value = "limit", defaultValue = "10") Integer pageSize,
+                  @RequestParam(value = "key", required = false) String key,
+                  @RequestParam(value = "value", required = false) String value){
 
         PageHelper.startPage(pageNum,pageSize);
-        List<MemberVo> memberVoList = memberService.queryPageVo();
+
+        List<MemberVo> memberVoList = memberService.queryPageVo(key, value);
+
         PageInfo<MemberVo> page = new PageInfo<>(memberVoList);
 
         return R.ok().put("page", page);

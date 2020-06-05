@@ -5,6 +5,8 @@ import io.mosidian.modules.contact.entity.ContactUsEntity;
 import io.mosidian.modules.contact.service.ContactUsService;
 import io.mosidian.modules.enterprise.service.EnterpriseService;
 import io.mosidian.modules.enterprise.vo.EnterpriseVo;
+import io.mosidian.modules.logistics.service.LogisticsService;
+import io.mosidian.modules.logistics.vo.LogisticsVo;
 import io.mosidian.modules.member.service.MemberService;
 import io.mosidian.modules.member.vo.MemberVo;
 import io.mosidian.modules.sys.entity.SysUserEntity;
@@ -43,6 +45,9 @@ public class ApiController {
 
     @Resource
     private EnterpriseService enterpriseService;
+
+    @Resource
+    private LogisticsService logisticsService;
 
     @Resource
     private ContactUsService contactUsService;
@@ -132,9 +137,11 @@ public class ApiController {
         String salt = RandomStringUtils.randomAlphanumeric(20);
         user.setPassword(new Sha256Hash(user.getPassword(), salt).toHex());
         user.setSalt(salt);
-        EnterpriseVo enterpriseVo = new EnterpriseVo(username, website, scale, corporation, reason, eserver, companies, name, headName, sector, eposition, headCard, emobile, eemail,enlicenseId);
-        enterpriseVo.setSynopsis("物流服务");
-        return enterpriseService.saveEnterpriseVo(enterpriseVo, user);
+        LogisticsVo logisticsVo = new LogisticsVo(
+                username, website, scale, corporation, reason, eserver, companies, name, headName, sector, eposition, headCard, emobile, eemail,enlicenseId
+        );
+        logisticsVo.setSynopsis("物流服务");
+        return logisticsService.saveLogisticsVo(logisticsVo, user);
     }
 
 

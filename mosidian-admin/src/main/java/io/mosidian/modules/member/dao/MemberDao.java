@@ -17,7 +17,7 @@ import java.util.List;
 @Mapper
 public interface MemberDao extends BaseMapper<MemberEntity> {
 
-    List<MemberVo> queryPageVo();
+    List<MemberVo> queryPageVo(String key, String value);
 
     MemberVo getMemberById(String id);
 

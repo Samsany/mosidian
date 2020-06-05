@@ -362,24 +362,18 @@
         <div class="Grid"
              style="margin:0 auto; display: flex;width: 1140px;height: 200px; align-items:center;justify-content:space-around;">
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp1.jpg) 260px 150px">
-                <p id="slide1" style="color: white;text-align: center;position:
-                relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
-                 30%;padding: 6px;font-weight: 400;font-size: 14px;">科技为先</p>
+                <p id="slide1" class="business-system-item">科技为先</p>
             </div>
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp2.jpg) 260px 150px">
-                <p id="slide2" style="color: white;text-align: center;position:
-                relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
-                 30%;padding: 6px;font-weight: 400;font-size: 14px;">以人为本</p>
+                <p id="slide2" class="business-system-item">以人为本</p>
             </div>
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp3.jpg) 260px 150px">
-                <p id="slide3" style="color: white;text-align: center;position:
-                relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
-                 30%;padding: 6px;font-weight: 400;font-size: 14px;">随时办公</p>
+                <p id="slide3" class="business-system-item">随时办公</p>
             </div>
             <div style="width: 260px;height: 159px;background: url(img/business/businessMp4.jpg) 260px 150px">
-                <p id="slide4" style="color: white;text-align: center;position:
-                relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
-                 30%;padding: 6px;font-weight: 400;font-size: 14px;">即时业务</p>
+                <p id="slide4" class="business-system-item">
+                    <a href="acosUrl">即时业务</a>
+                </p>
             </div>
         </div>
         <div id="show"
@@ -393,24 +387,16 @@
         <div class="Grid"
              style="margin: 0 auto;display: flex;width: 1140px;height: 200px; align-items:center;justify-content:space-around;">
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp5.jpg) 260px 150px">
-                <p id="slide5" style="color: white;text-align: center;position:
-                relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
-                 30%;padding: 6px;font-weight: 400;font-size: 14px;">精准推广</p>
+                <p id="slide5" class="business-system-item">精准推广</p>
             </div>
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp6.jpg) 260px 150px">
-                <p id="slide6" style="color: white;text-align: center;position:
-                relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
-                 30%;padding: 6px;font-weight: 400;font-size: 14px;">专业后台</p>
+                <p id="slide6" class="business-system-item">专业后台</p>
             </div>
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp7.jpg) 260px 150px">
-                <p id="slide7" style="color: white;text-align: center;position:
-                relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
-                 30%;padding: 6px;font-weight: 400;font-size: 14px;">科技改变</p>
+                <p id="slide7" class="business-system-item">科技改变</p>
             </div>
             <div style="width: 260px;height: 159px;background: url(img/business/businessMp8.jpg) 260px 150px">
-                <p id="slide8" style="color: white;text-align: center;position:
-                relative;background: rgba(0,0,0,0.6);font-size: 14px;top: 40%;left: 37% ;width:
-                 30%;padding: 6px;font-weight: 400;font-size: 14px;">专属客服</p>
+                <p id="slide8" class="business-system-item">专属客服</p>
             </div>
         </div>
     </div>
@@ -1996,7 +1982,7 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/ajax-contact-form.js"></script>
+
 <script src="js/main.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
 <script src="js/script.js"></script>

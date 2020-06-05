@@ -81,79 +81,29 @@ public class HomeController extends BaseController {
 
     @GetMapping("/bcLogin")
     public ModelAndView bcLogin() {
-        ModelAndView mv = new ModelAndView("redirect:http://47.103.64.74/mosidian-admin");
-//        mv.setViewName("sys/login/bcLogin");
+        ModelAndView mv = new ModelAndView("redirect:http://www.mosidian.com/mosidian-admin/#/login");
         return mv;
     }
 
     @GetMapping("/meLogin")
     public ModelAndView meLogin() {
-        ModelAndView mv = new ModelAndView("redirect:http://47.103.64.74/mosidian-admin");
+        ModelAndView mv = new ModelAndView("redirect:http://www.mosidian.com/mosidian-admin/#/login");
         return mv;
     }
 
+    @GetMapping("/sys/acos/consult1")
+    public ModelAndView consult1() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/consult1");
+        return mv;
+    }
 
-//    @RequestMapping(value = "/index-member", method = RequestMethod.GET)
-//    public ModelAndView indexMember() {
-//        ModelAndView mv = new ModelAndView();
-//        mv.setViewName("index-member");
-//        return mv;
-//    }
-//
-//    @RequestMapping(value = "/index-admin", method = RequestMethod.GET)
-//    public ModelAndView indexAdmin() {
-//        ModelAndView mv = new ModelAndView();
-//        mv.setViewName("index-admin");
-//        return mv;
-//    }
+    @GetMapping("/acosUrl")
+    public ModelAndView acosUrl() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/business1");
+        return mv;
+    }
 
-//    @RequestMapping(value = "/index-user",method = RequestMethod.GET)
-//    public ModelAndView indexUser(){
-//        ModelAndView mv=new ModelAndView();
-//        mv.setViewName("index-user");
-//        return mv;
-//    }
-//
-//    @RequestMapping(value = "/index-express",method = RequestMethod.GET)
-//    public ModelAndView indexExpress(){
-//        ModelAndView mv=new ModelAndView();
-//        mv.setViewName("index-express");
-//        return mv;
-//    }
-
-//    @RequestMapping(value = "/index-check",method = RequestMethod.GET)
-//    public ModelAndView indexCheck(){
-//        ModelAndView mv=new ModelAndView();
-//        mv.setViewName("index-check");
-//        return mv;
-//    }
-
-//    @RequestMapping(value = "/login", method = RequestMethod.POST)
-//    @ResponseBody
-//    public Object login(@RequestParam(name = "username") String username,
-//                              @RequestParam(name = "password") String password, HttpServletResponse response,HttpSession session) {
-//        String token = userService.login(username, password);
-//        if (token == null) {
-//            return this.error("用户名或密码错误");
-//        }
-//        QueryWrapper<User> wrapper=new QueryWrapper<>();
-//        wrapper.eq("username",username);
-//        User user=userService.getOne(wrapper);
-//        if (Objects.isNull(user)){
-//            return this.error("用户名或密码错误");
-//        }
-//        SuperUtils.addCookie(response,"Authorization","Bearer"+token,3600);
-//        PageData pd=this.getPageData();
-//        String roleId=user.getRoleid().toString();
-//        pd.put("roleId",roleId);
-//        pd.put("isLogin",user.getIsLogin());
-//        session.setAttribute("username",user.getUsername());
-//        return this.success(pd,"","");
-//    }
-//
-//    @RequestMapping("/loginOut")
-//    public String loginOut() {
-//        return "/login";
-//    }
 
 }

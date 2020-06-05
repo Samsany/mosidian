@@ -3,28 +3,32 @@
 
 <mapper namespace="io.mosidian.modules.member.dao.MemberDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
+    <!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="io.mosidian.modules.member.entity.MemberEntity" id="memberMap">
         <result property="memberId" column="member_id"/>
-        <result property="userId" column="user_id" />
+        <result property="userId" column="user_id"/>
         <result property="name" column="name"/>
         <result property="nickname" column="nickname"/>
-        <result property="avatar" column="avatar" />
-        <result property="gender" column="gender" />
+        <result property="avatar" column="avatar"/>
+        <result property="gender" column="gender"/>
         <result property="card" column="card"/>
         <result property="level" column="level"/>
         <result property="credits" column="credits"/>
-        <result property="domicile" column="domicile" />
-        <result property="balance" column="balance" />
-        <result property="monetary" column="monetary" />
+        <result property="domicile" column="domicile"/>
+        <result property="balance" column="balance"/>
+        <result property="monetary" column="monetary"/>
         <result property="updateTime" column="update_time"/>
     </resultMap>
 
     <select id="queryPageVo" resultType="io.mosidian.modules.member.vo.MemberVo">
-		select * from tb_member me
-		LEFT JOIN sys_user ur
-		on ur.user_id = me.user_id
-	</select>
+        select * from tb_member me
+        LEFT JOIN sys_user ur
+        on ur.user_id = me.user_id
+        <if test="key != null and value != null and key != '' and value != ''">
+         <bind name="value" value="'%' + value + '%'"/>
+            WHERE ${key} like #{value}
+        </if>
+    </select>
 
     <select id="getMemberById" resultType="io.mosidian.modules.member.vo.MemberVo">
         select * from tb_member me
