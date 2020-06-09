@@ -17,7 +17,6 @@
         <result property="domicile" column="domicile"/>
         <result property="balance" column="balance"/>
         <result property="monetary" column="monetary"/>
-        <result property="accountStatus" column="account_status"/>
         <result property="updateTime" column="update_time"/>
     </resultMap>
 
@@ -43,6 +42,21 @@
         from tb_member
         where user_id = (select max(user_id) from tb_member)
     </select>
+    <select id="queryMoney" resultType="io.mosidian.modules.member.vo.MoneyVo">
+        select nickname,monetary,@rank:=@rank+1 as moneyid FROM
+        (select nickname,monetary FROM tb_member ORDER BY monetary DESC)
+        as tb_member,(select @rank:=0) b
+    </select>
+    <select id="queryMoneyById" resultType="io.mosidian.modules.member.vo.MoneyVo">
+        select * from (
+                select nickname,monetary,user_id,@rank := @rank + 1 AS moneyid from
+            (
+	            select nickname,monetary,user_id from tb_member order by monetary desc
+            )
+                as tb_member,(select @rank :=0) o
+        )
+        tb_member2 where tb_member2.user_id=#{id}
+    </select>
 
     <delete id="removeByUserIds" parameterType="string">
         delete from tb_member me where me.user_id in
@@ -50,6 +64,7 @@
             #{item}
         </foreach>
     </delete>
+
 
 
 </mapper>

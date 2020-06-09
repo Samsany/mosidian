@@ -3,6 +3,7 @@ package io.mosidian.modules.member.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import io.mosidian.modules.member.entity.MemberEntity;
 import io.mosidian.modules.member.vo.MemberVo;
+import io.mosidian.modules.member.vo.MoneyVo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -18,6 +19,8 @@ import java.util.List;
 public interface MemberDao extends BaseMapper<MemberEntity> {
 
     List<MemberVo> queryPageVo(String key, String value);
+    List<MoneyVo> queryMoney();
+    List<MoneyVo> queryMoneyById(Long id);
 
     MemberVo getMemberById(String id);
 

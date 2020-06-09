@@ -1,0 +1,18 @@
+2020-04-06 11:52:38.738 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 14120 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-04-06 11:52:38.764 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-04-06 11:52:44.981 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-06 11:52:45.018 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-06 11:52:45.546 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109ms. Found 0 Redis repository interfaces.
+2020-04-06 11:52:49.031 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-04-06 11:52:49.080 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-04-06 11:52:49.081 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-06 11:52:49.081 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-06 11:52:49.391 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-04-06 11:52:49.391 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9941 ms
+2020-04-06 11:52:56.968 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-06 11:52:58.789 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-06 11:52:58.790 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-06 11:53:03.169 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-04-06 11:53:03.181 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-04-06 11:53:03.228 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-04-06 11:53:03.230 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 27.804 seconds (JVM running for 31.905)

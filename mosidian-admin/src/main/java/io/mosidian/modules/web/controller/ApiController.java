@@ -12,12 +12,9 @@ import io.mosidian.modules.member.vo.MemberVo;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 import io.mosidian.modules.sys.service.SysCaptchaService;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.RandomStringUtils;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.crypto.hash.Sha256Hash;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

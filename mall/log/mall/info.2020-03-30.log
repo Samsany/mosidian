@@ -1,0 +1,842 @@
+2020-03-30 15:01:25.835 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 10428 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 15:01:25.862 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 15:01:31.289 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 15:01:31.349 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 15:01:31.892 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113ms. Found 0 Redis repository interfaces.
+2020-03-30 15:01:34.650 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 15:01:34.701 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:01:34.702 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 15:01:34.702 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 15:01:34.990 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 15:01:34.990 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8608 ms
+2020-03-30 15:01:42.888 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 15:01:44.877 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 15:01:44.881 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 15:01:50.033 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 15:01:50.044 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:01:50.079 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 15:01:50.082 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 26.927 seconds (JVM running for 30.676)
+2020-03-30 15:01:55.403 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 15:01:55.403 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 15:01:55.410 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-03-30 15:01:55.679 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 15:01:56.005 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 15:01:56.175 [http-nio-8888-exec-2] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:02:48.866 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 5840 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 15:02:48.870 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 15:02:49.628 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 15:02:49.630 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 15:02:49.668 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-03-30 15:02:50.244 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 15:02:50.251 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:02:50.252 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 15:02:50.252 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 15:02:50.375 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 15:02:50.375 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1414 ms
+2020-03-30 15:02:54.349 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 15:02:54.752 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 15:02:54.753 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 15:02:58.524 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 15:02:58.531 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:02:58.543 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 15:02:58.545 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 10.217 seconds (JVM running for 12.867)
+2020-03-30 15:03:23.944 [http-nio-8888-exec-3] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 15:03:23.944 [http-nio-8888-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 15:03:23.950 [http-nio-8888-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-03-30 15:03:24.035 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 15:03:24.158 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 15:06:02.667 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 1900 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 15:06:02.673 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 15:06:03.547 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 15:06:03.549 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 15:06:03.591 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-03-30 15:06:04.224 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 15:06:04.234 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:06:04.235 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 15:06:04.235 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 15:06:04.393 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 15:06:04.393 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1590 ms
+2020-03-30 15:06:09.253 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 15:06:09.714 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 15:06:09.716 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 15:06:14.158 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 15:06:14.165 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:06:14.179 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 15:06:14.182 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 12.103 seconds (JVM running for 15.097)
+2020-03-30 15:08:28.147 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 15:08:28.147 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 15:08:28.155 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-30 15:08:28.225 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 15:08:28.356 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 15:08:28.463 [http-nio-8888-exec-2] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:13:28.179 [http-nio-8888-exec-7] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:13:30.639 [http-nio-8888-exec-9] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:13:34.913 [http-nio-8888-exec-1] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:13:36.063 [http-nio-8888-exec-3] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:13:45.492 [http-nio-8888-exec-6] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:13:46.633 [http-nio-8888-exec-7] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:13:49.068 [http-nio-8888-exec-8] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:13:51.074 [http-nio-8888-exec-9] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:14:31.706 [http-nio-8888-exec-6] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:15:04.590 [http-nio-8888-exec-7] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:15:34.070 [http-nio-8888-exec-10] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:24:27.424 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 13148 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 15:24:27.428 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 15:24:28.280 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 15:24:28.282 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 15:24:28.326 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-03-30 15:24:28.960 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 15:24:28.969 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:24:28.970 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 15:24:28.970 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 15:24:29.096 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 15:24:29.096 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1577 ms
+2020-03-30 15:24:33.240 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 15:24:33.665 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 15:24:33.667 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 15:24:37.936 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 15:24:37.945 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:24:37.961 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 15:24:37.965 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 11.095 seconds (JVM running for 13.877)
+2020-03-30 15:24:38.382 [http-nio-8888-exec-3] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 15:24:38.383 [http-nio-8888-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 15:24:38.392 [http-nio-8888-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-03-30 15:24:38.472 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 15:24:38.614 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 15:24:38.724 [http-nio-8888-exec-3] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:24:42.707 [http-nio-8888-exec-2] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 15:41:16.049 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 15764 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 15:41:16.053 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 15:41:16.860 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 15:41:16.864 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 15:41:16.903 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-03-30 15:41:17.503 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 15:41:17.512 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:41:17.512 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 15:41:17.513 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 15:41:17.640 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 15:41:17.641 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1492 ms
+2020-03-30 15:41:21.920 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 15:41:22.426 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 15:41:22.429 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 15:41:27.001 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 15:41:27.013 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:41:27.028 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 15:41:27.031 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 11.579 seconds (JVM running for 14.357)
+2020-03-30 15:41:29.559 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 15:41:29.559 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 15:41:29.568 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-30 15:41:29.650 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 15:41:29.797 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 15:42:04.742 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 11268 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 15:42:04.745 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 15:42:05.548 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 15:42:05.550 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 15:42:05.590 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-03-30 15:42:06.180 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 15:42:06.188 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:42:06.188 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 15:42:06.189 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 15:42:06.334 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 15:42:06.334 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1494 ms
+2020-03-30 15:42:11.224 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 15:42:11.793 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 15:42:11.795 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 15:42:15.932 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 15:42:15.939 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 15:42:15.951 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 15:42:15.954 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 11.761 seconds (JVM running for 14.459)
+2020-03-30 15:42:16.306 [http-nio-8888-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 15:42:16.306 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 15:42:16.313 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-03-30 15:42:16.388 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 15:42:16.534 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 16:45:45.674 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 15972 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 16:45:45.681 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 16:45:46.477 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 16:45:46.479 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 16:45:46.520 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-03-30 16:45:47.114 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 16:45:47.123 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 16:45:47.124 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 16:45:47.124 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 16:45:47.257 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 16:45:47.257 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1489 ms
+2020-03-30 16:45:52.169 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 16:45:52.588 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 16:45:52.589 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 16:45:56.798 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 16:45:56.807 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 16:45:56.839 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 16:45:56.842 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 11.712 seconds (JVM running for 14.405)
+2020-03-30 16:46:20.560 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 16:46:20.561 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 16:46:20.569 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-30 16:46:20.594 [http-nio-8888-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-03-30 16:46:31.443 [http-nio-8888-exec-3] INFO  c.samphanie.mall.interceptor.UserLoginInterceptor - preHandle...
+2020-03-30 16:46:56.473 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 14240 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 16:46:56.476 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 16:46:57.288 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 16:46:57.291 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 16:46:57.325 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-03-30 16:46:57.933 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 16:46:57.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 16:46:57.943 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 16:46:57.944 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 16:46:58.094 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 16:46:58.094 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1505 ms
+2020-03-30 16:47:02.803 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 16:47:03.211 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 16:47:03.212 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 16:47:07.147 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 16:47:07.154 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 16:47:07.167 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 16:47:07.170 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 11.315 seconds (JVM running for 14.017)
+2020-03-30 16:47:07.598 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 16:47:07.599 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 16:47:07.607 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-30 16:47:07.682 [http-nio-8888-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.samphanie.mall.vo.ResponseVo<com.samphanie.mall.vo.CartVo> com.samphanie.mall.controller.CartController.add(com.samphanie.mall.form.CartAddForm)]
+2020-03-30 16:50:13.035 [http-nio-8888-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.samphanie.mall.vo.ResponseVo<com.samphanie.mall.vo.CartVo> com.samphanie.mall.controller.CartController.add(com.samphanie.mall.form.CartAddForm): [Field error in object 'cartAddForm' on field 'productId': rejected value [null]; codes [NotNull.cartAddForm.productId,NotNull.productId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cartAddForm.productId,productId]; arguments []; default message [productId]]; default message [不能为null]] ]
+2020-03-30 17:02:30.211 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 9328 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 17:02:30.215 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 17:02:30.999 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 17:02:31.001 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 17:02:31.038 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-03-30 17:02:31.639 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 17:02:31.650 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 17:02:31.650 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 17:02:31.651 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 17:02:31.791 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 17:02:31.791 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1473 ms
+2020-03-30 17:02:36.374 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 17:02:36.831 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 17:02:36.832 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 17:02:40.978 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 17:02:40.984 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 17:02:40.999 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 17:02:41.001 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 11.394 seconds (JVM running for 14.08)
+2020-03-30 17:02:44.240 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 17:02:44.240 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 17:02:44.249 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-03-30 17:06:17.857 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 16284 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 17:06:17.863 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 17:06:18.598 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 17:06:18.600 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 17:06:18.634 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-03-30 17:06:19.194 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 17:06:19.202 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 17:06:19.203 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 17:06:19.203 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 17:06:19.323 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 17:06:19.323 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1367 ms
+2020-03-30 17:06:24.070 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 17:06:24.469 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 17:06:24.470 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 17:06:28.294 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 17:06:28.300 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 17:06:28.314 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 17:06:28.317 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 11.004 seconds (JVM running for 13.677)
+2020-03-30 17:06:43.691 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 17:06:43.691 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 17:06:43.700 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-03-30 17:06:43.903 [http-nio-8888-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.samphanie.mall.exception.GobalExceptionHandler#handleNotValidException(MethodArgumentNotValidException, HttpServletRequest)
+com.samphanie.mall.exception.MallException: null
+	at com.samphanie.mall.exception.GobalExceptionHandler.handleNotValidException(GobalExceptionHandler.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-30 17:06:43.930 [http-nio-8888-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.samphanie.mall.vo.ResponseVo<com.samphanie.mall.vo.CartVo> com.samphanie.mall.controller.CartController.add(com.samphanie.mall.form.CartAddForm): [Field error in object 'cartAddForm' on field 'productId': rejected value [null]; codes [NotNull.cartAddForm.productId,NotNull.productId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cartAddForm.productId,productId]; arguments []; default message [productId]]; default message [不能为null]] ]
+2020-03-30 17:07:38.842 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 7288 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 17:07:38.846 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-30 17:07:39.628 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 17:07:39.631 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 17:07:39.670 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-03-30 17:07:40.241 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-30 17:07:40.248 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-30 17:07:40.249 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-30 17:07:40.249 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-30 17:07:40.378 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-30 17:07:40.378 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1439 ms
+2020-03-30 17:07:45.186 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 17:07:45.607 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 17:07:45.608 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 17:07:49.628 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 17:07:49.636 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-30 17:07:49.650 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-30 17:07:49.653 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 11.343 seconds (JVM running for 13.944)
+2020-03-30 17:08:47.206 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-30 17:08:47.206 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-30 17:08:47.216 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-03-30 17:08:47.401 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 17:08:47.548 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 18:02:46.052 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 2316 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 18:02:46.053 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 18:02:46.999 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 18:02:47.019 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 18:02:47.065 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-03-30 18:02:53.918 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:02:55.026 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 18:02:55.028 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 18:03:00.835 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 18:03:00.848 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 15.572 seconds (JVM running for 22.76)
+2020-03-30 18:03:01.994 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 18:03:02.193 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 18:03:02.391 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:03:02.615 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 18:03:02.632 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 18:03:34.283 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 1208 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 18:03:34.285 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 18:03:35.249 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 18:03:35.253 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 18:03:35.311 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2020-03-30 18:03:41.103 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:03:42.037 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 18:03:42.039 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 18:03:47.706 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 18:03:47.716 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.109 seconds (JVM running for 15.575)
+2020-03-30 18:03:48.092 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 18:03:48.299 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 18:03:48.515 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:03:48.640 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 18:03:48.658 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 18:07:08.782 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 2976 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 18:07:08.784 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 18:07:09.724 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 18:07:09.729 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 18:07:09.796 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2020-03-30 18:07:15.994 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:07:17.026 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 18:07:17.028 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 18:07:22.987 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 18:07:23.001 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.764 seconds (JVM running for 16.237)
+2020-03-30 18:07:23.406 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 18:07:23.599 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 18:07:23.734 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:07:23.865 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 18:07:23.883 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 18:21:33.364 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 9360 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 18:21:33.366 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 18:21:34.354 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 18:21:34.357 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 18:21:34.430 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 Redis repository interfaces.
+2020-03-30 18:21:40.797 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:21:41.927 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 18:21:41.929 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 18:21:47.884 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 18:21:47.896 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 15.076 seconds (JVM running for 16.571)
+2020-03-30 18:21:48.316 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 18:21:48.545 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 18:21:48.708 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:21:48.836 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 18:21:48.855 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 18:29:56.514 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 4480 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 18:29:56.516 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 18:29:57.462 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 18:29:57.466 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 18:29:57.517 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-03-30 18:30:03.386 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:30:04.313 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 18:30:04.315 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 18:30:15.167 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 18:30:15.178 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 19.17 seconds (JVM running for 20.615)
+2020-03-30 18:30:15.658 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 18:30:20.931 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 18:30:21.072 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:30:21.201 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 18:30:21.220 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 18:31:07.883 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 4364 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 18:31:07.884 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 18:31:08.812 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 18:31:08.816 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 18:31:08.869 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2020-03-30 18:31:14.815 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:31:15.739 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 18:31:15.740 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 18:31:21.471 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 18:31:21.482 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.072 seconds (JVM running for 15.486)
+2020-03-30 18:31:21.868 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 18:31:22.065 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 18:31:22.208 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 18:31:22.434 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 18:31:22.451 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 19:19:48.781 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 4376 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:19:48.783 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:19:49.803 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:19:49.808 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:19:49.862 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2020-03-30 19:19:56.105 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:19:57.240 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:19:57.243 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:20:03.081 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:20:03.092 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.833 seconds (JVM running for 16.464)
+2020-03-30 19:20:03.583 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:23:29.967 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 15664 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:23:29.968 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:23:30.891 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:23:30.894 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:23:30.952 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2020-03-30 19:23:36.711 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:23:37.716 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:23:37.719 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:23:43.478 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:23:43.494 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.028 seconds (JVM running for 15.585)
+2020-03-30 19:23:44.070 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:25:47.102 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 680 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:25:47.103 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:25:48.123 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:25:48.126 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:25:48.181 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2020-03-30 19:25:54.026 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:25:55.007 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:25:55.009 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:26:00.659 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:26:00.670 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.087 seconds (JVM running for 15.629)
+2020-03-30 19:26:01.176 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 19:26:01.393 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 19:26:01.648 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:26:01.772 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 19:26:01.788 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 19:29:40.918 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 14452 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:29:40.919 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:29:41.841 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:29:41.845 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:29:41.904 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 0 Redis repository interfaces.
+2020-03-30 19:29:48.425 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:29:49.580 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:29:49.582 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:29:55.679 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:29:55.689 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 15.277 seconds (JVM running for 16.793)
+2020-03-30 19:29:56.180 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 19:29:56.426 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 19:29:56.590 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:29:56.716 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 19:29:56.733 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 19:30:53.851 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 1796 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:30:53.853 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:30:54.729 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:30:54.733 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:30:54.789 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2020-03-30 19:31:00.466 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:31:01.374 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:31:01.375 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:31:06.919 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:31:06.932 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 13.568 seconds (JVM running for 15.065)
+2020-03-30 19:31:07.420 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 19:31:07.640 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 19:31:07.814 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:31:08.038 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 19:31:08.054 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 19:31:32.951 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 3680 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:31:32.952 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:31:33.843 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:31:33.846 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:31:33.900 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 Redis repository interfaces.
+2020-03-30 19:31:39.745 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:31:40.731 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:31:40.733 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:31:46.479 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:31:46.491 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.02 seconds (JVM running for 15.43)
+2020-03-30 19:31:47.004 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 19:31:47.209 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 19:31:47.362 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:31:47.497 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 19:31:47.516 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 19:37:27.797 [main] INFO  com.samphanie.mall.service.ProductServiceTest - Starting ProductServiceTest on Samphanie with PID 15664 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:37:27.799 [main] INFO  com.samphanie.mall.service.ProductServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:37:28.658 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:37:28.662 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:37:28.718 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2020-03-30 19:37:34.650 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:37:35.575 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:37:35.577 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:37:41.267 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:37:41.279 [main] INFO  com.samphanie.mall.service.ProductServiceTest - Started ProductServiceTest in 14.027 seconds (JVM running for 15.502)
+2020-03-30 19:37:41.708 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 19:37:41.895 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 19:37:41.998 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:37:42.127 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 19:37:42.146 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 19:38:13.413 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 5796 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:38:13.414 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:38:14.282 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:38:14.285 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:38:14.342 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2020-03-30 19:38:20.079 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:38:20.994 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:38:20.995 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:38:26.663 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:38:26.673 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 13.761 seconds (JVM running for 15.346)
+2020-03-30 19:38:27.132 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 19:38:27.339 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 19:38:27.489 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:38:27.615 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 19:38:27.632 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 19:45:19.670 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 7228 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:45:19.671 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:45:20.580 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:45:20.583 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:45:20.633 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2020-03-30 19:45:27.062 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:45:28.014 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:45:28.016 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:45:33.743 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:45:33.754 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.628 seconds (JVM running for 16.153)
+2020-03-30 19:45:34.228 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 19:45:34.452 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 19:45:34.557 [main] INFO  com.samphanie.mall.service.ICartServiceTest - list={
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "productVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G 玫瑰金色 移动联通电信4G手机",
+        "productSubtitle": "iPhone 7，现更以红色呈现。",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 96,
+        "productSelected": true
+      },
+      {
+        "productId": 27,
+        "quantity": 2,
+        "productName": "Midea/美的 BCD-535WKZM(E)冰箱双开门对开门风冷无霜智能电家用",
+        "productSubtitle": "送品牌烤箱，五一大促",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 6598.00,
+        "productStock": 99,
+        "productSelected": true
+      }
+    ]
+  }
+}
+2020-03-30 19:45:34.594 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:45:34.726 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 19:45:34.745 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 19:48:22.498 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 14464 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 19:48:22.499 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 19:48:23.414 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 19:48:23.418 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 19:48:23.475 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2020-03-30 19:48:29.414 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:48:30.433 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 19:48:30.435 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 19:48:36.417 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 19:48:36.430 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.445 seconds (JVM running for 16.057)
+2020-03-30 19:48:36.902 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 19:48:37.104 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 19:48:37.194 [main] INFO  com.samphanie.mall.service.ICartServiceTest - list={
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G 玫瑰金色 移动联通电信4G手机",
+        "productSubtitle": "iPhone 7，现更以红色呈现。",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 96,
+        "productSelected": true
+      },
+      {
+        "productId": 27,
+        "quantity": 2,
+        "productName": "Midea/美的 BCD-535WKZM(E)冰箱双开门对开门风冷无霜智能电家用",
+        "productSubtitle": "送品牌烤箱，五一大促",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 6598.00,
+        "productStock": 99,
+        "productSelected": true
+      }
+    ]
+  }
+}
+2020-03-30 19:48:37.226 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 19:48:37.356 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 19:48:37.377 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 20:04:20.254 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 4216 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 20:04:20.256 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 20:04:21.305 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 20:04:21.309 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 20:04:21.365 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2020-03-30 20:04:27.923 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 20:04:29.002 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 20:04:29.005 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 20:04:34.893 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 20:04:34.903 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 15.295 seconds (JVM running for 17.069)
+2020-03-30 20:04:35.436 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 20:04:35.666 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 20:04:35.760 [main] INFO  com.samphanie.mall.service.ICartServiceTest - list={
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G 玫瑰金色 移动联通电信4G手机",
+        "productSubtitle": "iPhone 7，现更以红色呈现。",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 96,
+        "productSelected": true
+      },
+      {
+        "productId": 27,
+        "quantity": 2,
+        "productName": "Midea/美的 BCD-535WKZM(E)冰箱双开门对开门风冷无霜智能电家用",
+        "productSubtitle": "送品牌烤箱，五一大促",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 6598.00,
+        "productStock": 99,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": true,
+    "cartTotalPrice": 13597.00,
+    "cartTotalQuantity": 3
+  }
+}
+2020-03-30 20:04:35.792 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 20:04:35.920 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 20:04:35.946 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 20:08:58.350 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 11104 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 20:08:58.352 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 20:08:59.412 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 20:08:59.418 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 20:08:59.501 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42ms. Found 0 Redis repository interfaces.
+2020-03-30 20:09:05.640 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 20:09:06.644 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 20:09:06.646 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 20:09:12.384 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 20:09:12.395 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.559 seconds (JVM running for 16.216)
+2020-03-30 20:09:12.840 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 20:09:13.067 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 20:09:13.252 [main] INFO  com.samphanie.mall.service.ICartServiceTest - list={
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G 玫瑰金色 移动联通电信4G手机",
+        "productSubtitle": "iPhone 7，现更以红色呈现。",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 96,
+        "productSelected": true
+      },
+      {
+        "productId": 27,
+        "quantity": 2,
+        "productName": "Midea/美的 BCD-535WKZM(E)冰箱双开门对开门风冷无霜智能电家用",
+        "productSubtitle": "送品牌烤箱，五一大促",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 6598.00,
+        "productStock": 99,
+        "productSelected": true
+      },
+      {
+        "productId": 29,
+        "quantity": 1,
+        "productName": "Haier/海尔HJ100-1HU1 10公斤滚筒洗衣机全自动带烘干家用大容量 洗烘一体",
+        "productSubtitle": "门店机型 德邦送货",
+        "productMainImage": "http://img.springboot.cn/173335a4-5dce-4afd-9f18-a10623724c4e.jpeg",
+        "productPrice": 4299.00,
+        "productStatus": 1,
+        "productTotalPrice": 4299.00,
+        "productStock": 100,
+        "productSelected": false
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 13597.00,
+    "cartTotalQuantity": 4
+  }
+}
+2020-03-30 20:09:13.282 [main] INFO  com.samphanie.mall.service.ICartServiceTest - list={
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G 玫瑰金色 移动联通电信4G手机",
+        "productSubtitle": "iPhone 7，现更以红色呈现。",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 96,
+        "productSelected": true
+      },
+      {
+        "productId": 27,
+        "quantity": 2,
+        "productName": "Midea/美的 BCD-535WKZM(E)冰箱双开门对开门风冷无霜智能电家用",
+        "productSubtitle": "送品牌烤箱，五一大促",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 6598.00,
+        "productStock": 99,
+        "productSelected": true
+      },
+      {
+        "productId": 29,
+        "quantity": 1,
+        "productName": "Haier/海尔HJ100-1HU1 10公斤滚筒洗衣机全自动带烘干家用大容量 洗烘一体",
+        "productSubtitle": "门店机型 德邦送货",
+        "productMainImage": "http://img.springboot.cn/173335a4-5dce-4afd-9f18-a10623724c4e.jpeg",
+        "productPrice": 4299.00,
+        "productStatus": 1,
+        "productTotalPrice": 4299.00,
+        "productStock": 100,
+        "productSelected": false
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 13597.00,
+    "cartTotalQuantity": 4
+  }
+}
+2020-03-30 20:09:13.302 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 20:09:13.433 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 20:09:13.451 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-30 20:10:35.514 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Starting ICartServiceTest on Samphanie with PID 15668 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-30 20:10:35.515 [main] INFO  com.samphanie.mall.service.ICartServiceTest - No active profile set, falling back to default profiles: default
+2020-03-30 20:10:36.397 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-03-30 20:10:36.402 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-03-30 20:10:36.458 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2020-03-30 20:10:42.489 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-30 20:10:43.545 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-03-30 20:10:43.547 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-03-30 20:10:49.613 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-30 20:10:49.625 [main] INFO  com.samphanie.mall.service.ICartServiceTest - Started ICartServiceTest in 14.614 seconds (JVM running for 16.125)
+2020-03-30 20:10:50.188 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-30 20:10:50.406 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-30 20:10:50.504 [main] INFO  com.samphanie.mall.service.ICartServiceTest - list={
+  "code": 0,
+  "msg": "成功",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G 玫瑰金色 移动联通电信4G手机",
+        "productSubtitle": "iPhone 7，现更以红色呈现。",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 96,
+        "productSelected": true
+      },
+      {
+        "productId": 27,
+        "quantity": 2,
+        "productName": "Midea/美的 BCD-535WKZM(E)冰箱双开门对开门风冷无霜智能电家用",
+        "productSubtitle": "送品牌烤箱，五一大促",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 6598.00,
+        "productStock": 99,
+        "productSelected": true
+      },
+      {
+        "productId": 29,
+        "quantity": 1,
+        "productName": "Haier/海尔HJ100-1HU1 10公斤滚筒洗衣机全自动带烘干家用大容量 洗烘一体",
+        "productSubtitle": "门店机型 德邦送货",
+        "productMainImage": "http://img.springboot.cn/173335a4-5dce-4afd-9f18-a10623724c4e.jpeg",
+        "productPrice": 4299.00,
+        "productStatus": 1,
+        "productTotalPrice": 4299.00,
+        "productStock": 100,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": true,
+    "cartTotalPrice": 17896.00,
+    "cartTotalQuantity": 4
+  }
+}
+2020-03-30 20:10:50.543 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-30 20:10:50.676 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-30 20:10:50.696 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

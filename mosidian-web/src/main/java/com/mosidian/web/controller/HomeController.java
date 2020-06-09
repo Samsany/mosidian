@@ -1,32 +1,18 @@
 package com.mosidian.web.controller;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.mosidian.web.common.redis.RedisService;
-import com.mosidian.web.model.sys.User;
-import com.mosidian.web.utils.PageData;
-import com.mosidian.web.utils.SuperUtils;
-import com.mosidian.web.controller.BaseController;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.util.Objects;
-
 @Controller
-public class HomeController extends BaseController {
+public class HomeController {
 
 //    @Autowired
-//    private UserService userService;
-    @Autowired
-    private RedisService redisService;
-    @Value("${jwt.tokenHeader}")
-    private String tokenHeader;
-    @Value("${jwt.tokenHead}")
-    private String tokenHead;
+//    private RedisService redisService;
+//    @Value("${jwt.tokenHeader}")
+//    private String tokenHeader;
+//    @Value("${jwt.tokenHead}")
+//    private String tokenHead;
 
     @GetMapping("/")
     public ModelAndView login() {
@@ -102,6 +88,36 @@ public class HomeController extends BaseController {
     public ModelAndView acosUrl() {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("sys/acos/business1");
+        return mv;
+    }
+
+    @GetMapping("/acosWebService")
+    public ModelAndView acosWebService() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/webService");
+        return mv;
+    }
+
+    @GetMapping("/acosPerson")
+    public ModelAndView acosPerson() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/person");
+        return mv;
+    }
+
+
+    @GetMapping("/acosOffice")
+    public ModelAndView acosOffice() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/office");
+        return mv;
+    }
+
+    @GetMapping("/sys/email/email_info/{id}")
+    public ModelAndView emailInfo(@PathVariable Integer id) {
+        ModelAndView mv = new ModelAndView();
+        mv.getModel().put("id", id);
+        mv.setViewName("sys/email/email_info");
         return mv;
     }
 

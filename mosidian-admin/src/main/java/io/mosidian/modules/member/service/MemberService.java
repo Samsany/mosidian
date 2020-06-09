@@ -5,6 +5,7 @@ import io.mosidian.common.utils.PageUtils;
 import io.mosidian.common.utils.R;
 import io.mosidian.modules.member.entity.MemberEntity;
 import io.mosidian.modules.member.vo.MemberVo;
+import io.mosidian.modules.member.vo.MoneyVo;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 
 import java.util.List;
@@ -20,6 +21,10 @@ import java.util.Map;
 public interface MemberService extends IService<MemberEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    List<MoneyVo> queryMoney();
+
+    List<MoneyVo> queryMoneyById(Long id);
 
     List<MemberVo> queryPageVo(String key, String value);
 

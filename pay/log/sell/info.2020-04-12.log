@@ -1,0 +1,12 @@
+2020-04-12 15:39:51,621 - Starting PayApplication on Samphanie with PID 16256 (E:\IdeaProjects\pay\target\classes started by ZSY in E:\IdeaProjects\pay)
+2020-04-12 15:39:51,637 - No active profile set, falling back to default profiles: default
+2020-04-12 15:39:57,290 - Tomcat initialized with port(s): 8080 (http)
+2020-04-12 15:39:57,339 - Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-12 15:39:57,340 - Starting service [Tomcat]
+2020-04-12 15:39:57,340 - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-12 15:39:57,628 - Initializing Spring embedded WebApplicationContext
+2020-04-12 15:39:57,629 - Root WebApplicationContext: initialization completed in 5407 ms
+2020-04-12 15:40:04,208 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-12 15:40:05,094 - Starting ProtocolHandler ["http-nio-8080"]
+2020-04-12 15:40:05,154 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-12 15:40:05,157 - Started PayApplication in 17.474 seconds (JVM running for 21.239)

@@ -1,3 +1,4 @@
+<#include "/common/header.ftl">
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,12 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mosidian</title>
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="layui/css/modules/layer/default/layer.css"/>
-    <link rel="stylesheet" type="text/css" href="layui/css/modules/laydate/default/laydate.css"/>
-    <link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+    <title>即时业务</title>
 </head>
 <style>
     /*导航栏*/
@@ -24,14 +20,21 @@
     .nav {
         width:100%;
         height: 85px;
-        background: #3d3d3d;
+        /*background: #3d3d3d;*/
+    }
+    .nav-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+        height: 100%;
+        margin:0 auto;
     }
     .nav-ul {
         display: flex;
         flex-direction: row;
-        width: 1200px;
-        height: 100%;
-        margin:0 auto;
+        align-items: center;
     }
     .nav-li {
         position: relative;
@@ -40,18 +43,11 @@
         align-items: center;
         justify-content: center;
         width:100px;
-        cursor:pointer;
+
     }
-    .show-border .nav-li-border {
-        position: absolute;
-        bottom:5px;
-        left:0;
-        right:0;
-        width:100%;
-        height:2px;
-        border-radius: 8px;
-        background: #f4ebe6;
+    .show-border .nav-title {
         transition: all .5s linear;
+        color: #1f8fff;
     }
 
     .nav-icon img {
@@ -61,339 +57,251 @@
     }
     .nav-title {
         font-size: 14px;
-        color: #fff2ea;
+        color: #656565;
     }
-/*    banner*/
+    .nav-logo {
+        width:160px;
+        height:50px;
+    }
+
+
+
+
+
+    /*    banner*/
     .rank-banner {
         width: 100%;
-        height: 215px;
+        height: 300px;
         background-position: center center;
-       background-repeat: no-repeat;
+        background-repeat: no-repeat;
         background-size: cover;
     }
     .rank-banner-title {
         text-align: center;
-        line-height: 216px;
-        font-size: 70px;
+        line-height: 300px;
+        font-size: 36px;
+        font-weight: 500;
+        letter-spacing: 1px;
         color: #fff;
     }
-/*    main-banner*/
+    /*main-banner*/
     .main {
         width: 100%;
         margin-top:-3px;
-        padding-bottom:40px;
-        /*background: #f9e3d2;*/
-        background: #e5e5e5;
-
+        background: #fff;
     }
     .main-banner {
         width: 1200px;
         margin:0 auto;
+        padding:70px 0 100px 0;
     }
-    .main-banner-head {
+    .main-banner-title {
+        position: relative;
+        text-align: center;
+    }
+    .main-banner-rectangular {
+        width:280px;
+    }
+    .main-type-title {
+        position: absolute;
+        top:-10px;
+        left:50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        color: #333;
+    }
+    .main-type-detail {
+        position: absolute;
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        color:#656565;
+    }
+    .main-banner-content {
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
-        padding: 40px 0 30px 0;
-    }
-    .main-banner-icon img {
-        width: 30px;
-        height: 25px;
-    }
-    .main-banner-title span {
-        margin:0 10px;
-        color: #745429;
-        font-size: 26px;
-        font-weight: 700;
-    }
-    .main-banner-info span {
-        color: #745429;
-        font-size: 14px;
-        opacity: .7;
+        align-items: center;
+        justify-content: space-between;
+        margin-top:30px;
     }
     .main-banner-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .main-banner-li {
+        width:30%;
         position: relative;
-        display: flex;
-        flex-direction: row;
-        width: 29%;
-        /*height:206px;*/
-        padding:20px;
-        margin-bottom:15px;
-        background: #fff;
     }
-    .main-banner-tag {
+    .main-banner-item-bg {
+        width: 100%;
+        height:220px;
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .main-banner-item-tag {
         position: absolute;
-        top:0;
+        bottom:0;
         left:0;
-        width:70px;
-        height:23px;
+        right:0;
+        height:30px;
         text-align: center;
+        line-height: 30px;
+        font-size: 12px;
         color:#fff;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
+        background:rgba(0,0,0,.5);
     }
-    .main-banner-li-img {
-        min-width: 150px;
-        height: 150px;
-        margin-right:10px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+    .main-banner-item-detail {
+        position: absolute;
+        bottom:-50px;
+        left:50%;
+        transform: translateX(-50%);
+        width:80px;
+        height:30px;
+        color:#fff;
+        text-align: center;
+        line-height: 30px;
+        border:none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: #1C85DFFF;
     }
-    .main-banner-li-detail {
+    .easy-main {
+        background-color: #ECEFF3FF;
+    }
+    .easy-main .main-banner-item-bg {
+        height:200px;
+    }
+    .easy-main .main-banner-item {
+        background-color: #fff;
+    }
+    .easy-main-item-detail {
         position: relative;
+        height:130px;
+        padding:15px 20px 15px 20px;
+    }
+    .easy-main-title {
+        font-size: 12px;
+        color:#000000FF;
+    }
+    .easy-main-detail {
+        position: absolute;
+        bottom:15px;
+        right:20px;
+        font-size: 12px;
+        color:#1B85DFFF!important;
+        text-decoration: none;
     }
 
-    .detail-title {
-        color: #333;
-        font-size: 14px;
-    }
-    .detail-span {
-        display: inline-block;
-        padding: 3px 5px;
-        margin:10px 0 8px 0;
-        color:orange;
-        font-size: 12px;
-        border-radius: 5px;
-        border:1px solid orange;
-    }
-    .detail-ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 5px;
-        font-size: 12px;
-        color:#999;
-    }
-    .detail-star {
-        margin: 0 5px;
-    }
-    .detail-star img {
-        width:12px;
-        height: 12px;
-    }
-    .detail-info {
-        display: block;
-        font-size: 12px;
-        color:#999;
-    }
-    .detail-consulting {
-        position: absolute;
-        right:0;
-        margin-top:5px;
-        display: inline-block;
-        padding:3px 8px;
-        font-size: 14px;
-        color:#fff;
-        background: orange;
-        border-radius: 5px;
-        cursor:pointer;
-    }
 </style>
 <body>
-    <div class="page">
-        <!--导航栏-->
-        <div class="nav">
+<div class="page">
+    <!--导航栏-->
+    <div class="nav">
+        <div class="nav-content">
+            <img class="nav-logo" src="./img/acos/business/logo.png" alt="">
             <ul class="nav-ul">
                 <li class="nav-li show-border">
-                    <div class="nav-icon">
-                        <img src="img/acos/one.png" alt="">
-                    </div>
-                    <span class="nav-title">品牌设计</span>
-                    <div class="nav-li-border"></div>
+                    <span class="nav-title">企业LOGO</span>
                 </li>
                 <li class="nav-li">
-                    <div class="nav-icon">
-                        <img src="./img/acos/two.png" alt="">
-                    </div>
-                    <span class="nav-title">网站建设</span>
-                    <div class="nav-li-border"></div>
+                    <span class="nav-title">网站LOGO</span>
                 </li>
                 <li class="nav-li">
-                    <div class="nav-icon">
-                        <img src="./img/acos/three.png" alt="">
-                    </div>
-                    <span class="nav-title">移动应用开发</span>
-                    <div class="nav-li-border"></div>
+                    <span class="nav-title">餐饮LOGO</span>
+                </li>
+                <li class="nav-li">
+                    <span class="nav-title">机械LOGO</span>
+                </li>
+                <li class="nav-li">
+                    <span class="nav-title">科技LOGO</span>
+                </li>
+                <li class="nav-li">
+                    <span class="nav-title">联系我们</span>
                 </li>
             </ul>
         </div>
-        <!--rank-banner-->
-        <div class="rank-banner" style="background: #101010">
-            <h1 class="rank-banner-title">品牌建设排行榜</h1>
-        </div>
-        <!--main-banner-->
-        <div class="main">
-            <div class="main-banner">
-                <ul class="main-banner-head">
-                    <li class="main-banner-icon">
-                        <img src="./img/acos/hot.png" alt="">
-                    </li>
-                    <li class="main-banner-title">
-                        <span>服务热卖榜</span>
-                    </li>
-                    <li class="main-banner-info">
-                        <span>按服务销量计算，每日更新</span>
-                    </li>
-                </ul>
-                <ul class="main-banner-item">
-                    <li class="main-banner-li">
-                        <div class="main-banner-tag" style="background-image: url(./img/acos/foot.png);opacity: .8">
-                            TOP1
-                        </div>
-                        <div class="main-banner-li-img" style="background-image: url(./img/acos/item_one.png)"></div>
-                        <div class="main-banner-li-detail">
-                            <p class="detail-title">企业公司LOGO品牌设计图文原创标志商设计</p>
-                            <div class="detail-span">3套方案供选</div>
-                            <ul class="detail-ul">
-                                <li class="detail-li">客户评分</li>
-                                <li class="detail-star">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star_side.png" alt="">
-                                </li>
-                                <li class="detail-score">4.9分</li>
-                            </ul>
-                            <p class="detail-info">很喜欢的服务，比自己想象中好</p>
-                            <a class="detail-consulting" id="consult1">立即咨询</a>
-                        </div>
-                    </li>
-                    <li class="main-banner-li">
-                        <div class="main-banner-tag" style="background-image: url(./img/acos/foot_five.png);">
-                            TOP2
-                        </div>
-                        <div class="main-banner-li-img" style="background-image: url(./img/acos/item_two.png)"></div>
-                        <div class="main-banner-li-detail">
-                            <p class="detail-title">企业公司LOGO品牌设计图文原创标志商设计</p>
-                            <div class="detail-span">3套方案供选</div>
-                            <ul class="detail-ul">
-                                <li class="detail-li">客户评分</li>
-                                <li class="detail-star">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                </li>
-                                <li class="detail-score">5分</li>
-                            </ul>
-                            <p class="detail-info">很喜欢的服务，比自己想象中好</p>
-                            <a class="detail-consulting" id="consult2">立即咨询</a>
-                        </div>
-                    </li>
-                    <li class="main-banner-li">
-                        <div class="main-banner-tag" style="background-image: url(./img/acos/foot_four.png);">
-                            TOP3
-                        </div>
-                        <div class="main-banner-li-img" style="background-image: url(./img/acos/item_three.png)"></div>
-                        <div class="main-banner-li-detail">
-                            <p class="detail-title">企业公司LOGO品牌设计图文原创标志商设计</p>
-                            <div class="detail-span">3套方案供选</div>
-                            <ul class="detail-ul">
-                                <li class="detail-li">客户评分</li>
-                                <li class="detail-star">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star_side.png" alt="">
-                                </li>
-                                <li class="detail-score">4.9分</li>
-                            </ul>
-                            <p class="detail-info">很喜欢的服务，比自己想象中好</p>
-                            <a class="detail-consulting" id="consult3">立即咨询</a>
-                        </div>
-                    </li>
-                    <li class="main-banner-li">
-                        <div class="main-banner-tag" style="background-image: url(./img/acos/foot_one.png);">
-                            TOP4
-                        </div>
-                        <div class="main-banner-li-img" style="background-image: url(./img/acos/item_four.png)"></div>
-                        <div class="main-banner-li-detail">
-                            <p class="detail-title">企业公司LOGO品牌设计图文原创标志商设计</p>
-                            <div class="detail-span">3套方案供选</div>
-                            <ul class="detail-ul">
-                                <li class="detail-li">客户评分</li>
-                                <li class="detail-star">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                </li>
-                                <li class="detail-score">5分</li>
-                            </ul>
-                            <p class="detail-info">很喜欢的服务，比自己想象中好</p>
-                            <a class="detail-consulting" id="consult4">立即咨询</a>
-                        </div>
-                    </li>
-                    <li class="main-banner-li">
-                        <div class="main-banner-tag" style="background-image: url(./img/acos/foot_two.png);">
-                            TOP5
-                        </div>
-                        <div class="main-banner-li-img" style="background-image: url(./img/acos/item_five.png)"></div>
-                        <div class="main-banner-li-detail">
-                            <p class="detail-title">企业公司LOGO品牌设计图文原创标志商设计</p>
-                            <div class="detail-span">3套方案供选</div>
-                            <ul class="detail-ul">
-                                <li class="detail-li">客户评分</li>
-                                <li class="detail-star">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                </li>
-                                <li class="detail-score">5分</li>
-                            </ul>
-                            <p class="detail-info">很喜欢的服务，比自己想象中好</p>
-                            <a class="detail-consulting" id="consult5">立即咨询</a>
-                        </div>
-                    </li>
-                    <li class="main-banner-li">
-                        <div class="main-banner-tag" style="background-image: url(./img/acos/foot_three.png);">
-                            TOP6
-                        </div>
-                        <div class="main-banner-li-img" style="background-image: url(./img/acos/item_six.png)"></div>
-                        <div class="main-banner-li-detail">
-                            <p class="detail-title">企业公司LOGO品牌设计图文原创标志商设计</p>
-                            <div class="detail-span">3套方案供选</div>
-                            <ul class="detail-ul">
-                                <li class="detail-li">客户评分</li>
-                                <li class="detail-star">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star.png" alt="">
-                                    <img src="./img/acos/star_side.png" alt="">
-                                </li>
-                                <li class="detail-score">4.9分</li>
-                            </ul>
-                            <p class="detail-info">很喜欢的服务，比自己想象中好</p>
-                            <a class="detail-consulting" id="consult6">立即咨询</a>
-                        </div>
-                    </li>
-                </ul>
+    </div>
+    <!--rank-banner-->
+    <div class="rank-banner" style="background:#101010;">
+        <h1 class="rank-banner-title">莫斯蒂恩LOGO设计</h1>
+    </div>
+    <!--main-banner-->
+    <div class="main">
+        <div class="main-banner">
+            <div class="main-banner-title">
+                <img class="main-banner-rectangular" src="./img/acos/business/rectangular.png" alt="">
+                <h2 class="main-type-title">大气企业LOGO</h2>
+                <span class="main-type-detail">LOGO是一个企业的灵魂</span>
             </div>
+            <ul class="main-banner-content">
+                <li class="main-banner-item">
+                    <div class="main-banner-item-bg" style="background-image: url(./img/acos/business/a.png)">
+                        <div class="main-banner-item-tag">
+                            678家企业购买了此服务
+                        </div>
+                    </div>
+                    <button class="main-banner-item-detail" id="consult1">详情</button>
+                </li>
+                <li class="main-banner-item">
+                    <div class="main-banner-item-bg" style="background-image: url(./img/acos/business/b.png)">
+                        <div class="main-banner-item-tag">
+                            658家企业购买了此服务
+                        </div>
+                    </div>
+                    <button class="main-banner-item-detail" id="consult2">详情</button>
+                </li>
+                <li class="main-banner-item">
+                    <div class="main-banner-item-bg" style="background-image: url(./img/acos/business/c.png)">
+                        <div class="main-banner-item-tag">
+                            666家企业购买了此服务
+                        </div>
+                    </div>
+                    <button class="main-banner-item-detail" id="consult3">详情</button>
+                </li>
+            </ul>
         </div>
     </div>
+    <div class="main easy-main">
+        <div class="main-banner">
+            <div class="main-banner-title">
+                <img class="main-banner-rectangular" src="./img/acos/business/rectangular.png" alt="">
+                <h2 class="main-type-title">简约LOGO</h2>
+                <span class="main-type-detail">LOGO是一个企业的第一形象</span>
+            </div>
+            <ul class="main-banner-content">
+                <li class="main-banner-item">
+                    <div class="main-banner-item-bg" style="background-image: url(./img/acos/business/d.png)">
+                    </div>
+                    <div class="easy-main-item-detail">
+                        <p class="easy-main-title">简单好记</p>
+                        <a class="easy-main-detail" id="consult4">了解详情</a>
+
+                    </div>
+                </li>
+                <li class="main-banner-item">
+                    <div class="main-banner-item-bg" style="background-image: url(./img/acos/business/e.png)">
+                    </div>
+                    <div class="easy-main-item-detail">
+                        <p class="easy-main-title">简介传统</p>
+                        <a class="easy-main-detail" id="consult5">了解详情</a>
+
+                    </div>
+                </li>
+                <li class="main-banner-item">
+                    <div class="main-banner-item-bg" style="background-image: url(./img/acos/business/f.png)">
+                    </div>
+                    <div class="easy-main-item-detail">
+                        <p class="easy-main-title">简易识别</p>
+                        <a class="easy-main-detail" id="consult6">了解详情</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/ajax-contact-form.js"></script>
-<script src="js/main.js"></script>
-<script src="js/script.js"></script>
-<script src="layui/lay/modules/layer.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/dolphin.js"></script>
 <script>
     $(function () {
         $(".nav-li").on('click',function () {
@@ -401,37 +309,46 @@
             $('.nav-li').eq($(this).index()).siblings().removeClass('show-border');
             var nav_index = $(this).index();
             if(nav_index==0){
-                $(".rank-banner-title").html('品牌建设排行榜');
+                $(".rank-banner-title").html('莫斯蒂恩企业LOGO设计');
                 return false;
             }
             if(nav_index==1){
-                $(".rank-banner-title").html('网站建设排行榜');
+                $(".rank-banner-title").html('莫斯蒂恩网站LOGO设计');
                 return false;
             }
             if(nav_index==2){
-                $(".rank-banner-title").html('移动应用建设排行榜');
+                $(".rank-banner-title").html('莫斯蒂恩餐饮LOGO设计');
                 return false;
             }
-
+            if(nav_index==3){
+                $(".rank-banner-title").html('莫斯蒂恩机械LOGO设计');
+                return false;
+            }
+            if(nav_index==4){
+                $(".rank-banner-title").html('莫斯蒂恩科技LOGO设计');
+                return false;
+            }
         })
+
         $("#consult1").click(function () {
-            dolphin.iframe("/sys/acos/consult1", "联系我们", "350px", "400px")
+            dolphin.iframe("/sys/acos/consult1", "联系我们", "420px", "430px")
         })
         $("#consult2").click(function () {
-            dolphin.iframe("/sys/acos/consult1", "联系我们", "350px", "400px")
+            dolphin.iframe("/sys/acos/consult1", "联系我们", "420px", "410px")
         })
         $("#consult3").click(function () {
-            dolphin.iframe("/sys/acos/consult1", "联系我们", "350px", "400px")
+            dolphin.iframe("/sys/acos/consult1", "联系我们", "420px", "410px")
         })
         $("#consult4").click(function () {
-            dolphin.iframe("/sys/acos/consult1", "联系我们", "350px", "400px")
+            dolphin.iframe("/sys/acos/consult1", "联系我们", "420px", "410px")
         })
         $("#consult5").click(function () {
-            dolphin.iframe("/sys/acos/consult1", "联系我们", "350px", "400px")
+            dolphin.iframe("/sys/acos/consult1", "联系我们", "420px", "410px")
         })
         $("#consult6").click(function () {
-            dolphin.iframe("/sys/acos/consult1", "联系我们", "350px", "400px")
+            dolphin.iframe("/sys/acos/consult1", "联系我们", "420px", "410px")
         })
     })
 </script>
+<#include "/common/footer.ftl">
 </html>

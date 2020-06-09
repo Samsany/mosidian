@@ -5,6 +5,7 @@ import cn.hutool.crypto.SecureUtil;
 import io.mosidian.common.utils.R;
 import io.mosidian.modules.enterprise.entity.EnterpriseEntity;
 import io.mosidian.modules.member.vo.MemberVo;
+import io.mosidian.modules.member.vo.MoneyVo;
 import io.mosidian.modules.sys.controller.AbstractController;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 import io.mosidian.modules.sys.entity.SysUserRoleEntity;
@@ -71,6 +72,16 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
     }
 
     @Override
+    public List<MoneyVo> queryMoney() {
+        return memberDao.queryMoney();
+    }
+
+    @Override
+    public List<MoneyVo> queryMoneyById(Long id) {
+        return memberDao.queryMoneyById(id);
+    }
+
+    @Override
     public MemberVo getMemberById(String id) {
         return memberDao.getMemberById(id);
     }
@@ -84,10 +95,11 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
         BeanUtils.copyProperties(memberVo, user);
         BeanUtils.copyProperties(memberVo, memberEntity);
 
-        // 获取会员卡号
         MemberEntity member = memberService.getMaxMemberByUserId();
+
         memberEntity.setMemberId(member.getMemberId());
-        // 设置用户标识
+
+
         user.setFlag(2);
 
         log.info("【会员卡】========》" + memberEntity.getMemberId());
@@ -97,15 +109,13 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
             return R.error("开卡失败");
         }
         memberEntity.setUserId(user.getUserId());
-        // 设置账户状态 0 未激活
-        memberEntity.setAccountStatus(0);
 
         int result = memberDao.insert(memberEntity);
         if (result == 0) {
             return R.error("开卡失败");
         }
 
-        // 默认会员权限
+        //        默认会员权限
         SysUserRoleEntity userRoleEntity = new SysUserRoleEntity();
         userRoleEntity.setUserId(user.getUserId());
         userRoleEntity.setRoleId(Long.parseLong("2"));

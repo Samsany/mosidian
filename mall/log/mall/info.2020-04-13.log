@@ -1,0 +1,1927 @@
+2020-04-13 00:00:25.003 [main] INFO  com.samphanie.mall.service.CategoryServiceTest - Starting CategoryServiceTest on Samphanie with PID 13424 (started by ZSY in E:\IdeaProjects\mall)
+2020-04-13 00:00:25.005 [main] INFO  com.samphanie.mall.service.CategoryServiceTest - The following profiles are active: prod
+2020-04-13 00:00:25.909 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-13 00:00:25.913 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-13 00:00:25.957 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-04-13 00:00:32.042 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:00:36.951 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-13 00:00:36.952 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-13 00:00:40.820 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [www.samphanie.cn:5672]
+2020-04-13 00:00:41.015 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#54247647:0/SimpleConnection@10b87ff6 [delegate=amqp://admin@182.254.171.162:5672/, localPort= 49835]
+2020-04-13 00:00:41.751 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-04-13 00:00:41.764 [main] INFO  com.samphanie.mall.service.CategoryServiceTest - Started CategoryServiceTest in 17.3 seconds (JVM running for 18.789)
+2020-04-13 00:00:42.066 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-13 00:00:42.535 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-13 00:00:42.750 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.samphanie.mall.service.ICartServiceTest], using SpringBootContextLoader
+2020-04-13 00:00:42.751 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.samphanie.mall.service.ICartServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-13 00:00:42.751 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.samphanie.mall.service.ICartServiceTest]: ICartServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-13 00:00:42.754 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.samphanie.mall.MallApplication for test class com.samphanie.mall.service.ICartServiceTest
+2020-04-13 00:00:42.756 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-13 00:00:42.757 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c13ca07, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7d17906, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@97beeaf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5d68954d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f793f15, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3ec7eb5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5534e6f1, org.springframework.test.context.event.EventPublishingTestExecutionListener@4c6fc3e7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@aa8dce8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6ad112de, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@18a0721b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2ae2fa13, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@66e12c3b]
+2020-04-13 00:00:43.002 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 95,
+        "productSelected": false
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": false
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 0,
+    "cartTotalQuantity": 15
+  }
+}
+2020-04-13 00:00:43.152 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 95,
+        "productSelected": true
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": true,
+    "cartTotalPrice": 53185.00,
+    "cartTotalQuantity": 15
+  }
+}
+2020-04-13 00:00:43.284 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": true,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 14
+  }
+}
+2020-04-13 00:00:43.440 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 95,
+        "productSelected": false
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 15
+  }
+}
+2020-04-13 00:00:43.563 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 5,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 34995.00,
+        "productStock": 95,
+        "productSelected": false
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 19
+  }
+}
+2020-04-13 00:00:43.681 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": true,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 14
+  }
+}
+2020-04-13 00:00:43.881 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 95,
+        "productSelected": false
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 15
+  }
+}
+2020-04-13 00:00:43.911 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": 15
+}
+2020-04-13 00:00:44.027 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": true,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 14
+  }
+}
+2020-04-13 00:00:44.177 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 95,
+        "productSelected": false
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 15
+  }
+}
+2020-04-13 00:00:44.248 [main] INFO  com.samphanie.mall.service.ICartServiceTest - list={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 95,
+        "productSelected": false
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 15
+  }
+}
+2020-04-13 00:00:44.363 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": true,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 14
+  }
+}
+2020-04-13 00:00:44.515 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 95,
+        "productSelected": false
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": true
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 46186.00,
+    "cartTotalQuantity": 15
+  }
+}
+2020-04-13 00:00:44.657 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 26,
+        "quantity": 1,
+        "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+        "productSubtitle": "iPhone 7£¬ÏÖ¸üÒÔºìÉ«³ÊÏÖ¡£",
+        "productMainImage": "http://img.springboot.cn/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg",
+        "productPrice": 6999.00,
+        "productStatus": 1,
+        "productTotalPrice": 6999.00,
+        "productStock": 95,
+        "productSelected": false
+      },
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": false
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 0,
+    "cartTotalQuantity": 15
+  }
+}
+2020-04-13 00:00:44.771 [main] INFO  com.samphanie.mall.service.ICartServiceTest - responseVo={
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "cartProductVoList": [
+      {
+        "productId": 27,
+        "quantity": 14,
+        "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+        "productSubtitle": "ËÍÆ·ÅÆ¿¾Ïä£¬ÎåÒ»´ó´Ù",
+        "productMainImage": "http://img.springboot.cn/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg",
+        "productPrice": 3299.00,
+        "productStatus": 1,
+        "productTotalPrice": 46186.00,
+        "productStock": 97,
+        "productSelected": false
+      }
+    ],
+    "selectedAll": false,
+    "cartTotalPrice": 0,
+    "cartTotalQuantity": 14
+  }
+}
+2020-04-13 00:00:44.776 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.samphanie.mall.service.impl.UserServiceImplTest], using SpringBootContextLoader
+2020-04-13 00:00:44.776 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.samphanie.mall.service.impl.UserServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-13 00:00:44.776 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.samphanie.mall.service.impl.UserServiceImplTest]: UserServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-13 00:00:44.792 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.samphanie.mall.MallApplication for test class com.samphanie.mall.service.impl.UserServiceImplTest
+2020-04-13 00:00:44.794 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-13 00:00:44.795 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6ffc6ea7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2c5708e7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4ffa078d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4e26564d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@42238078, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5627b8eb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49fe0bcd, org.springframework.test.context.event.EventPublishingTestExecutionListener@3516b881, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6be8ce1b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@e3c36d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@397a10df, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@39a865c1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@141dfcf9]
+2020-04-13 00:00:44.838 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@5d0e703a testClass = UserServiceImplTest, testInstance = com.samphanie.mall.service.impl.UserServiceImplTest@7f77e065, testMethod = login@UserServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6f655dbd testClass = UserServiceImplTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@38022758]; rollback [true]
+2020-04-13 00:00:45.124 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@5d0e703a testClass = UserServiceImplTest, testInstance = com.samphanie.mall.service.impl.UserServiceImplTest@7f77e065, testMethod = login@UserServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6f655dbd testClass = UserServiceImplTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:00:45.128 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.samphanie.mall.service.IOrderServiceTest], using SpringBootContextLoader
+2020-04-13 00:00:45.128 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.samphanie.mall.service.IOrderServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-13 00:00:45.128 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.samphanie.mall.service.IOrderServiceTest]: IOrderServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-13 00:00:45.130 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.samphanie.mall.MallApplication for test class com.samphanie.mall.service.IOrderServiceTest
+2020-04-13 00:00:45.132 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-13 00:00:45.133 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b3b4f37, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3b25709e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5ec6a1b6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@40013051, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71f29d91, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6143b2b1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@a63643e, org.springframework.test.context.event.EventPublishingTestExecutionListener@43294e9b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@26d24d7a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5a78b52b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4bab78ce, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@42ffbab6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7672960e]
+2020-04-13 00:00:45.168 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@4654e373 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2474df51, testMethod = cancel@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2864d34d testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@38022758]; rollback [true]
+2020-04-13 00:00:45.476 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@4654e373 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2474df51, testMethod = cancel@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: ÇëÑ¡ÔñÉÌÆ·ºóÏÂµ¥, mergedContextConfiguration = [WebMergedContextConfiguration@2864d34d testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:00:45.513 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@4654e373 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2ca1e49a, testMethod = create@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2864d34d testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@38022758]; rollback [true]
+2020-04-13 00:00:45.786 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@4654e373 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2ca1e49a, testMethod = create@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: ÇëÑ¡ÔñÉÌÆ·ºóÏÂµ¥, mergedContextConfiguration = [WebMergedContextConfiguration@2864d34d testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:00:45.818 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@4654e373 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2f61de04, testMethod = detail@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2864d34d testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@38022758]; rollback [true]
+2020-04-13 00:00:46.109 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@4654e373 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2f61de04, testMethod = detail@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: ÇëÑ¡ÔñÉÌÆ·ºóÏÂµ¥, mergedContextConfiguration = [WebMergedContextConfiguration@2864d34d testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:00:46.159 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@4654e373 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@d180961, testMethod = list@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2864d34d testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@38022758]; rollback [true]
+2020-04-13 00:00:46.604 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - reponseVo = {
+  "code": 0,
+  "msg": "³É¹¦",
+  "data": {
+    "pageNum": 1,
+    "pageSize": 10,
+    "size": 5,
+    "startRow": 1,
+    "endRow": 5,
+    "pages": 1,
+    "prePage": 0,
+    "nextPage": 0,
+    "isFirstPage": true,
+    "isLastPage": true,
+    "hasPreviousPage": false,
+    "hasNextPage": false,
+    "navigatePages": 8,
+    "navigatepageNums": [
+      1
+    ],
+    "navigateFirstPage": 1,
+    "navigateLastPage": 1,
+    "total": 5,
+    "list": [
+      {
+        "orderNo": 120200407175930111,
+        "payment": 69990.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 17,
+            "minute": 59,
+            "second": 30,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 120200407175930111,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+            "currentUnitPrice": 6999.00,
+            "quantity": 10,
+            "totalPrice": 69990.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 7
+              },
+              "time": {
+                "hour": 17,
+                "minute": 59,
+                "second": 30,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "°²»ÕÊ¡",
+          "receiverCity": "°²ÇìÊÐ",
+          "receiverDistrict": "ÔÀÎ÷ÏØ",
+          "receiverAddress": "Ë¾¿ÕÉ½´å",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004071800376216,
+        "payment": 69990.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 18,
+            "minute": 0,
+            "second": 37,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004071800376216,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+            "currentUnitPrice": 6999.00,
+            "quantity": 10,
+            "totalPrice": 69990.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 7
+              },
+              "time": {
+                "hour": 18,
+                "minute": 0,
+                "second": 37,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "°²»ÕÊ¡",
+          "receiverCity": "°²ÇìÊÐ",
+          "receiverDistrict": "ÔÀÎ÷ÏØ",
+          "receiverAddress": "Ë¾¿ÕÉ½´å",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081003217486,
+        "payment": 6999.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 8
+          },
+          "time": {
+            "hour": 10,
+            "minute": 3,
+            "second": 21,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081003217486,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G Ãµ¹å½ðÉ« ÒÆ¶¯ÁªÍ¨µçÐÅ4GÊÖ»ú",
+            "currentUnitPrice": 6999.00,
+            "quantity": 1,
+            "totalPrice": 6999.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 3,
+                "second": 21,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "°²»ÕÊ¡",
+          "receiverCity": "°²ÇìÊÐ",
+          "receiverDistrict": "ÔÀÎ÷ÏØ",
+          "receiverAddress": "Ë¾¿ÕÉ½´å",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081015234836,
+        "payment": 3299.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 0,
+        "closeTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 9
+          },
+          "time": {
+            "hour": 7,
+            "minute": 4,
+            "second": 25,
+            "nano": 0
+          }
+        },
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 21,
+            "minute": 15,
+            "second": 23,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081015234836,
+            "productId": 27,
+            "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+            "currentUnitPrice": 3299.00,
+            "quantity": 1,
+            "totalPrice": 3299.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 15,
+                "second": 23,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "°²»ÕÊ¡",
+          "receiverCity": "°²ÇìÊÐ",
+          "receiverDistrict": "ÔÀÎ÷ÏØ",
+          "receiverAddress": "Ë¾¿ÕÉ½´å",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081038217966,
+        "payment": 3299.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 8
+          },
+          "time": {
+            "hour": 10,
+            "minute": 38,
+            "second": 21,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081038217966,
+            "productId": 27,
+            "productName": "Midea/ÃÀµÄ BCD-535WKZM(E)±ùÏäË«¿ªÃÅ¶Ô¿ªÃÅ·çÀäÎÞËªÖÇÄÜµç¼ÒÓÃ",
+            "currentUnitPrice": 3299.00,
+            "quantity": 1,
+            "totalPrice": 3299.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 38,
+                "second": 21,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "°²»ÕÊ¡",
+          "receiverCity": "°²ÇìÊÐ",
+          "receiverDistrict": "ÔÀÎ÷ÏØ",
+          "receiverAddress": "Ë¾¿ÕÉ½´å",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+2020-04-13 00:00:46.665 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@4654e373 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@d180961, testMethod = list@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2864d34d testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@60704c, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7692d9cc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79efed2d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e91d63f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:00:46.668 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.samphanie.mall.service.IShippingServiceTest], using SpringBootContextLoader
+2020-04-13 00:00:46.669 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.samphanie.mall.service.IShippingServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-13 00:00:46.670 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.samphanie.mall.service.IShippingServiceTest]: IShippingServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-13 00:00:46.672 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.samphanie.mall.MallApplication for test class com.samphanie.mall.service.IShippingServiceTest
+2020-04-13 00:00:46.673 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-13 00:00:46.674 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@632b5c79, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a552721, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3815a7d1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@24dc150c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d2d4d7a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5e020dd1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4bbc02ef, org.springframework.test.context.event.EventPublishingTestExecutionListener@f0c1ae1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@783dc0e7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@361f26b4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d9ff1e2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@722b3ba2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6487f7f8]
+2020-04-13 00:00:46.765 [main] INFO  com.samphanie.mall.service.IShippingServiceTest - reponseVo = ResponseVo(code=0, msg=³É¹¦, data={shippingId=25})
+2020-04-13 00:00:46.853 [main] INFO  com.samphanie.mall.service.IShippingServiceTest - reponseVo = ResponseVo(code=0, msg=³É¹¦, data=null)
+2020-04-13 00:00:46.927 [main] INFO  com.samphanie.mall.service.IShippingServiceTest - reponseVo = ResponseVo(code=0, msg=³É¹¦, data=null)
+2020-04-13 00:00:47.001 [main] INFO  com.samphanie.mall.service.IShippingServiceTest - reponseVo = ResponseVo(code=0, msg=³É¹¦, data={shippingId=26})
+2020-04-13 00:00:47.067 [main] INFO  com.samphanie.mall.service.IShippingServiceTest - reponseVo = ResponseVo(code=0, msg=³É¹¦, data=PageInfo{pageNum=1, pageSize=10, size=2, startRow=1, endRow=2, total=2, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=2, pages=1, reasonable=false, pageSizeZero=false}[Shipping(id=4, userId=1, receiverName=ÁÎÊ¦ÐÖ, receiverPhone=010, receiverMobile=18688888888, receiverProvince=±±¾©, receiverCity=±±¾©ÊÐ, receiverDistrict=º£µíÇø, receiverAddress=ÖÐ¹Ø´åÄ½¿ÎÍø´óÂ¥, receiverZip=100000, createTime=2000-01-22T14:26:25, updateTime=2000-01-22T14:26:25), Shipping(id=26, userId=1, receiverName=Ä°Àë, receiverPhone=17354056086, receiverMobile=, receiverProvince=°²»ÕÊ¡, receiverCity=°²ÇìÊÐ, receiverDistrict=ÔÀÎ÷ÏØ, receiverAddress=Ë¾¿ÕÉ½´å, receiverZip=246671, createTime=2020-04-13T00:00:47, updateTime=2020-04-13T00:00:47)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]})
+2020-04-13 00:00:47.138 [main] INFO  com.samphanie.mall.service.IShippingServiceTest - reponseVo = ResponseVo(code=0, msg=³É¹¦, data=null)
+2020-04-13 00:00:47.142 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.samphanie.mall.service.ProductServiceTest], using SpringBootContextLoader
+2020-04-13 00:00:47.143 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.samphanie.mall.service.ProductServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-13 00:00:47.143 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.samphanie.mall.service.ProductServiceTest]: ProductServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-13 00:00:47.145 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.samphanie.mall.MallApplication for test class com.samphanie.mall.service.ProductServiceTest
+2020-04-13 00:00:47.147 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-13 00:00:47.148 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@31e22365, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2ebf524, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@41bdaa81, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@799971ac, org.springframework.test.context.support.DirtiesContextTestExecutionListener@59c08cf1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@45f0038, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@289a4b90, org.springframework.test.context.event.EventPublishingTestExecutionListener@1a3c4b3e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4746fb8c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3be46d9c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@41d877bb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@39c5a105, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@492fa72a]
+2020-04-13 00:00:50.711 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2020-04-13 00:00:51.212 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2020-04-13 00:00:51.277 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2020-04-13 00:00:51.312 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:00:51.439 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-13 00:00:51.451 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-04-13 00:02:14.055 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - Starting IOrderServiceTest on Samphanie with PID 10420 (started by ZSY in E:\IdeaProjects\mall)
+2020-04-13 00:02:14.057 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - The following profiles are active: prod
+2020-04-13 00:02:15.079 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-13 00:02:15.083 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-13 00:02:15.146 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+2020-04-13 00:02:22.051 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:02:27.468 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-13 00:02:27.470 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-13 00:02:31.468 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [www.samphanie.cn:5672]
+2020-04-13 00:02:31.687 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#226d5af0:0/SimpleConnection@21b744ec [delegate=amqp://admin@182.254.171.162:5672/, localPort= 49993]
+2020-04-13 00:02:32.439 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-04-13 00:02:32.449 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - Started IOrderServiceTest in 18.967 seconds (JVM running for 20.478)
+2020-04-13 00:02:32.481 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-13 00:02:32.914 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-13 00:02:32.947 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@68c9133c testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@1ddf42dd, testMethod = cancel@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a35b0f5 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b927fb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4fb0f2b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d7275fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49139829], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@5c5f0edc]; rollback [true]
+2020-04-13 00:02:33.686 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@68c9133c testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@1ddf42dd, testMethod = cancel@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: è¯·é€‰æ‹©å•†å“åŽä¸‹å•, mergedContextConfiguration = [WebMergedContextConfiguration@7a35b0f5 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b927fb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4fb0f2b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d7275fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49139829], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:02:33.729 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@68c9133c testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@1607d391, testMethod = create@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a35b0f5 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b927fb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4fb0f2b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d7275fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49139829], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@5c5f0edc]; rollback [true]
+2020-04-13 00:02:33.992 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@68c9133c testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@1607d391, testMethod = create@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: è¯·é€‰æ‹©å•†å“åŽä¸‹å•, mergedContextConfiguration = [WebMergedContextConfiguration@7a35b0f5 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b927fb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4fb0f2b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d7275fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49139829], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:02:34.026 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@68c9133c testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2430cf17, testMethod = detail@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a35b0f5 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b927fb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4fb0f2b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d7275fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49139829], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@5c5f0edc]; rollback [true]
+2020-04-13 00:02:34.287 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@68c9133c testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2430cf17, testMethod = detail@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: è¯·é€‰æ‹©å•†å“åŽä¸‹å•, mergedContextConfiguration = [WebMergedContextConfiguration@7a35b0f5 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b927fb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4fb0f2b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d7275fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49139829], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:02:34.319 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@68c9133c testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@13374ca6, testMethod = list@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a35b0f5 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b927fb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4fb0f2b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d7275fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49139829], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@5c5f0edc]; rollback [true]
+2020-04-13 00:02:34.703 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - reponseVo = {
+  "code": 0,
+  "msg": "æˆåŠŸ",
+  "data": {
+    "pageNum": 1,
+    "pageSize": 10,
+    "size": 5,
+    "startRow": 1,
+    "endRow": 5,
+    "pages": 1,
+    "prePage": 0,
+    "nextPage": 0,
+    "isFirstPage": true,
+    "isLastPage": true,
+    "hasPreviousPage": false,
+    "hasNextPage": false,
+    "navigatePages": 8,
+    "navigatepageNums": [
+      1
+    ],
+    "navigateFirstPage": 1,
+    "navigateLastPage": 1,
+    "total": 5,
+    "list": [
+      {
+        "orderNo": 120200407175930111,
+        "payment": 69990.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 17,
+            "minute": 59,
+            "second": 30,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 120200407175930111,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G çŽ«ç‘°é‡‘è‰² ç§»åŠ¨è”é€šç”µä¿¡4Gæ‰‹æœº",
+            "currentUnitPrice": 6999.00,
+            "quantity": 10,
+            "totalPrice": 69990.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 7
+              },
+              "time": {
+                "hour": 17,
+                "minute": 59,
+                "second": 30,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004071800376216,
+        "payment": 69990.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 18,
+            "minute": 0,
+            "second": 37,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004071800376216,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G çŽ«ç‘°é‡‘è‰² ç§»åŠ¨è”é€šç”µä¿¡4Gæ‰‹æœº",
+            "currentUnitPrice": 6999.00,
+            "quantity": 10,
+            "totalPrice": 69990.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 7
+              },
+              "time": {
+                "hour": 18,
+                "minute": 0,
+                "second": 37,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081003217486,
+        "payment": 6999.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 8
+          },
+          "time": {
+            "hour": 10,
+            "minute": 3,
+            "second": 21,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081003217486,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G çŽ«ç‘°é‡‘è‰² ç§»åŠ¨è”é€šç”µä¿¡4Gæ‰‹æœº",
+            "currentUnitPrice": 6999.00,
+            "quantity": 1,
+            "totalPrice": 6999.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 3,
+                "second": 21,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081015234836,
+        "payment": 3299.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 0,
+        "closeTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 9
+          },
+          "time": {
+            "hour": 7,
+            "minute": 4,
+            "second": 25,
+            "nano": 0
+          }
+        },
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 21,
+            "minute": 15,
+            "second": 23,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081015234836,
+            "productId": 27,
+            "productName": "Midea/ç¾Žçš„ BCD-535WKZM(E)å†°ç®±åŒå¼€é—¨å¯¹å¼€é—¨é£Žå†·æ— éœœæ™ºèƒ½ç”µå®¶ç”¨",
+            "currentUnitPrice": 3299.00,
+            "quantity": 1,
+            "totalPrice": 3299.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 15,
+                "second": 23,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081038217966,
+        "payment": 3299.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 8
+          },
+          "time": {
+            "hour": 10,
+            "minute": 38,
+            "second": 21,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081038217966,
+            "productId": 27,
+            "productName": "Midea/ç¾Žçš„ BCD-535WKZM(E)å†°ç®±åŒå¼€é—¨å¯¹å¼€é—¨é£Žå†·æ— éœœæ™ºèƒ½ç”µå®¶ç”¨",
+            "currentUnitPrice": 3299.00,
+            "quantity": 1,
+            "totalPrice": 3299.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 38,
+                "second": 21,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+2020-04-13 00:02:34.800 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@68c9133c testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@13374ca6, testMethod = list@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a35b0f5 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6b927fb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4fb0f2b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2d7275fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49139829], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:02:34.855 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2020-04-13 00:02:34.892 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2020-04-13 00:02:34.958 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2020-04-13 00:02:34.993 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:02:35.119 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-13 00:02:35.132 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-04-13 00:03:09.185 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - Starting IOrderServiceTest on Samphanie with PID 14724 (started by ZSY in E:\IdeaProjects\mall)
+2020-04-13 00:03:09.186 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - The following profiles are active: prod
+2020-04-13 00:03:10.135 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-13 00:03:10.139 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-13 00:03:10.192 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2020-04-13 00:03:16.091 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:03:21.103 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-13 00:03:21.105 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-13 00:03:24.973 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [www.samphanie.cn:5672]
+2020-04-13 00:03:25.138 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#255d9277:0/SimpleConnection@56d822dc [delegate=amqp://admin@182.254.171.162:5672/, localPort= 50076]
+2020-04-13 00:03:25.887 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-04-13 00:03:25.897 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - Started IOrderServiceTest in 17.222 seconds (JVM running for 18.769)
+2020-04-13 00:03:25.929 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-13 00:03:26.414 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-13 00:03:26.448 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@7a35b0f5 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@318e3942, testMethod = create@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5e2c3d18 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e58a80e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@79924b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@399f45b1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@9597028], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@1b1e1f02]; rollback [true]
+2020-04-13 00:03:27.229 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@7a35b0f5 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@318e3942, testMethod = create@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: è¯·é€‰æ‹©å•†å“åŽä¸‹å•, mergedContextConfiguration = [WebMergedContextConfiguration@5e2c3d18 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e58a80e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@79924b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@399f45b1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@9597028], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:03:27.280 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@7a35b0f5 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2e1291a4, testMethod = detail@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5e2c3d18 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e58a80e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@79924b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@399f45b1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@9597028], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@1b1e1f02]; rollback [true]
+2020-04-13 00:03:27.598 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@7a35b0f5 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@2e1291a4, testMethod = detail@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: è¯·é€‰æ‹©å•†å“åŽä¸‹å•, mergedContextConfiguration = [WebMergedContextConfiguration@5e2c3d18 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e58a80e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@79924b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@399f45b1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@9597028], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:03:27.633 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@7a35b0f5 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@7402c49f, testMethod = list@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5e2c3d18 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e58a80e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@79924b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@399f45b1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@9597028], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@1b1e1f02]; rollback [true]
+2020-04-13 00:03:28.031 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - reponseVo = {
+  "code": 0,
+  "msg": "æˆåŠŸ",
+  "data": {
+    "pageNum": 1,
+    "pageSize": 10,
+    "size": 5,
+    "startRow": 1,
+    "endRow": 5,
+    "pages": 1,
+    "prePage": 0,
+    "nextPage": 0,
+    "isFirstPage": true,
+    "isLastPage": true,
+    "hasPreviousPage": false,
+    "hasNextPage": false,
+    "navigatePages": 8,
+    "navigatepageNums": [
+      1
+    ],
+    "navigateFirstPage": 1,
+    "navigateLastPage": 1,
+    "total": 5,
+    "list": [
+      {
+        "orderNo": 120200407175930111,
+        "payment": 69990.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 17,
+            "minute": 59,
+            "second": 30,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 120200407175930111,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G çŽ«ç‘°é‡‘è‰² ç§»åŠ¨è”é€šç”µä¿¡4Gæ‰‹æœº",
+            "currentUnitPrice": 6999.00,
+            "quantity": 10,
+            "totalPrice": 69990.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 7
+              },
+              "time": {
+                "hour": 17,
+                "minute": 59,
+                "second": 30,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004071800376216,
+        "payment": 69990.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 18,
+            "minute": 0,
+            "second": 37,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004071800376216,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G çŽ«ç‘°é‡‘è‰² ç§»åŠ¨è”é€šç”µä¿¡4Gæ‰‹æœº",
+            "currentUnitPrice": 6999.00,
+            "quantity": 10,
+            "totalPrice": 69990.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 7
+              },
+              "time": {
+                "hour": 18,
+                "minute": 0,
+                "second": 37,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081003217486,
+        "payment": 6999.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 8
+          },
+          "time": {
+            "hour": 10,
+            "minute": 3,
+            "second": 21,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081003217486,
+            "productId": 26,
+            "productName": "Apple iPhone 7 Plus (A1661) 128G çŽ«ç‘°é‡‘è‰² ç§»åŠ¨è”é€šç”µä¿¡4Gæ‰‹æœº",
+            "currentUnitPrice": 6999.00,
+            "quantity": 1,
+            "totalPrice": 6999.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 3,
+                "second": 21,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081015234836,
+        "payment": 3299.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 0,
+        "closeTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 9
+          },
+          "time": {
+            "hour": 7,
+            "minute": 4,
+            "second": 25,
+            "nano": 0
+          }
+        },
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 7
+          },
+          "time": {
+            "hour": 21,
+            "minute": 15,
+            "second": 23,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081015234836,
+            "productId": 27,
+            "productName": "Midea/ç¾Žçš„ BCD-535WKZM(E)å†°ç®±åŒå¼€é—¨å¯¹å¼€é—¨é£Žå†·æ— éœœæ™ºèƒ½ç”µå®¶ç”¨",
+            "currentUnitPrice": 3299.00,
+            "quantity": 1,
+            "totalPrice": 3299.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 15,
+                "second": 23,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      },
+      {
+        "orderNo": 1202004081038217966,
+        "payment": 3299.00,
+        "paymentType": 1,
+        "postage": 0,
+        "status": 10,
+        "createTime": {
+          "date": {
+            "year": 2020,
+            "month": 4,
+            "day": 8
+          },
+          "time": {
+            "hour": 10,
+            "minute": 38,
+            "second": 21,
+            "nano": 0
+          }
+        },
+        "orderItemVoList": [
+          {
+            "orderNo": 1202004081038217966,
+            "productId": 27,
+            "productName": "Midea/ç¾Žçš„ BCD-535WKZM(E)å†°ç®±åŒå¼€é—¨å¯¹å¼€é—¨é£Žå†·æ— éœœæ™ºèƒ½ç”µå®¶ç”¨",
+            "currentUnitPrice": 3299.00,
+            "quantity": 1,
+            "totalPrice": 3299.00,
+            "createTime": {
+              "date": {
+                "year": 2020,
+                "month": 4,
+                "day": 8
+              },
+              "time": {
+                "hour": 10,
+                "minute": 38,
+                "second": 21,
+                "nano": 0
+              }
+            }
+          }
+        ],
+        "shippingId": 7,
+        "shippingVo": {
+          "id": 7,
+          "userId": 2,
+          "receiverName": "zxx",
+          "receiverPhone": "17354056086",
+          "receiverMobile": "",
+          "receiverProvince": "å®‰å¾½çœ",
+          "receiverCity": "å®‰åº†å¸‚",
+          "receiverDistrict": "å²³è¥¿åŽ¿",
+          "receiverAddress": "å¸ç©ºå±±æ‘",
+          "receiverZip": "246671",
+          "createTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 12,
+              "minute": 13,
+              "second": 39,
+              "nano": 0
+            }
+          },
+          "updateTime": {
+            "date": {
+              "year": 2020,
+              "month": 4,
+              "day": 7
+            },
+            "time": {
+              "hour": 14,
+              "minute": 34,
+              "second": 54,
+              "nano": 0
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+2020-04-13 00:03:28.152 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@7a35b0f5 testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@7402c49f, testMethod = list@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: è¯·é€‰æ‹©å•†å“åŽä¸‹å•, mergedContextConfiguration = [WebMergedContextConfiguration@5e2c3d18 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3e58a80e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@79924b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@399f45b1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@9597028], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:03:28.199 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2020-04-13 00:03:28.340 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2020-04-13 00:03:28.406 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2020-04-13 00:03:28.436 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:03:28.559 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-13 00:03:28.573 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-04-13 00:07:18.121 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - Starting IOrderServiceTest on Samphanie with PID 14828 (started by ZSY in E:\IdeaProjects\mall)
+2020-04-13 00:07:18.122 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - The following profiles are active: prod
+2020-04-13 00:07:19.031 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-13 00:07:19.036 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-13 00:07:19.090 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2020-04-13 00:07:25.303 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:07:30.195 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-04-13 00:07:30.196 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-04-13 00:07:33.956 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [www.samphanie.cn:5672]
+2020-04-13 00:07:34.131 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6562cc23:0/SimpleConnection@52b32b70 [delegate=amqp://admin@182.254.171.162:5672/, localPort= 50357]
+2020-04-13 00:07:34.863 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-04-13 00:07:34.872 [main] INFO  com.samphanie.mall.service.IOrderServiceTest - Started IOrderServiceTest in 17.261 seconds (JVM running for 18.75)
+2020-04-13 00:07:34.903 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-13 00:07:35.333 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-13 00:07:35.366 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@2cb4893b testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@72a3462f, testMethod = create@IOrderServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@cc43f62 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4fb0f2b9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a94ee4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@478190fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4efbca5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@3dc46f24]; rollback [true]
+2020-04-13 00:07:36.074 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@2cb4893b testClass = IOrderServiceTest, testInstance = com.samphanie.mall.service.IOrderServiceTest@72a3462f, testMethod = create@IOrderServiceTest, testException = com.samphanie.mall.exception.MallException: è¯·é€‰æ‹©å•†å“åŽä¸‹å•, mergedContextConfiguration = [WebMergedContextConfiguration@cc43f62 testClass = IOrderServiceTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4fb0f2b9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a94ee4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@478190fc, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4efbca5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-04-13 00:07:36.130 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2020-04-13 00:07:36.324 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2020-04-13 00:07:36.388 [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+2020-04-13 00:07:36.420 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:07:36.545 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-13 00:07:36.559 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

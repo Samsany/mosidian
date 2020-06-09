@@ -1,0 +1,473 @@
+2020-03-26 18:38:35.904 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 271784 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 18:38:35.909 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 18:38:37.353 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 18:38:37.361 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:38:37.389 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 18:38:37.389 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 18:38:37.575 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:38:37.575 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1552 ms
+2020-03-26 18:38:41.510 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 18:38:41.703 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:38:41.727 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 18:38:41.730 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 6.423 seconds (JVM running for 9.921)
+2020-03-26 18:39:58.188 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 41616 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 18:39:58.192 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 18:39:59.419 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 18:39:59.428 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:39:59.428 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 18:39:59.428 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 18:39:59.567 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:39:59.568 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1269 ms
+2020-03-26 18:40:03.346 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 18:40:03.514 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:40:03.536 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 18:40:03.539 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 5.878 seconds (JVM running for 8.53)
+2020-03-26 18:40:51.788 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 18:40:51.788 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 18:40:51.796 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-26 18:47:46.794 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 313976 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 18:47:46.798 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 18:47:47.965 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 18:47:47.973 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:47:47.973 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 18:47:47.973 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 18:47:48.131 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:47:48.132 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1241 ms
+2020-03-26 18:47:52.381 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 18:47:52.572 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:47:52.597 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 18:47:52.600 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 6.365 seconds (JVM running for 8.998)
+2020-03-26 18:48:02.342 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 18:48:02.343 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 18:48:02.351 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-26 18:48:17.078 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 89684 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 18:48:17.082 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 18:48:18.354 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 18:48:18.362 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:48:18.363 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 18:48:18.363 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 18:48:18.510 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:48:18.511 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1318 ms
+2020-03-26 18:48:22.695 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 18:48:22.912 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:48:22.934 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 18:48:22.938 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 6.468 seconds (JVM running for 9.166)
+2020-03-26 18:48:25.778 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 18:48:25.778 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 18:48:25.787 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-03-26 18:49:02.395 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 5628 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 18:49:02.401 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 18:49:03.624 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 18:49:03.633 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:49:03.633 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 18:49:03.633 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 18:49:03.782 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:49:03.782 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1257 ms
+2020-03-26 18:49:07.815 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 18:49:08.033 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:49:08.059 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 18:49:08.061 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 6.217 seconds (JVM running for 8.834)
+2020-03-26 18:49:08.368 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 18:49:08.368 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 18:49:08.376 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-26 18:51:52.101 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 313668 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 18:51:52.105 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 18:51:53.264 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 18:51:53.271 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:51:53.272 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 18:51:53.272 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 18:51:53.422 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:51:53.422 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1216 ms
+2020-03-26 18:51:57.197 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 18:51:57.461 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:51:57.483 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 18:51:57.486 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 5.919 seconds (JVM running for 8.503)
+2020-03-26 18:52:06.415 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 18:52:06.415 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 18:52:06.423 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-26 18:52:06.627 [http-nio-8888-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.samphanie.mall.exception.GobalExceptionHandler#handleMallException(MallException, HttpServletRequest)
+java.lang.NullPointerException: null
+	at com.samphanie.mall.utils.ErrorResponse.<init>(ErrorResponse.java:51)
+	at com.samphanie.mall.utils.ErrorResponse.<init>(ErrorResponse.java:36)
+	at com.samphanie.mall.exception.GobalExceptionHandler.handleMallException(GobalExceptionHandler.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-26 18:55:04.633 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 310356 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 18:55:04.638 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 18:55:05.753 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 18:55:05.761 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:55:05.761 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 18:55:05.761 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 18:55:05.902 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 18:55:05.902 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1167 ms
+2020-03-26 18:55:09.708 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 18:55:09.897 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 18:55:09.921 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 18:55:09.923 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 5.808 seconds (JVM running for 8.432)
+2020-03-26 18:55:11.968 [http-nio-8888-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 18:55:11.969 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 18:55:11.978 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-03-26 18:55:12.202 [http-nio-8888-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.samphanie.mall.exception.GobalExceptionHandler#handleMallException(MallException, HttpServletRequest)
+java.lang.NullPointerException: null
+	at com.samphanie.mall.utils.ErrorResponse.<init>(ErrorResponse.java:51)
+	at com.samphanie.mall.utils.ErrorResponse.<init>(ErrorResponse.java:36)
+	at com.samphanie.mall.exception.GobalExceptionHandler.handleMallException(GobalExceptionHandler.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-26 19:00:31.477 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 7740 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 19:00:31.481 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 19:00:32.604 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 19:00:32.612 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:00:32.613 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 19:00:32.613 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 19:00:32.752 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 19:00:32.752 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1172 ms
+2020-03-26 19:00:36.893 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 19:00:37.104 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:00:37.131 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 19:00:37.134 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 6.151 seconds (JVM running for 8.734)
+2020-03-26 19:00:37.588 [http-nio-8888-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 19:00:37.589 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 19:00:37.596 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-03-26 19:02:10.166 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 315288 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 19:02:10.169 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 19:02:11.326 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 19:02:11.334 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:02:11.335 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 19:02:11.335 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 19:02:11.484 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 19:02:11.484 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1206 ms
+2020-03-26 19:02:15.515 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 19:02:15.686 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:02:15.709 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 19:02:15.712 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 6.076 seconds (JVM running for 8.722)
+2020-03-26 19:02:17.345 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 19:02:17.345 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 19:02:17.353 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-26 19:02:17.581 [http-nio-8888-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.samphanie.mall.exception.GobalExceptionHandler#handleMallException(MallException, HttpServletRequest)
+java.lang.NullPointerException: null
+	at com.samphanie.mall.utils.ErrorResponse.<init>(ErrorResponse.java:52)
+	at com.samphanie.mall.utils.ErrorResponse.<init>(ErrorResponse.java:37)
+	at com.samphanie.mall.exception.GobalExceptionHandler.handleMallException(GobalExceptionHandler.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-26 19:07:01.308 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 313860 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 19:07:01.312 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 19:07:02.486 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 19:07:02.495 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:07:02.496 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 19:07:02.496 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 19:07:02.633 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 19:07:02.633 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1226 ms
+2020-03-26 19:07:06.772 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 19:07:06.963 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:07:06.987 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 19:07:06.991 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 6.221 seconds (JVM running for 8.845)
+2020-03-26 19:07:10.335 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 19:07:10.335 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 19:07:10.343 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-26 19:16:25.352 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 313788 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 19:16:25.355 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 19:16:26.560 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 19:16:26.568 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:16:26.569 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 19:16:26.569 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 19:16:26.703 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 19:16:26.704 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1258 ms
+2020-03-26 19:16:30.559 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 19:16:30.734 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:16:30.756 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 19:16:30.758 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 5.982 seconds (JVM running for 8.715)
+2020-03-26 19:16:34.853 [http-nio-8888-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 19:16:34.854 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 19:16:34.864 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-03-26 19:24:59.444 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 28632 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 19:24:59.448 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 19:25:00.706 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 19:25:00.714 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:25:00.715 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 19:25:00.715 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 19:25:00.854 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 19:25:00.854 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1308 ms
+2020-03-26 19:25:04.674 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 19:25:04.844 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:25:04.865 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 19:25:04.867 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 5.984 seconds (JVM running for 8.69)
+2020-03-26 19:25:10.734 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 19:25:10.734 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 19:25:10.742 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-03-26 19:25:19.848 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-26 19:25:20.041 [http-nio-8888-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-26 19:25:20.133 [http-nio-8888-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Failure in @ExceptionHandler com.samphanie.mall.exception.GobalExceptionHandler#handleMallException(MallException, HttpServletRequest)
+java.lang.NullPointerException: null
+	at com.samphanie.mall.utils.ErrorResponse.<init>(ErrorResponse.java:42)
+	at com.samphanie.mall.exception.GobalExceptionHandler.handleMallException(GobalExceptionHandler.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-26 19:30:37.128 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 313604 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 19:30:37.132 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 19:30:38.322 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 19:30:38.333 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:30:38.334 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 19:30:38.334 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 19:30:38.476 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 19:30:38.476 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1239 ms
+2020-03-26 19:30:42.326 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 19:30:42.539 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:30:42.561 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 19:30:42.563 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 5.972 seconds (JVM running for 8.564)
+2020-03-26 19:30:51.614 [http-nio-8888-exec-2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-26 19:30:51.615 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-03-26 19:30:51.622 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-03-26 19:30:51.865 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-26 19:30:51.991 [http-nio-8888-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-26 19:49:18.817 [main] INFO  com.samphanie.mall.MallApplication - Starting MallApplication on Samphanie with PID 313704 (E:\IdeaProjects\mall\target\classes started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 19:49:18.821 [main] INFO  com.samphanie.mall.MallApplication - No active profile set, falling back to default profiles: default
+2020-03-26 19:49:20.051 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-03-26 19:49:20.059 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:49:20.059 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-26 19:49:20.059 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-26 19:49:20.201 [main] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/mall] - Initializing Spring embedded WebApplicationContext
+2020-03-26 19:49:20.202 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1274 ms
+2020-03-26 19:49:24.077 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 19:49:24.252 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-03-26 19:49:24.279 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/mall'
+2020-03-26 19:49:24.283 [main] INFO  com.samphanie.mall.MallApplication - Started MallApplication in 6.039 seconds (JVM running for 8.866)
+2020-03-26 20:00:11.055 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - Starting UserServiceImplTest on Samphanie with PID 300840 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 20:00:11.057 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - No active profile set, falling back to default profiles: default
+2020-03-26 20:00:16.938 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 20:00:17.348 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - Started UserServiceImplTest in 6.789 seconds (JVM running for 8.348)
+2020-03-26 20:00:17.384 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-26 20:00:17.605 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-26 20:00:17.612 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6e9175d8 testClass = UserServiceImplTest, testInstance = com.samphanie.mall.service.impl.UserServiceImplTest@4bd5849e, testMethod = login@UserServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7d0b7e3c testClass = UserServiceImplTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2c767a52, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@68999068, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@40ef3420, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7c729a55], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@7cdbaa50]; rollback [true]
+2020-03-26 20:00:18.046 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@6e9175d8 testClass = UserServiceImplTest, testInstance = com.samphanie.mall.service.impl.UserServiceImplTest@4bd5849e, testMethod = login@UserServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7d0b7e3c testClass = UserServiceImplTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2c767a52, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@68999068, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@40ef3420, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7c729a55], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-03-26 20:00:18.064 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-26 20:00:18.066 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-26 20:00:18.087 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-03-26 20:13:25.842 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - Starting UserServiceImplTest on Samphanie with PID 314876 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 20:13:25.843 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - No active profile set, falling back to default profiles: default
+2020-03-26 20:13:27.990 [main] WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\IdeaProjects\mall\target\classes\com\samphanie\mall\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IdeaProjects\mall\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\IdeaProjects\mall\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'BaseResultMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: BaseResultMap
+2020-03-26 20:13:28.002 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-26 20:15:37.835 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - Starting UserServiceImplTest on Samphanie with PID 313776 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 20:15:37.836 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - No active profile set, falling back to default profiles: default
+2020-03-26 20:15:39.715 [main] WARN  o.s.w.context.support.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\IdeaProjects\mall\target\classes\com\samphanie\mall\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\IdeaProjects\mall\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\IdeaProjects\mall\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'BaseResultMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: BaseResultMap
+2020-03-26 20:15:39.723 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-03-26 20:27:57.120 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - Starting UserServiceImplTest on Samphanie with PID 312572 (started by ZSY in E:\IdeaProjects\mall)
+2020-03-26 20:27:57.121 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - No active profile set, falling back to default profiles: default
+2020-03-26 20:28:03.180 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-26 20:28:03.601 [main] INFO  c.samphanie.mall.service.impl.UserServiceImplTest - Started UserServiceImplTest in 6.969 seconds (JVM running for 8.391)
+2020-03-26 20:28:03.637 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-03-26 20:28:03.867 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-03-26 20:28:03.875 [main] INFO  o.s.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6e9175d8 testClass = UserServiceImplTest, testInstance = com.samphanie.mall.service.impl.UserServiceImplTest@29fd8e67, testMethod = login@UserServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7d0b7e3c testClass = UserServiceImplTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2c767a52, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@68999068, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@40ef3420, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7c729a55], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@e146f93]; rollback [true]
+2020-03-26 20:28:04.240 [main] INFO  o.s.test.context.transaction.TransactionContext - Rolled back transaction for test: [DefaultTestContext@6e9175d8 testClass = UserServiceImplTest, testInstance = com.samphanie.mall.service.impl.UserServiceImplTest@29fd8e67, testMethod = login@UserServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7d0b7e3c testClass = UserServiceImplTest, locations = '{}', classes = '{class com.samphanie.mall.MallApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2c767a52, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@68999068, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@40ef3420, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7c729a55], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+2020-03-26 20:28:04.257 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-26 20:28:04.259 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-03-26 20:28:04.277 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

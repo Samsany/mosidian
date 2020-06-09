@@ -1,18 +1,11 @@
 package io.mosidian.modules.member.controller;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-
-import com.baomidou.mybatisplus.core.conditions.ISqlSegment;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import io.mosidian.common.utils.R;
-import io.mosidian.modules.member.entity.MemberEntity;
 import io.mosidian.modules.member.service.MemberService;
 import io.mosidian.modules.member.vo.MemberVo;
+import io.mosidian.modules.member.vo.MoneyVo;
 import io.mosidian.modules.sys.controller.AbstractController;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 import io.mosidian.modules.sys.service.SysUserService;
@@ -20,12 +13,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.crypto.hash.Sha256Hash;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
+import java.util.List;
 
 
 /**
@@ -154,5 +148,28 @@ public class MemberController extends AbstractController {
 //
 //        return R.ok();
 //    }
+    /**
+     * 消费排名
+     */
+//    @RequiresPermissions("member:moneylist")
+    @RequestMapping("/moneylist")
+    public R querymoney(@RequestParam(value = "page", defaultValue = "1") Integer pageNum,
+                        @RequestParam(value = "limit", defaultValue = "10") Integer pageSize){
 
+        PageHelper.startPage(pageNum,pageSize);
+
+        List<MoneyVo> memberVoList = memberService.queryMoney();
+        PageInfo<MoneyVo> page = new PageInfo<>(memberVoList);
+
+        return R.ok().put("page", page);
+    }
+
+
+    @RequestMapping("/moneybyid")
+    public R querymoneybyid(@RequestParam(value = "userid", required = true) Long userid){
+        List<MoneyVo> money = memberService.queryMoneyById(userid);
+        PageInfo<MoneyVo> page = new PageInfo<>(money);
+
+        return R.ok().put("page", page);
+    }
 }

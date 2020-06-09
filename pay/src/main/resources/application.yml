@@ -1,0 +1,41 @@
+
+
+spring:
+  datasource:
+    username: mosidian
+    password: 2020mosiDian@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://www.mosidian.com:3306/mosidian_pro?characterEncoding=utf-8&useSSL=false
+
+  rabbitmq:
+    addresses: www.mosidian.com:5672
+    port: 5672
+    username: mosidian
+    password: 2020mosdian@
+
+  freemarker:
+    suffix: .ftl
+
+alipay:
+  appId: 2016101800717551
+  privateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1ksxzzurGrS/jLdrJSXyohyoUk+rRlhowD0qp+RDfl5j9qBHC3udhKDLUFNgxLNgdku1J5tjPW5JTLetM8vBHXsgNj4gR/ERBid7LJuJWn081LxyBEAigNKWBfBS7Y0GJ19IGV2nBxZrfxVTYWjPZB5N+fXTxAEVwXyezKu16TsyLlZ+YpelDOkdHlJY3tfhTpWpOdZLD6eCTavhJrD3uqSGy3UY6SEOZAbAK71wB195v3CNnEurdJaRyezyKvbmY3oLQMz7xWeavAptKFQUTQ+aV7ezACzgG9EACRtaxmwGvGzjaS1yeChAqa6HIBNDwB+p4IHGNymlMysYC7urfAgMBAAECggEAKwbQYBkGVXIwyNrS36QEYEM3W4z5thSlvAHDpaeZsgJQhLtRCiacGc/Wy57s5CpGRCvPAxYrBmgisodNHPzsp1z0dxIuImTvH8C2BNoABJrXwDibvpG4GY6gMaDfoNASdcGoyUvpibtzydcPFf26D5HWB8Fe9sUjr089Lx3bDII8nnUBDtBmg9InplCglFD4lEUwurxluRgcY+mkGKojuTLrk61Zbhz/d2nmOm6A6AHTuORD9BgN+wso2gpeiAxTICMBUuC680lKaW+YfIDCfARG3xOIwC1rO4aklR1JGh//3ewTHwB7cfwHqV2FQMEC7h4VvLsXMpgLWgIhO5UosQKBgQD3Pa45l8hKc32Awlgn6slvDTDywuKWmkbHPObqryEdjlcLo9fMKeLMlMS/WuJhqxQZuq30gXgIz/NZL+6N1BtfBkElVzGxGGujRPLjNEHDtzXLBAy3QXv6RE4CFb6LDWL8FQcJfPu4arn4hPRkE463G39/bQeKjh2fGhy2T9OIrQKBgQC8AY4gvVrxyha43SAYogXfzAORB/IO9onraZqi6anyEQVbFbLfYovyLg1wRSepB8Kec9ZO77F3FXPnJeE8s561OnR1zimlhLmvAucrTvBiFZ84XKl2UKonOjHta0PqVA3r2tRwl2AE9IRBGQAuiPBJhFY+GApMajVhBxqsAf53OwKBgESR1sAiWGpNnYEYZVqswzEJd4ncgvtBzl9zhJeR+p033OxdhHwbIcubdvWbPy3XRLveCmDFh4TqJ5OUt5SePvkbwvWYOS/klfWyKarZ02N0bHbhqKUqhDfkub3aSf5GuC0xp8H559Y9w1YpiZ43zlz6Q2IT2wOSZqS5mTz25rQBAoGBALh3Uivffw9EeRzzoh1pRBg9BbbUs/VogxSfrmFwoRXpC3c+iB5Ug/mgpADnaa2Y9qUgBUO4PUkZnHpNGX3Ew9EPxNsd6JEF9Ga6k3VT49ppWqsjiAaVyQ3qNLi+CYou5OXo9Y5viH/0Jpv02s/N/u4zUadlUR1/DFbicJIa9sGnAoGBALf7dnzUeZGA9V1EJvt4Pv1WW+USPdccFZtmblEyV79suzav6kZwq12oKbMCHZjXbiSHivlfPGmXPaJm4QqRCDJ/0HKlFKcMDPF4+OD2lNlHzQf9Ol913WPnj4le7V8iNA9bwVDPDmzRFGr3k6+HRO2SfHweZLKwT4mxqNmCKLiM
+  aliPayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhnq4jj3RkgYxzbXkjMtMVB+vJTi0mIOzb1FlajkrYwBygsNc8c4sjztDwfVLLG52IXqtC+ZM4MPSnILX8JBl543POhV3G4F+mP6YjZlrOuStX0if/a2h5esBSHM+e1hbZJUESGfNFsCuXyjkjC2JRji2VFuDolXnfIBthOEmt5aWJJOCyZBkEDYjrgJeA/wz8Bzr9tPvasV7hzC2kTJmL50ghxhKNtgS56Gu38TYGQFgiZEoNMPbOa9/W57iwvqSg2fNTpU2f9YO82oUUmtyibHTJ8lik8pP5gspLG2g4wyScJtpcIzAQoG7J6vrJQYQ8xzbkZaFGO8AeP6EMf466QIDAQAB
+  notifyUrl: http://samphanie.natapp1.cc/pay/notify
+  returnUrl: http://www.mosdian.com
+  sandbox: true #是否使用沙箱
+
+wechat:
+  mpAppId: wxf575fcff4fd8fddd
+  mpAppSecret: 2fbd350c071d6fae7a0cb193b6594d1e
+  mchId:
+  mchKey:
+  keyPath:
+  notifyUrl: http://samphanie.natapp1.cc/pay/notify
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml
+
+server:
+  port: 8082

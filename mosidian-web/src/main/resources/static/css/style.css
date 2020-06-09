@@ -1788,7 +1788,7 @@ p.form-message.error {
 .lang-change {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 12%;
     padding:5px 8px;
     transform: translateY(-50%);
     border-radius: 40px;
@@ -1858,6 +1858,8 @@ p.form-message.error {
     font-weight: 400;
     color: #00A8FE
 }
+
+/*业务服务新版*/
 /*业务系统样式*/
 .business-system-item {
     color: white;
@@ -1884,3 +1886,62 @@ p.form-message.error {
     transform: scale(1.2);
 
 }
+.business-services-title {
+    background-color: rgba(0,0,0,0.8);
+}
+.business-services-title-item {
+    cursor: pointer;
+}
+.business-services-active {
+    background-color: #000!important;
+}
+.business-services-title-network {
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    color:#fff;
+}
+.business-services-content {
+    height:100%;
+    opacity: .8;
+    background-color: #DAE0E4;
+}
+.business-services-content-industrial {
+    display: none;
+    padding:30px;
+}
+.business-services-content-active {
+    display: block!important;
+}
+.business-services-tag {
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    font-size: 14px;
+    color:#101010;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #BCA08E;
+}
+.business-services-detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 30px 30px 45px;
+}
+.business-services-detail li {
+    min-width:33%;
+    font-size: 18px;
+    color: #000;
+    line-height: 50px;
+}
+.navbar-nav {
+    margin-left:15%;
+}
+@media(max-width:900px){
+    .navbar-nav {
+        margin-left:auto!important;
+    }
+}
+

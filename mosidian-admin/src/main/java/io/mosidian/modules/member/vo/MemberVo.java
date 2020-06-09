@@ -1,18 +1,11 @@
 package io.mosidian.modules.member.vo;
 
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import io.mosidian.common.validator.group.AddGroup;
-import io.mosidian.common.validator.group.UpdateGroup;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @Author ZSY
@@ -51,7 +44,7 @@ public class MemberVo {
     private BigDecimal balance;
     /*** 消费总金额（默认：600）*/
     private BigDecimal monetary;
-    /*** 账户激活状态*/
+    /*** 会员激活状态*/
     private Integer accountStatus;
 
     public MemberVo(Long userId, String username, String email, String mobile, Integer status, String memberId, String name, String nickname, String card, String domicile, String avatar, Integer gender, Integer level, Integer credits, BigDecimal balance, BigDecimal monetary) {

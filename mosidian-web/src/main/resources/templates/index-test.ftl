@@ -35,8 +35,6 @@
 
     <!--====== 图标 css ======-->
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1598462_3lrn8hkd04i.css">
-    <#--    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1832976_hpgero4rzm.css">-->
-    <#--    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1832976_enq1ewj9dai.css">-->
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1832976_dxo1jrajxyo.css">
 
 </head>
@@ -82,7 +80,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navBarBag">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item navBag1">
                     <a data-scroll-nav="0" href="#" class="language-change-en">HOME</a>
                     <a data-scroll-nav="0" href="#" class="language-change-zh">官网首页</a>
@@ -219,6 +217,7 @@
     </div>
 <!--====== 轮播图 PART ENDS ======-->
 
+<!--====== 企业服务 COSE PART START 新版======-->
 <!--====== 企业服务 COSE PART START 旧版待定======-->
 <div  class="about pb-20 pt-95 " data-scroll-index="1">
     <div class="container">
@@ -233,40 +232,38 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <div class="about_text pt-70">
-<#--                    <span>多维度客户需求全面感知</span>-->
+                    <#--                    <span>多维度客户需求全面感知</span>-->
                     <h3 style="font-size: 20px;">莫斯蒂恩深耕企业服务行业，是您企业值得依赖的合作伙伴</h3>
-                    <ul class="nav nav-tabs row" id="myTab" role="tablist" style="text-align: center">
+                    <ul class="nav nav-tabs row" id="myTab" role="tablist" style="margin-left:20px;">
                         <li class="nav-item ">
                             <a class="active" id="misson-tab" data-toggle="tab" href="#misson" role="tab"
-                               aria-controls="misson" aria-selected="true">成就报销美学</a>
+                               aria-controls="misson" aria-selected="true">工商服务</a>
                         </li>
                         <li class="nav-item ">
                             <a id="gol-tab" data-toggle="tab" href="#gol" role="tab" aria-controls="gol"
-                               aria-selected="false">注入成长活力</a>
+                               aria-selected="false">综合服务</a>
                         </li>
                         <li class="nav-item ">
                             <a id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision"
-                               aria-selected="false">践行极致体验</a>
+                               aria-selected="false">建站服务</a>
                         </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
+                    <div class="tab-content" id="myTabContent" style="margin-left:20px;">
                         <div class="tab-pane fade show active" id="misson" role="tabpanel" aria-labelledby="misson-tab">
-                            <p>大型企业 10000人及以上</p>
-                            <p>为企业提供VIP咨询落地方案</p>
-                            <p>提供定制版专业建议</p>
-                            <p>集团化、精细化管理方案配套</p>
+                            <p>公司注册</p>
+                            <p>社保开户</p>
+                            <p>公积金开户</p>
+                            <p>法人信息变更</p>
                         </div>
                         <div class="tab-pane fade" id="gol" role="tabpanel" aria-labelledby="gol-tab">
-                            <p>中型企业 501-9999人</p>
-                            <p>为企业提供行业化解决方案</p>
-                            <p>专业化的实施团队</p>
-                            <p>同行业优秀方案实践</p>
+                            <p>版权服务</p>
+                            <p>商标服务</p>
+                            <p>法律服务</p>
+                            <p>证件服务</p>
                         </div>
                         <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
-                            <p>小型企业 500人及以下</p>
-                            <p>为企业提供VIP咨询落地方案</p>
-                            <p> 统一、安全、标准化实施</p>
-                            <p>助力企业管理升级</p>
+                            <p>企业建站</p>
+                            <p>一站式服务</p>
                         </div>
                     </div>
                 </div>
@@ -286,6 +283,7 @@
     </div>
 </div>
 <!--====== 企业服务 COSE PART ENDS 旧版待定 ======-->
+<!--====== 企业服务 COSE PART ENDS 新版 ======-->
 
 <#--=====================注意===============================企业服务新版===================注意============-->
 <#--<div style="display: none" class="container pb-20 pt-95" data-scroll-index="1">-->
@@ -360,13 +358,17 @@
         <div class="Grid"
              style="margin:0 auto; display: flex;width: 1140px;height: 200px; align-items:center;justify-content:space-around;">
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp1.jpg) 260px 150px">
-                <p id="slide1" class="business-system-item">科技为先</p>
+                <p id="slide1" class="business-system-item">
+                    <a href="acosWebService">科技为先</a>
+                </p>
             </div>
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp2.jpg) 260px 150px">
-                <p id="slide2" class="business-system-item">以人为本</p>
+                <p id="slide2" class="business-system-item">
+                    <a href="acosPerson">以人为本</a></p>
             </div>
             <div style="width: 260px;height: 150px;background: url(img/business/businessMp3.jpg) 260px 150px">
-                <p id="slide3" class="business-system-item">随时办公</p>
+                <p id="slide3" class="business-system-item">
+                <a href="acosOffice">随时办公</a></p>
             </div>
             <div style="width: 260px;height: 159px;background: url(img/business/businessMp4.jpg) 260px 150px">
                 <p id="slide4" class="business-system-item">
@@ -747,7 +749,7 @@
 
 <!--====== 团队 PART START ======-->
 <!--====== TMIC 我们的团队 ======-->
-<div data-scroll-index="6" class="our_team pt-90 pb-50" id="abstart">
+<div data-scroll-index="5" class="our_team pt-90 pb-50" id="abstart">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -772,14 +774,9 @@
                         <h5>CTO</h5>
                         <p>Dries(郑祥祥) 精通大数据，深刻理解JavaWEB技术体系架构，精通SSH、SpringMVC、Spring Boot、JBPM、MyBatis、EJB等多种流行框架。</p>
                         <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="    border: 1px solid #9F9F9F;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;"></i></p>
+                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
+                                <a onclick="getUserEmail(1)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
+                            </p>
                         </div>
 
                     </div>
@@ -800,14 +797,9 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
                             管理，包括人、财、物、产、供、销等工作
                             领导公司员工实现公司经营目标。</p>
                         <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="    border: 1px solid #9F9F9F;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;"></i></p>
+                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
+                                <a onclick="getUserEmail(2)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
+                            </p>
                         </div>
 
                     </div>
@@ -827,14 +819,9 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
                             Axure RP、After Effects、Premiere 、
                             XMind等多种设计软件。</p>
                         <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="    border: 1px solid #9F9F9F;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;"></i></p>
+                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
+                                <a onclick="getUserEmail(3)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
+                            </p>
                         </div>
 
                     </div>
@@ -852,14 +839,9 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
                             验丰富，投资预算精确，制定多个考核计划，
                             以及运营系统整体设计方案的制作与实施。</p>
                         <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="    border: 1px solid #9F9F9F;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;"></i></p>
+                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
+                                <a onclick="getUserEmail(4)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -874,14 +856,9 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
                         <h5>核心技术员</h5>
                         <p>对JavaEE 技术体系结构、JavaWeb 原理有深刻理解，精通多种主流框架以及 Maven构建工具。</p>
                         <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="    border: 1px solid #9F9F9F;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;"></i></p>
+                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
+                                <a onclick="getUserEmail(5)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
+                            </p>
                         </div>
 
                     </div>
@@ -897,14 +874,9 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
                         <h5>核心技术员</h5>
                         <p>掌握SpringBoot、Mybatis、Spring等主流框架，熟悉Vue、BootStrap前端框架。</p>
                         <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="    border: 1px solid #9F9F9F;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;"></i></p>
+                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
+                                <a onclick="getUserEmail(6)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
+                            </p>
                         </div>
 
                     </div>
@@ -1989,6 +1961,11 @@ justify-content: center"><i class="iconfont iconyouxiang" style="font-size:20px;
 <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
 </body>
 <script type="text/javascript">
+
+    function getUserEmail(id) {
+        dolphin.iframe("/sys/email/email_info/" + id, "邮箱信息", "300px", "200px")
+    }
+
     $(function () {
         $("#outlet").click(function () {
             dolphin.iframe("/sys/mega/outlet", "商家数据分析")

@@ -45,8 +45,8 @@ public class SwaggerConfig implements WebMvcConfigurer {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("人人开源")
-            .description("mosidian-fast文档")
+            .title("mosidian")
+            .description("mosidian-admin文档")
             .termsOfServiceUrl("https://www.mosidian.com")
             .version("3.0.0")
             .build();
