@@ -1,4 +1,4 @@
-package com.samphanie.pay.config;
+package io.mosidian.modules.pay.config;
 
 import com.lly835.bestpay.config.AliPayConfig;
 import com.lly835.bestpay.config.WxPayConfig;

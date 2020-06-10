@@ -16,14 +16,18 @@ import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.Date;
+import java.util.UUID;
 
 /**
  * @Author ZSY
@@ -48,6 +52,28 @@ public class ApiController {
 
     @Resource
     private ContactUsService contactUsService;
+
+    @RequestMapping("/upload")
+    public R upload(@RequestParam("file") MultipartFile uploadFile, HttpServletRequest req){
+
+        //  实际地址
+        File folder=new File("E://upload");
+        if (!folder.isDirectory()){
+            folder.mkdirs();
+        }
+        String oldName=uploadFile.getOriginalFilename();
+        String newName= UUID.randomUUID().toString() + oldName.substring(oldName.lastIndexOf("."),oldName.length());
+        try {
+            uploadFile.transferTo(new File(folder,newName));
+            String filePath=req.getScheme()+"://"+req.getServerName()+
+                    ":"+req.getServerPort()+"/mosidian/upload/"+newName;
+
+            return R.ok().put("imgUrl",filePath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return R.error("上传失败");
+    }
 
     @PostMapping(value = "/contact/us")
     @ResponseBody

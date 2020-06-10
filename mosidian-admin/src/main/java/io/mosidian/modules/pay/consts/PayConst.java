@@ -1,4 +1,4 @@
-package com.samphanie.pay.consts;
+package io.mosidian.modules.pay.consts;
 
 /**
  * @Classname PayConst

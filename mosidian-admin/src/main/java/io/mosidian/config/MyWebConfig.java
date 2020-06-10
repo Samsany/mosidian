@@ -1,4 +1,4 @@
-package com.mosidian.web.config;
+package io.mosidian.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -6,10 +6,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @Author ZSY
- * @createTime 2020/6/7 13:28
+ * @createTime 2020/6/10 14:27
  */
 @Configuration
-public class WebMvcConfig implements WebMvcConfigurer {
+public class MyWebConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -24,4 +24,5 @@ public class WebMvcConfig implements WebMvcConfigurer {
             registry.addResourceHandler("/upload/**").addResourceLocations("file:/data/www/upload/");
         }
     }
+
 }

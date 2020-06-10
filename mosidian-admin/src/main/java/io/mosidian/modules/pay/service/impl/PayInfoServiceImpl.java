@@ -1,9 +1,9 @@
-package com.samphanie.pay.service.impl;
+package io.mosidian.modules.pay.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.samphanie.pay.entity.PayInfo;
-import com.samphanie.pay.mapper.PayInfoMapper;
-import com.samphanie.pay.service.IPayInfoService;
+import io.mosidian.modules.pay.entity.PayInfo;
+import io.mosidian.modules.pay.mapper.PayInfoMapper;
+import io.mosidian.modules.pay.service.IPayInfoService;
 import org.springframework.stereotype.Service;
 
 /**

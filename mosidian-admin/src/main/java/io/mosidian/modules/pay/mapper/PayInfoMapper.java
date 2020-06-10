@@ -1,8 +1,8 @@
-package com.samphanie.pay.mapper;
+package io.mosidian.modules.pay.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.samphanie.pay.entity.PayInfo;
-import org.springframework.stereotype.Component;
+import io.mosidian.modules.pay.entity.PayInfo;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -12,8 +12,9 @@ import org.springframework.stereotype.Component;
  * @author zsy
  * @since 2020-03-23
  */
-@Component
+@Mapper
 public interface PayInfoMapper extends BaseMapper<PayInfo> {
 
     PayInfo selectByOrderNo(Long orderId);
+
 }

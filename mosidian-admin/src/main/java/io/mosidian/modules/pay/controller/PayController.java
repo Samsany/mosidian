@@ -1,10 +1,10 @@
-package com.samphanie.pay.controller;
+package io.mosidian.modules.pay.controller;
 
 import com.lly835.bestpay.enums.BestPayPlatformEnum;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
 import com.lly835.bestpay.model.PayResponse;
-import com.samphanie.pay.service.IPayService;
-import com.samphanie.pay.utils.KeyUtil;
+import io.mosidian.modules.pay.service.IPayService;
+import io.mosidian.modules.pay.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,7 +1,8 @@
-package com.samphanie.pay.service;
+package io.mosidian.modules.pay.service;
+
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.samphanie.pay.entity.PayInfo;
+import io.mosidian.modules.pay.entity.PayInfo;
 
 /**
  * <p>

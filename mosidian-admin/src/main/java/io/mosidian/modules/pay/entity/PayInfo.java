@@ -1,4 +1,4 @@
-package com.samphanie.pay.entity;
+package io.mosidian.modules.pay.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

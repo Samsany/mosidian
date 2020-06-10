@@ -1,4 +1,4 @@
-package com.samphanie.pay.controller;
+package io.mosidian.modules.pay.controller;
 
 import com.lly835.bestpay.enums.BestPayPlatformEnum;
 import com.lly835.bestpay.model.OrderQueryRequest;

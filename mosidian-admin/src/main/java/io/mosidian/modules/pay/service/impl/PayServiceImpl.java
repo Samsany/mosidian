@@ -1,4 +1,4 @@
-package com.samphanie.pay.service.impl;
+package io.mosidian.modules.pay.service.impl;
 
 import com.google.gson.Gson;
 import com.lly835.bestpay.enums.BestPayTypeEnum;
@@ -6,11 +6,11 @@ import com.lly835.bestpay.enums.OrderStatusEnum;
 import com.lly835.bestpay.model.PayRequest;
 import com.lly835.bestpay.model.PayResponse;
 import com.lly835.bestpay.service.impl.BestPayServiceImpl;
-import com.samphanie.pay.consts.PayConst;
-import com.samphanie.pay.entity.PayInfo;
-import com.samphanie.pay.enums.PayPlatformEnum;
-import com.samphanie.pay.mapper.PayInfoMapper;
-import com.samphanie.pay.service.IPayService;
+import io.mosidian.modules.pay.consts.PayConst;
+import io.mosidian.modules.pay.entity.PayInfo;
+import io.mosidian.modules.pay.enums.PayPlatformEnum;
+import io.mosidian.modules.pay.mapper.PayInfoMapper;
+import io.mosidian.modules.pay.service.IPayService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

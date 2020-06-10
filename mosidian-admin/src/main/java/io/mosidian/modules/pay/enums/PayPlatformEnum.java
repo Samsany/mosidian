@@ -1,4 +1,4 @@
-package com.samphanie.pay.enums;
+package io.mosidian.modules.pay.enums;
 
 import com.lly835.bestpay.enums.BestPayPlatformEnum;
 import com.lly835.bestpay.enums.BestPayTypeEnum;

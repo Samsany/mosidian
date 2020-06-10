@@ -1,4 +1,4 @@
-package com.samphanie.pay.utils;
+package io.mosidian.modules.pay.utils;
 
 import java.util.Random;
 
