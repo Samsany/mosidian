@@ -79,6 +79,7 @@ public class ApiController {
     @ResponseBody
     public Object contactUpdate(@RequestParam(name = "ticket") String ticket,
                                 @RequestParam(name = "randstr") String randstr,
+                                @RequestParam(name = "clients", required = false) String clients,
                                 @RequestParam(name = "name", required = false) String name,
                                 @RequestParam(name = "email", required = false) String email,
                                 @RequestParam(name = "phone", required = false) String phone,
@@ -88,6 +89,7 @@ public class ApiController {
             ContactUsEntity contactUs = new ContactUsEntity();
             contactUs.setCreatedate(new Date());
             contactUs.setName(name);
+            contactUs.setClients(Integer.parseInt(clients));
             contactUs.setEmail(email);
             contactUs.setPhone(phone);
             contactUs.setFeedbackMessage(feedbackMessage);

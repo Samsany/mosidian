@@ -3,7 +3,7 @@
 
 <mapper namespace="io.mosidian.modules.enterprise.dao.EnterpriseDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
+    <!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="io.mosidian.modules.enterprise.entity.EnterpriseEntity" id="enterpriseMap">
         <result property="enId" column="en_id"/>
         <result property="userId" column="user_id"/>
@@ -21,25 +21,30 @@
         <result property="headCard" column="head_card"/>
         <result property="emobile" column="emobile"/>
         <result property="eemail" column="eemail"/>
-        <result property="audit" column="audit" />
+        <result property="audit" column="audit"/>
         <result property="modifier" column="modifier"/>
         <result property="credits" column="credits"/>
         <result property="enlicenseId" column="enlicense_id"/>
         <result property="avatar" column="avatar"/>
         <result property="domicile" column="domicile"/>
         <result property="enlicense" column="enlicense"/>
-        <result property="balance" column="balance" />
-        <result property="monetary" column="monetary" />
+        <result property="balance" column="balance"/>
+        <result property="monetary" column="monetary"/>
         <result property="updateTime" column="update_time"/>
         <result property="level" column="level"/>
     </resultMap>
 
     <select id="queryPageVo" resultType="io.mosidian.modules.enterprise.vo.EnterpriseVo">
-		select * from tb_enterprise en
-		LEFT JOIN sys_user ur
-		on ur.user_id = en.user_id
-		where ur.flag = #{flag}
-	</select>
+        select * from tb_enterprise en LEFT JOIN sys_user ur on ur.user_id = en.user_id where ur.flag = #{flag}
+        <if test="key == 'enId' and value != null and value != ''">AND en_id like CONCAT('%',CONCAT(#{value},'%'))</if>
+
+        <if test="key == 'name' and value != null and value != ''">AND name like CONCAT('%',CONCAT(#{value},'%'))</if>
+
+        <if test="key == 'headCard' and value != null and value != ''">AND head_card like
+            CONCAT('%',CONCAT(#{value},'%'))
+        </if>
+
+    </select>
 
     <select id="getMaxEnterpriseByUserId" resultType="io.mosidian.modules.enterprise.entity.EnterpriseEntity">
         select en_id,user_id

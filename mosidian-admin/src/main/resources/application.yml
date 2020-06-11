@@ -25,9 +25,9 @@ spring:
   redis:
     open: false  # 是否开启redis缓存  true开启   false关闭
     database: 0
-    host: localhost
+    host: www.mosidian.com
     port: 6379
-    password:    # 密码（默认为空）
+    password: 2020mosdian@   # 密码（默认为空）
     timeout: 6000ms  # 连接超时时长（毫秒）
     jedis:
       pool:
@@ -62,11 +62,11 @@ mybatis-plus:
     jdbc-type-for-null: 'null'
 
 #pagehelper分页插件
-pagehelper:
-  helperDialect: mysql
-  reasonable: true
-  supportMethodsArguments: true
-  params: count=countSql
+#pagehelper:
+#  helperDialect: mysql
+#  reasonable: true
+#  supportMethodsArguments: true
+#  params: count=countSql
 
 mosidian:
   redis:

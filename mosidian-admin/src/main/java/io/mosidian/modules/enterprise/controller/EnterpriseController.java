@@ -7,7 +7,6 @@ import io.mosidian.common.utils.R;
 import io.mosidian.modules.enterprise.entity.EnterpriseEntity;
 import io.mosidian.modules.enterprise.service.EnterpriseService;
 import io.mosidian.modules.enterprise.vo.EnterpriseVo;
-import io.mosidian.modules.member.vo.MemberVo;
 import io.mosidian.modules.sys.controller.AbstractController;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 import io.mosidian.modules.sys.service.SysUserService;
@@ -43,10 +42,12 @@ public class EnterpriseController extends AbstractController {
     @RequiresPermissions("enterprise:list")
     public R list(@RequestParam(value = "page", defaultValue = "1") Integer pageNum,
                   @RequestParam(value = "limit", defaultValue = "10") Integer pageSize,
+                  @RequestParam(value = "key", required = false) String key,
+                  @RequestParam(value = "value", required = false) String value,
                   @RequestParam(value = "flag") Integer flag) {
 
         PageHelper.startPage(pageNum, pageSize);
-        List<EnterpriseVo> enterpriseVos = enterpriseService.queryPageVo(flag);
+        List<EnterpriseVo> enterpriseVos = enterpriseService.queryPageVo(flag, key, value);
         PageInfo<EnterpriseVo> page = new PageInfo<>(enterpriseVos);
 
         return R.ok().put("page", page);
@@ -113,13 +114,21 @@ public class EnterpriseController extends AbstractController {
 
     /**
      * 保存
+     * @return
      */
     @RequestMapping("/save")
     @RequiresPermissions("enterprise:save")
-    public R save(@RequestBody EnterpriseEntity enterprise) {
-        enterpriseService.save(enterprise);
+    public R save(@RequestBody EnterpriseVo enterprise) {
 
-        return R.ok();
+        SysUserEntity user = new SysUserEntity();
+        user.setFlag(4);
+        user.setPassword("2020");
+        //sha256加密
+        String salt = RandomStringUtils.randomAlphanumeric(20);
+        user.setPassword(new Sha256Hash(user.getPassword(), salt).toHex());
+        user.setSalt(salt);
+        return enterpriseService.saveEnterpriseVo(enterprise,user);
+
     }
 
     /**
@@ -139,13 +148,13 @@ public class EnterpriseController extends AbstractController {
     @Transactional
     @RequestMapping("/delete")
     @RequiresPermissions("enterprise:delete")
-    public R delete(@RequestBody String[] ids){
+    public R delete(@RequestBody String[] ids) {
 
         boolean b = sysUserService.removeByIds(Arrays.asList(ids));
 
         int result = enterpriseService.removeByUserIds(Arrays.asList(ids));
 
-        if ( b && result == 1) {
+        if (b && result != 0) {
             return R.ok();
         } else {
             return R.error("删除失败");

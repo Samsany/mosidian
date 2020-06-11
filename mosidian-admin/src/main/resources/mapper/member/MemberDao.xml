@@ -24,9 +24,14 @@
         select * from tb_member me
         LEFT JOIN sys_user ur
         on ur.user_id = me.user_id
-        <if test="key != null and value != null and key != '' and value != ''">
-         <bind name="value" value="'%' + value + '%'"/>
-            WHERE ${key} like #{value}
+        <if test="key == 'member_id' and value != null and value != ''">
+            WHERE member_id like CONCAT('%',CONCAT(#{value},'%'))
+        </if>
+        <if test="key == 'mobile' and value != null and value != ''">
+            WHERE mobile like CONCAT('%',CONCAT(#{value},'%'))
+        </if>
+        <if test="key == 'nickname' and value != null and value != ''">
+            WHERE nickname like CONCAT('%',CONCAT(#{value},'%'))
         </if>
     </select>
 

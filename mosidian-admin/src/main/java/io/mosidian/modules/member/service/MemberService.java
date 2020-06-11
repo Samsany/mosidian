@@ -37,6 +37,8 @@ public interface MemberService extends IService<MemberEntity> {
     int removeByUserIds(List<String> asList);
 
     R updateByMember(MemberVo member);
+
+    R updateByUser(MemberVo member);
 }
 
 

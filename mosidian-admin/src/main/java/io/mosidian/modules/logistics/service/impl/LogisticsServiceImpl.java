@@ -1,11 +1,12 @@
 package io.mosidian.modules.logistics.service.impl;
 
 import cn.hutool.core.util.StrUtil;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import io.mosidian.common.utils.PageUtils;
+import io.mosidian.common.utils.Query;
 import io.mosidian.common.utils.R;
-import io.mosidian.modules.enterprise.dao.EnterpriseDao;
-import io.mosidian.modules.enterprise.entity.EnterpriseEntity;
-import io.mosidian.modules.enterprise.service.EnterpriseService;
-import io.mosidian.modules.enterprise.vo.EnterpriseVo;
 import io.mosidian.modules.logistics.dao.LogisticsDao;
 import io.mosidian.modules.logistics.entity.LogisticsEntity;
 import io.mosidian.modules.logistics.service.LogisticsService;
@@ -17,21 +18,14 @@ import io.mosidian.modules.sys.service.SysUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.math.BigInteger;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.mosidian.common.utils.PageUtils;
-import io.mosidian.common.utils.Query;
-import org.springframework.transaction.annotation.Transactional;
-
-import javax.annotation.Resource;
 
 @Slf4j
 @Service("logisticsService")
@@ -61,8 +55,8 @@ public class LogisticsServiceImpl extends ServiceImpl<LogisticsDao, LogisticsEnt
     }
 
     @Override
-    public List<LogisticsVo> queryPageVo(Integer flag) {
-        return logisticsDao.queryPageVo(flag);
+    public List<LogisticsVo> queryPageVo(Integer flag,String key,String value) {
+        return logisticsDao.queryPageVo(flag,key,value);
     }
 
     @Transactional

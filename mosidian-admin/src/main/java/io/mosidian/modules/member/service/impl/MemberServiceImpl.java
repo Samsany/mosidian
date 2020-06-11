@@ -1,41 +1,32 @@
 package io.mosidian.modules.member.service.impl;
 
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.crypto.SecureUtil;
-import io.mosidian.common.utils.R;
-import io.mosidian.modules.enterprise.entity.EnterpriseEntity;
-import io.mosidian.modules.member.vo.MemberVo;
-import io.mosidian.modules.member.vo.MoneyVo;
-import io.mosidian.modules.sys.controller.AbstractController;
-import io.mosidian.modules.sys.entity.SysUserEntity;
-import io.mosidian.modules.sys.entity.SysUserRoleEntity;
-import io.mosidian.modules.sys.service.SysUserRoleService;
-import io.mosidian.modules.sys.service.SysUserService;
-import jdk.nashorn.internal.runtime.regexp.joni.Regex;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.crypto.hash.Hash;
-import org.apache.shiro.crypto.hash.Sha256Hash;
-import org.springframework.beans.BeanUtils;
-import org.springframework.stereotype.Service;
-
-import java.math.BigInteger;
-import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import io.mosidian.common.utils.PageUtils;
 import io.mosidian.common.utils.Query;
+import io.mosidian.common.utils.R;
 import io.mosidian.modules.member.dao.MemberDao;
 import io.mosidian.modules.member.entity.MemberEntity;
 import io.mosidian.modules.member.service.MemberService;
+import io.mosidian.modules.member.vo.MemberVo;
+import io.mosidian.modules.member.vo.MoneyVo;
+import io.mosidian.modules.sys.entity.SysUserEntity;
+import io.mosidian.modules.sys.entity.SysUserRoleEntity;
+import io.mosidian.modules.sys.service.SysUserRoleService;
+import io.mosidian.modules.sys.service.SysUserService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.math.BigInteger;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author ZSY
@@ -74,6 +65,22 @@ public class MemberServiceImpl extends ServiceImpl<MemberDao, MemberEntity> impl
     @Override
     public List<MoneyVo> queryMoney() {
         return memberDao.queryMoney();
+    }
+
+    @Override
+    public R updateByUser(MemberVo member) {
+
+        QueryWrapper<MemberEntity> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("user_id",member.getUserId());
+        MemberEntity entity = memberDao.selectOne(queryWrapper);
+        entity.setAvatar(member.getAvatar());
+
+        int i = memberDao.updateById(entity);
+        if (i == 1 ) {
+            return R.ok();
+        } else {
+            return R.error("更新失败");
+        }
     }
 
     @Override

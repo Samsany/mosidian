@@ -22,11 +22,11 @@ public interface EnterpriseService extends IService<EnterpriseEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
 
-    List<EnterpriseVo> queryPageVo(Integer flag);
+    List<EnterpriseVo> queryPageVo(Integer flag,String key,String value);
 
     R saveEnterpriseVo(EnterpriseVo enterpriseVo, SysUserEntity user);
 
-    EnterpriseEntity getMaxEnterpriseByUserId(Integer flag);
+    EnterpriseEntity getMaxEnterpriseByUserId();
 
     EnterpriseVo getEnterpriseById(String valueOf);
 

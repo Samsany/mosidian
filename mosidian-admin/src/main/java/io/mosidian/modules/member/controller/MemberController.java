@@ -133,7 +133,7 @@ public class MemberController extends AbstractController {
 
         int result = memberService.removeByUserIds(Arrays.asList(ids));
 
-        if ( b && result == 1) {
+        if ( b && result !=0 ) {
             return R.ok();
         } else {
             return R.error("删除失败");
@@ -153,7 +153,7 @@ public class MemberController extends AbstractController {
      */
 //    @RequiresPermissions("member:moneylist")
     @RequestMapping("/moneylist")
-    public R querymoney(@RequestParam(value = "page", defaultValue = "1") Integer pageNum,
+    public R queryMoney(@RequestParam(value = "page", defaultValue = "1") Integer pageNum,
                         @RequestParam(value = "limit", defaultValue = "10") Integer pageSize){
 
         PageHelper.startPage(pageNum,pageSize);
@@ -166,10 +166,18 @@ public class MemberController extends AbstractController {
 
 
     @RequestMapping("/moneybyid")
-    public R querymoneybyid(@RequestParam(value = "userid", required = true) Long userid){
+    public R querymoneyById(@RequestParam(value = "userid", required = true) Long userid){
         List<MoneyVo> money = memberService.queryMoneyById(userid);
         PageInfo<MoneyVo> page = new PageInfo<>(money);
 
         return R.ok().put("page", page);
+    }
+
+    /**
+     * 根据userid修改头像
+     * */
+    @RequestMapping("/updateById")
+    public R updateById(@RequestBody MemberVo member) {
+        return memberService.updateByUser(member);
     }
 }

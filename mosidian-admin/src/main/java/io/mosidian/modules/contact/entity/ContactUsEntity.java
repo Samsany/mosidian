@@ -2,10 +2,10 @@ package io.mosidian.modules.contact.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
 
 /**
  * 
@@ -53,4 +53,8 @@ public class ContactUsEntity implements Serializable {
 	 */
 	private Integer status;
 
+	/**
+	 * 不同的客户
+	 */
+    private Integer clients;
 }

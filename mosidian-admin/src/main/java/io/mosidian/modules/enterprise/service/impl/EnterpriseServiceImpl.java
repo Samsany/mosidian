@@ -11,7 +11,6 @@ import io.mosidian.modules.enterprise.dao.EnterpriseDao;
 import io.mosidian.modules.enterprise.entity.EnterpriseEntity;
 import io.mosidian.modules.enterprise.service.EnterpriseService;
 import io.mosidian.modules.enterprise.vo.EnterpriseVo;
-import io.mosidian.modules.member.entity.MemberEntity;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 import io.mosidian.modules.sys.entity.SysUserRoleEntity;
 import io.mosidian.modules.sys.service.SysUserRoleService;
@@ -56,8 +55,8 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
     }
 
     @Override
-    public List<EnterpriseVo> queryPageVo(Integer flag) {
-        return enterpriseDao.queryPageVo(flag);
+    public List<EnterpriseVo> queryPageVo(Integer flag,String key,String value) {
+        return enterpriseDao.queryPageVo(flag,key,value);
     }
 
     @Transactional
@@ -68,7 +67,7 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
         BeanUtils.copyProperties(enterpriseVo, user);
         BeanUtils.copyProperties(enterpriseVo, enterpriseEntity);
 
-        EnterpriseEntity enterprise = enterpriseService.getMaxEnterpriseByUserId(user.getFlag());
+        EnterpriseEntity enterprise = enterpriseService.getMaxEnterpriseByUserId();
 
         enterpriseEntity.setEnId(enterprise.getEnId());
 
@@ -97,8 +96,8 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
     }
 
     @Override
-    public EnterpriseEntity getMaxEnterpriseByUserId(Integer flag) {
-        Integer check = 3;
+    public EnterpriseEntity getMaxEnterpriseByUserId() {
+
         EnterpriseEntity enterpriseEntity = enterpriseDao.getMaxEnterpriseByUserId();
 
         if (enterpriseEntity != null) {
@@ -112,18 +111,10 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
             String str2 = StrUtil.sub(enNum,4, 8);
             String str3 = StrUtil.sub(enNum,8, 12);
             String template;
-            if (flag.equals(check)) {
-                template = "BIC{}-{}-{}";
-            } else {
-                template = "CIC{}-{}-{}";
-            }
+            template = "CIC{}-{}-{}";
             String enId = StrUtil.format(template,str1, str2, str3);
             enterpriseEntity.setEnId(enId);
             return enterpriseEntity;
-        } else if (flag.equals(check)){
-            EnterpriseEntity entity = new EnterpriseEntity();
-            entity.setEnId("BIC2020-0000-0000");
-            return entity;
         } else {
             EnterpriseEntity entity = new EnterpriseEntity();
             entity.setEnId("CIC2020-0000-0000");

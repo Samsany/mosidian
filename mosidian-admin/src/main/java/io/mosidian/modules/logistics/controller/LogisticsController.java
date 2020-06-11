@@ -1,18 +1,15 @@
 package io.mosidian.modules.logistics.controller;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import io.mosidian.modules.enterprise.vo.EnterpriseVo;
+import io.mosidian.common.utils.R;
 import io.mosidian.modules.logistics.entity.LogisticsEntity;
 import io.mosidian.modules.logistics.service.LogisticsService;
 import io.mosidian.modules.logistics.vo.LogisticsVo;
 import io.mosidian.modules.sys.controller.AbstractController;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 import io.mosidian.modules.sys.service.SysUserService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.crypto.hash.Sha256Hash;
@@ -20,19 +17,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-import io.mosidian.common.utils.R;
-
+import java.util.Arrays;
+import java.util.List;
 
 
 /**
- * 
- *
  * @author zsy
  * @email samphsanie@gmail.com
  * @date 2020-06-04 15:36:46
  */
 @RestController
 @RequestMapping("/logistics")
+@Slf4j
 public class LogisticsController extends AbstractController {
     @Autowired
     private LogisticsService logisticsService;
@@ -55,10 +51,12 @@ public class LogisticsController extends AbstractController {
     @RequiresPermissions("logistics:list")
     public R list(@RequestParam(value = "page", defaultValue = "1") Integer pageNum,
                   @RequestParam(value = "limit", defaultValue = "10") Integer pageSize,
+                  @RequestParam(value = "key", required = false) String key,
+                  @RequestParam(value = "value", required = false) String value,
                   @RequestParam(value = "flag") Integer flag) {
 
         PageHelper.startPage(pageNum, pageSize);
-        List<LogisticsVo> logisticsVos = logisticsService.queryPageVo(flag);
+        List<LogisticsVo> logisticsVos = logisticsService.queryPageVo(flag, key, value);
         PageInfo<LogisticsVo> page = new PageInfo<>(logisticsVos);
 
         return R.ok().put("page", page);
@@ -96,10 +94,10 @@ public class LogisticsController extends AbstractController {
     /**
      * 信息
      */
-    @RequestMapping("/info/{enId}")
+    @RequestMapping("/info/{id}")
     @RequiresPermissions("logistics:info")
-    public R info(@PathVariable("enId") String enId){
-		LogisticsEntity logistics = logisticsService.getById(enId);
+    public R info(@PathVariable("id") String enId){
+        LogisticsVo logistics = logisticsService.getLogisticsById(enId);
 
         return R.ok().put("logistics", logistics);
     }
@@ -109,8 +107,8 @@ public class LogisticsController extends AbstractController {
      */
     @RequestMapping("/update")
     @RequiresPermissions("logistics:update")
-    public R update(@RequestBody LogisticsEntity logistics){
-		logisticsService.updateById(logistics);
+    public R update(@RequestBody LogisticsEntity logistics) {
+        logisticsService.updateById(logistics);
 
         return R.ok();
     }
@@ -118,13 +116,13 @@ public class LogisticsController extends AbstractController {
     @Transactional
     @RequestMapping("/delete")
     @RequiresPermissions("logistics:delete")
-    public R delete(@RequestBody String[] ids){
+    public R delete(@RequestBody String[] ids) {
 
         boolean b = sysUserService.removeByIds(Arrays.asList(ids));
 
         int result = logisticsService.removeByUserIds(Arrays.asList(ids));
 
-        if ( b && result == 1) {
+        if (b && result != 0) {
             return R.ok();
         } else {
             return R.error("删除失败");

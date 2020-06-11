@@ -14,8 +14,6 @@
         <module>mosidian-web</module>
         <module>mosidian-common</module>
         <module>mosidian-admin</module>
-        <module>mall</module>
-        <module>pay</module>
     </modules>
 
     <build>

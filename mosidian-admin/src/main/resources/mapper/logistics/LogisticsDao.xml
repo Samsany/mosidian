@@ -39,6 +39,15 @@
 		LEFT JOIN sys_user ur
 		on ur.user_id = en.user_id
 		where ur.flag = #{flag}
+        <if test="key == 'enId' and value != null and value != ''">
+            AND en_id like CONCAT('%',CONCAT(#{value},'%'))
+        </if>
+        <if test="key == 'name' and value != null and value != ''">
+            AND name like CONCAT('%',CONCAT(#{value},'%'))
+        </if>
+        <if test="key == 'headCard' and value != null and value != ''">
+            AND head_card like CONCAT('%',CONCAT(#{value},'%'))
+        </if>
 	</select>
 
     <select id="getMaxLogisticsByUserId" resultType="io.mosidian.modules.logistics.entity.LogisticsEntity">

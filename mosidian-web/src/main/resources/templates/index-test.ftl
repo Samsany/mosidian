@@ -945,14 +945,27 @@
                     <form id="contact-form">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                                <input type="text" name="name" placeholder="姓名">
+                                <input type="text" name="ticket" hidden>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                                <input type="email" name="email" placeholder="邮箱">
+                                <input type="text" name="randstr" hidden>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                                <input type="text" name="name" placeholder="姓名">
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+                                <select name="clients" placeholder="身份" style="width: 100%;border: 1px solid #ddd;margin-bottom: 16px;padding: 15px;font-size: 14px;">
+                                    <option value="1">会员问题</option>
+                                    <option value="2">物流问题</option>
+                                    <option value="3">企业问题</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                                <input type="email" name="email" placeholder="邮箱">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6  ">
                                 <input type="text" name="phone" placeholder="电话号码">
                             </div>
                         </div>

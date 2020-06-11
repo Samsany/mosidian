@@ -15,7 +15,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 /**
@@ -32,7 +34,7 @@ public class PayServiceImpl implements IPayService {
     @Autowired
     private BestPayServiceImpl bestPayService;
 
-    @Autowired
+    @Resource
     private PayInfoMapper payInfoMapper;
 
     @Autowired
@@ -47,11 +49,9 @@ public class PayServiceImpl implements IPayService {
      * @return
      */
     @Override
+    @Transactional
     public PayResponse create(String userId,String orderId, BigDecimal amount, BestPayTypeEnum bestPayTypeEnum) {
 
-//        QueryWrapper<PayInfo> queryWrapper = new QueryWrapper<>();
-//        queryWrapper.eq("order_no", orderId);
-//        PayInfo payInfoResult = payInfoMapper.selectOne(queryWrapper);
         PayInfo payInfoResult = payInfoMapper.selectByOrderNo(Long.parseLong(orderId));
 
 
@@ -114,7 +114,7 @@ public class PayServiceImpl implements IPayService {
 
         }
 
-        //TODO pay发送MQ消息，mall接收MQ消息
+        // pay发送MQ消息，mall接收MQ消息
         amqpTemplate.convertAndSend(PayConst.QUEUE_PAY_NOTIFY, new Gson().toJson(payInfo));
 
 

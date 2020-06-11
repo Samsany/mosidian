@@ -3,8 +3,6 @@ package io.mosidian.modules.enterprise.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import io.mosidian.modules.enterprise.entity.EnterpriseEntity;
 import io.mosidian.modules.enterprise.vo.EnterpriseVo;
-import io.mosidian.modules.member.entity.MemberEntity;
-import io.mosidian.modules.member.vo.MemberVo;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -19,7 +17,7 @@ import java.util.List;
 @Mapper
 public interface EnterpriseDao extends BaseMapper<EnterpriseEntity> {
 
-    List<EnterpriseVo> queryPageVo(Integer flag);
+    List<EnterpriseVo> queryPageVo(Integer flag,String key,String value);
 
     EnterpriseEntity getMaxEnterpriseByUserId();
 

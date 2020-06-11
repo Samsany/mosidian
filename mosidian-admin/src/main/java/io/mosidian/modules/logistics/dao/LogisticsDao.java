@@ -17,7 +17,7 @@ import java.util.List;
 @Mapper
 public interface LogisticsDao extends BaseMapper<LogisticsEntity> {
 
-    List<LogisticsVo> queryPageVo(Integer flag);
+    List<LogisticsVo> queryPageVo(Integer flag,String key,String value);
 
     LogisticsEntity getMaxLogisticsByUserId();
 
