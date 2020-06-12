@@ -478,6 +478,15 @@ PREALODER
     transform: rotate(135deg);
     top: -8px;
 }
+/*导航栏自定义样式--适配*/
+.navbar-cell .navbar-brand {
+    margin-left:-145px;
+}
+@media(max-width:1200px){
+    .navbar .navbar-cell .navbar-brand {
+        margin-left:0;
+    }
+}
 
 /*===========================
     3.SLIDER PART css
@@ -578,9 +587,9 @@ PREALODER
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     color: #aeaeae;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    position: relative;
+    /*-webkit-transition: all 0.3s ease-in;*/
+    /*transition: all 0.3s ease-in;*/
+    /*position: relative;*/
 }
 .about_text .nav-tabs li {
     width:33%;
@@ -612,7 +621,7 @@ PREALODER
 
 .about_text .nav.nav-tabs li a.active,
 .about_text .nav.nav-tabs li:hover a {
-    color: #181818;
+    color: #1f8fff;
 }
 
 .about_text .nav.nav-tabs li a.active::before,
@@ -1782,9 +1791,8 @@ p.form-message.error {
     color: white;
 }
 /*导航栏样式*/
-/*.navbar-cell {*/
-/*    position: relative;*/
-/*}*/
+
+
 .lang-change {
     position: absolute;
     top: 50%;
@@ -1794,7 +1802,6 @@ p.form-message.error {
     border-radius: 40px;
     border: 1px solid white;
     color: white;
-    /*background-color: #fff;*/
 }
 .lang-change .lang-zh,
 .lang-change .lang-en{
@@ -1810,6 +1817,21 @@ p.form-message.error {
 .language-change-zh {
     display: none;
 }
+.eight-diagrams-zh,.eight-diagrams-en {
+    color:#fff;
+}
+.eight-diagrams-zh {
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.eight-diagrams-en {
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+
 /*-----新版样式代码------2020-6-2start 作者蔡东*/
 /*企业服务*/
 .enterprise-service-title {
@@ -1943,5 +1965,9 @@ p.form-message.error {
     .navbar-nav {
         margin-left:auto!important;
     }
+}
+/*为什么选择莫斯蒂恩*/
+.tab-content .tab-pane p {
+    cursor: pointer;
 }
 

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-
+<#include "/common/header.ftl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -48,7 +48,7 @@
         width:100%;
         height: 60px;
         z-index:5;
-        background-color: rgba(13, 13, 13, 0.5);
+        background-color: rgba(13, 13, 13, 0.6);
     }
     .nav-content {
         display: flex;
@@ -84,21 +84,20 @@
         margin-bottom:5px;
     }
     .nav-title {
-        font-size: 14px;
         color: #656565;
     }
     .nav-logo {
-        width:140px;
-        height:40px;
+        width:160px;
+        height:50px;
     }
     .nav-company {
         color:#fff;
         text-align: center;
     }
     .company-name {
+        color:#fff;
         font-size: 18px;
         letter-spacing: 10px;
-        color: #fff;
     }
     .company-pinyin {
         margin-left:-10px;
@@ -140,48 +139,57 @@
         font-size: 8px;
         color:#D3D5DDFF;
     }
-    .our-services-line {
-        width:100%;
-        margin: 10px 0 30px 0;
-        border-top:1px solid #DDDDDD;
-    }
-    .our-services-content {
+    .precision-marketing-content {
         position: relative;
+        width: 600px;
+        height: 500px;
+        margin:15px auto 0 auto;
+    }
+    .precision-market-item{
+        width:100%;
+        height:100%;
+    }
+    .precision-market-item .precision-market-img {
+        width: 100%;
+    }
+
+    /*    莫斯蒂恩开发工程师*/
+    .mosidien-engineer {
+        margin:80px auto 0 auto;
+        padding:80px 0;
+
+    }
+    .mosidien-engineer .our-services-title {
+        color:#fff;
+    }
+    .mosidien-engineer .our-services-item-line {
+        background-color: #DDDDDD;
+    }
+    .mosidien-engineer-content {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
-        margin: 15px 13% 0 13%;
     }
-    .our-services-content-item {
-        width:300px;
-        height:300px;
-        background-position: center center;
+    .mosidien-engineer-item {
+        width:25%;
+        height:200px;
+    }
+    .mosidien-engineer-item:nth-child(1){
+        background-color: #4D75BB;
+    }
+
+    .mosidien-engineer-icon {
+        width: 50px;
+        height:50px;
+        border-radius: 50%;
         background-size: cover;
+        background-position: center center;
         background-repeat: no-repeat;
+        background-color: #0B172F;
     }
-    .our-services-content-logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top:0;
-        left:0;
-        width:260px;
-        height:260px;
-        transform: rotate(45deg);
-        margin: 170px 0 0 314px;
-        background-color: rgba(13, 13, 13, 0.6);
-
+    .mosidien-engineer-logo {
+        width: 300px;
     }
-    .science-technology-logo {
-        width:250px;
-        transform: rotate(-45deg);
-
-    }
-
     /*关于我们*/
     .about-us-contain {
         width:100%;
@@ -231,41 +239,34 @@
     <!--导航栏-->
     <div class="nav">
         <div class="nav-content">
-            <img class="nav-logo" src="./img/acos/person/logo1.png" alt="">
+            <img class="nav-logo" src="./img/acos/promote/logo.png" alt="">
             <div class="nav-company">
                 <p class="company-name">上海莫斯蒂恩科技有限公司</p>
                 <span class="company-pinyin">Shanghai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mosidian&nbsp;&nbsp;&nbsp;&nbsp;Network&nbsp;&nbsp;&nbsp;&nbsp;Technology&nbsp;&nbsp;&nbsp;&nbsp;Co.,&nbsp;Ltd</span>
             </div>
         </div>
     </div>
-    <!--莫斯蒂恩，网络服务 -->
-    <div class="nav-banner" style="background-image: url(./img/acos/person/banner.png)">
-        <p class="nav-banner-title">莫斯蒂恩&nbsp;&nbsp;以人为本</p>
+    <!--莫斯蒂恩，精准推广 -->
+    <div class="nav-banner" style="background-image: url(./img/acos/promote/banner.png)">
+        <p class="nav-banner-title">莫斯蒂恩&nbsp;&nbsp;精准推广</p>
     </div>
-    <!--我们的服务-->
+    <!--全方位营销-->
     <div class="our-services-contain">
         <div class="our-services">
-            <h2 class="our-services-title">科技造福人类</h2>
+            <h2 class="our-services-title">全方位营销</h2>
             <span class="our-services-detail">TITLETITLE</span>
-            <ul class="our-services-content">
-                <li class="our-services-content-item" style="background-image: url(./img/acos/person/person_one.png)">
-                </li>
-                <li class="our-services-content-item" style="background-image: url(./img/acos/person/person_two.png)">
-                </li>
-                <li class="our-services-content-item" style="background-image: url(./img/acos/person/person_three.png)">
-                </li>
-                <li class="our-services-content-item" style="background-image: url(./img/acos/person/person_four.png)">
-                </li>
-                <li class="our-services-content-logo">
-                    <img class="science-technology-logo" src="./img/acos/person/logo_old.png" alt="">
+            <ul class="precision-marketing-content">
+                <li class="precision-market-item">
+                    <img class="precision-market-img" src="./img/acos/promote/content.png" alt="">
                 </li>
             </ul>
         </div>
     </div>
+
     <!--关于我们-->
     <div class="about-us-contain">
         <div class="about-us">
-            <div class="about-us-img" style="background-image: url(./img/acos/person/aboutUs.png)"></div>
+            <div class="about-us-img" style="background-image: url(./img/acos/promote/aboutUs.png)"></div>
             <div class="about-us-content">
                 <div class="about-us-title">
                     <h2 class="about-us-txt">关于我们</h2>
@@ -282,9 +283,7 @@
 <#include "/common/footer.ftl">
 <script>
     $(function () {
-        $(".our-services-item").on('click',function () {
-            $(this).addClass('our-services-active').siblings().removeClass('our-services-active')
-        })
+
     })
 </script>
 </html>

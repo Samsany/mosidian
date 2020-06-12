@@ -1,4 +1,15 @@
-
+<!doctype html>
+<html lang="en">
+<#include "/common/header.ftl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOSIDIAN</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/png">
+</head>
 <style>
     /*导航栏*/
     *{
@@ -80,6 +91,7 @@
         text-align: center;
     }
     .company-name {
+        color:#fff;
         font-size: 18px;
         letter-spacing: 10px;
     }
@@ -141,8 +153,7 @@
         align-items: center;
         justify-content: center;
         width:12%;
-        max-height:130px;
-        min-height:130px;
+        height: 170px;
         padding:20px;
 
     }
@@ -396,8 +407,9 @@
             </div>
         </div>
     </div>
-
 </div>
+<#--公共foot-info引入，尾部-->
+<#include "/common/foot_info.ftl">
 </body>
 <#include "/common/footer.ftl">
 <script>

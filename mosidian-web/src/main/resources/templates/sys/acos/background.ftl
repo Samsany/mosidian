@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-
+<#include "/common/header.ftl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,30 +9,6 @@
     <title>MOSIDIAN</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="./img/favicon1.png" type="image/png">
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="./css/fontawesome-all.min.css">
-    <!--====== Slick css ======-->
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/slick-theme.css">
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="./css/magnific-popup.css">
-    <!--====== Animate css ======-->
-    <link rel="stylesheet" href="./css/animate.min.css">
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="./css/default.css">
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="./css/style.css">
-    <!--====== Responsive css ======-->
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="./css/macroease.css"/>
-    <link rel="stylesheet" type="text/css" href="./layui/css/modules/layer/default/layer.css"/>
-    <link rel="stylesheet" type="text/css" href="./layui/css/modules/laydate/default/laydate.css"/>
-    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css"/>
-    <!--====== 图标 css ======-->
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1598462_3lrn8hkd04i.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1832976_dxo1jrajxyo.css">
 </head>
 <style>
     /*导航栏*/
@@ -48,7 +24,7 @@
         width:100%;
         height: 60px;
         z-index:5;
-        background-color: rgba(13, 13, 13, 0.5);
+        background-color: rgba(13, 13, 13, 0.6);
     }
     .nav-content {
         display: flex;
@@ -88,8 +64,8 @@
         color: #656565;
     }
     .nav-logo {
-        width:140px;
-        height:40px;
+        width:160px;
+        height:50px;
     }
     .nav-company {
         color:#fff;
@@ -98,7 +74,6 @@
     .company-name {
         font-size: 18px;
         letter-spacing: 10px;
-        color: #fff;
     }
     .company-pinyin {
         margin-left:-10px;
@@ -140,48 +115,47 @@
         font-size: 8px;
         color:#D3D5DDFF;
     }
-    .our-services-line {
-        width:100%;
-        margin: 10px 0 30px 0;
-        border-top:1px solid #DDDDDD;
-    }
-    .our-services-content {
+    .precision-marketing-content {
         position: relative;
+        width: 600px;
+        height: 500px;
+        margin:15px auto 0 auto;
+    }
+    .precision-market-item{
+        position: relative;
+        width:100%;
+        height:100%;
+    }
+    .precision-market-item .precision-market-img {
+        width: 100%;
+    }
+
+    .profess-background-content {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        right: 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin: 15px 13% 0 13%;
     }
-    .our-services-content-item {
-        width:300px;
-        height:300px;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    .profess-background-item {
+        width:40%;
+        margin-bottom:30px;
     }
-    .our-services-content-logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top:0;
-        left:0;
-        width:260px;
-        height:260px;
-        transform: rotate(45deg);
-        margin: 170px 0 0 314px;
-        background-color: rgba(13, 13, 13, 0.6);
-
+    .profess-background-item button {
+        width:80%;
+        color:#000;
+        outline: none;
+        border:0;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 30px;
+        background-color: #DCDCDC;
     }
-    .science-technology-logo {
-        width:250px;
-        transform: rotate(-45deg);
-
-    }
-
     /*关于我们*/
     .about-us-contain {
         width:100%;
@@ -231,41 +205,40 @@
     <!--导航栏-->
     <div class="nav">
         <div class="nav-content">
-            <img class="nav-logo" src="./img/acos/person/logo1.png" alt="">
+            <img class="nav-logo" src="./img/acos/background/logo.png" alt="">
             <div class="nav-company">
                 <p class="company-name">上海莫斯蒂恩科技有限公司</p>
                 <span class="company-pinyin">Shanghai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mosidian&nbsp;&nbsp;&nbsp;&nbsp;Network&nbsp;&nbsp;&nbsp;&nbsp;Technology&nbsp;&nbsp;&nbsp;&nbsp;Co.,&nbsp;Ltd</span>
             </div>
         </div>
     </div>
-    <!--莫斯蒂恩，网络服务 -->
-    <div class="nav-banner" style="background-image: url(./img/acos/person/banner.png)">
-        <p class="nav-banner-title">莫斯蒂恩&nbsp;&nbsp;以人为本</p>
+    <!--莫斯蒂恩，精准推广 -->
+    <div class="nav-banner" style="background-image: url(./img/acos/background/banner.png)">
+        <p class="nav-banner-title">莫斯蒂恩&nbsp;&nbsp;专业后台</p>
     </div>
-    <!--我们的服务-->
+    <!--全方位营销-->
     <div class="our-services-contain">
         <div class="our-services">
-            <h2 class="our-services-title">科技造福人类</h2>
+            <h2 class="our-services-title">后台大数据实时分析</h2>
             <span class="our-services-detail">TITLETITLE</span>
-            <ul class="our-services-content">
-                <li class="our-services-content-item" style="background-image: url(./img/acos/person/person_one.png)">
-                </li>
-                <li class="our-services-content-item" style="background-image: url(./img/acos/person/person_two.png)">
-                </li>
-                <li class="our-services-content-item" style="background-image: url(./img/acos/person/person_three.png)">
-                </li>
-                <li class="our-services-content-item" style="background-image: url(./img/acos/person/person_four.png)">
-                </li>
-                <li class="our-services-content-logo">
-                    <img class="science-technology-logo" src="./img/acos/person/logo_old.png" alt="">
+            <ul class="precision-marketing-content">
+                <li class="precision-market-item">
+                    <img class="precision-market-img" src="./img/acos/background/content.png" alt="">
+                    <ul class="profess-background-content">
+                        <li class="profess-background-item"><button>订单全程跟踪</button></li>
+                        <li class="profess-background-item"><button>新增会员实时查看</button></li>
+                        <li class="profess-background-item"><button>每日营收在线查询</button></li>
+                        <li class="profess-background-item"><button>首页浏览量统计</button></li>
+                    </ul>
                 </li>
             </ul>
         </div>
     </div>
+
     <!--关于我们-->
     <div class="about-us-contain">
         <div class="about-us">
-            <div class="about-us-img" style="background-image: url(./img/acos/person/aboutUs.png)"></div>
+            <div class="about-us-img" style="background-image: url(./img/acos/background/aboutUs.png)"></div>
             <div class="about-us-content">
                 <div class="about-us-title">
                     <h2 class="about-us-txt">关于我们</h2>
@@ -278,13 +251,12 @@
 
 </div>
 <#--公共foot-info引入，尾部-->
-<#include "/common/foot_info.ftl"></body>
+<#include "/common/foot_info.ftl">
+</body>
 <#include "/common/footer.ftl">
 <script>
     $(function () {
-        $(".our-services-item").on('click',function () {
-            $(this).addClass('our-services-active').siblings().removeClass('our-services-active')
-        })
+
     })
 </script>
 </html>

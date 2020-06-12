@@ -6,7 +6,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>即时业务</title>
+    <title>MOSIDIAN</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/png">
 </head>
 <style>
     /*导航栏*/
@@ -17,10 +19,15 @@
     li {
         list-style: none;
     }
+
+
+    /*统一版本nav*/
     .nav {
+        position: fixed;
         width:100%;
-        height: 85px;
-        /*background: #3d3d3d;*/
+        height: 60px;
+        z-index:5;
+        background-color: rgba(13, 13, 13, 0.6);
     }
     .nav-content {
         display: flex;
@@ -63,7 +70,38 @@
         width:160px;
         height:50px;
     }
-
+    .nav-company {
+        color:#fff;
+        text-align: center;
+    }
+    .company-name {
+        color:#fff;
+        font-size: 18px;
+        letter-spacing: 10px;
+    }
+    .company-pinyin {
+        margin-left:-10px;
+        margin-top:5px;
+        font-size: 12px;
+    }
+    .nav-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width:100%;
+        height:600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .nav-banner-title {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 50px;
+    }
 
 
 
@@ -196,7 +234,7 @@
 <body>
 <div class="page">
     <!--导航栏-->
-    <div class="nav">
+    <div class="nav" style="display: none">
         <div class="nav-content">
             <img class="nav-logo" src="./img/acos/business/logo.png" alt="">
             <ul class="nav-ul">
@@ -221,10 +259,25 @@
             </ul>
         </div>
     </div>
-    <!--rank-banner-->
-    <div class="rank-banner" style="background:#101010;">
-        <h1 class="rank-banner-title">莫斯蒂恩LOGO设计</h1>
+    <!--导航栏-->
+    <div class="nav">
+        <div class="nav-content">
+            <img class="nav-logo" src="./img/acos/customer/logo.png" alt="">
+            <div class="nav-company">
+                <p class="company-name">上海莫斯蒂恩科技有限公司</p>
+                <span class="company-pinyin">Shanghai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mosidian&nbsp;&nbsp;&nbsp;&nbsp;Network&nbsp;&nbsp;&nbsp;&nbsp;Technology&nbsp;&nbsp;&nbsp;&nbsp;Co.,&nbsp;Ltd</span>
+            </div>
+        </div>
     </div>
+    <!--莫斯蒂恩，网络服务 -->
+    <div class="nav-banner" style="background-image: url(./img/acos/business/banner.png)">
+        <p class="nav-banner-title">莫斯蒂恩&nbsp;&nbsp;即时业务</p>
+    </div>
+
+<#--    <!--rank-banner&ndash;&gt;-->
+<#--    <div class="rank-banner" style="background:#101010;">-->
+<#--        <h1 class="rank-banner-title">莫斯蒂恩LOGO设计</h1>-->
+<#--    </div>-->
     <!--main-banner-->
     <div class="main">
         <div class="main-banner">
@@ -300,8 +353,10 @@
         </div>
     </div>
 </div>
+<#--公共foot-info引入，尾部-->
+<#include "/common/foot_info.ftl">
 </body>
-<script src="js/jquery-3.4.1.min.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
 <script>
     $(function () {
         $(".nav-li").on('click',function () {
