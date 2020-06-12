@@ -9,7 +9,6 @@ import io.mosidian.modules.mall.vo.OrderVo;
 import io.mosidian.modules.mall.vo.ResponseVo;
 import io.mosidian.modules.pay.service.IPayService;
 import io.mosidian.modules.sys.controller.AbstractController;
-import io.mosidian.modules.sys.entity.SysUserEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -41,10 +40,11 @@ public class RechargeController extends AbstractController {
      */
     @GetMapping("/recharge")
     public ModelAndView recharge(@RequestParam("recharge") String recharge,
+                                 @RequestParam("userId") Integer userId,
                                  Map<String, Object> map) {
 
-        SysUserEntity userEntity = getUser();
-        Integer userId = Math.toIntExact(userEntity.getUserId());
+//        SysUserEntity userEntity = getUser();
+//        Integer userId = Math.toIntExact(userEntity.getUserId());
 
         ResponseVo<OrderVo> responseVo = orderService.recharge(userId, recharge);
 

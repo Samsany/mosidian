@@ -7,13 +7,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-//    @Autowired
-//    private RedisService redisService;
-//    @Value("${jwt.tokenHeader}")
-//    private String tokenHeader;
-//    @Value("${jwt.tokenHead}")
-//    private String tokenHead;
-
     @GetMapping("/")
     public ModelAndView login() {
         ModelAndView mv = new ModelAndView();
@@ -43,7 +36,20 @@ public class HomeController {
         return mv;
     }
 
+    @GetMapping("/sys/enterprise_service/service_module/{id}")
+    public ModelAndView service_module(@PathVariable("id") Integer id) {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/enterprise_service/service_module");
+        mv.getModel().put("id",id);
+        return mv;
+    }
 
+    @GetMapping("/sys/legal_notices/legal_notice")
+    public ModelAndView legal_notice() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/legal_notices/legal_notice");
+        return mv;
+    }
     @GetMapping("/sys/register")
     public ModelAndView register() {
         ModelAndView mv = new ModelAndView();
@@ -112,7 +118,30 @@ public class HomeController {
         mv.setViewName("sys/acos/office");
         return mv;
     }
-
+    @GetMapping("/acosPromote")
+    public ModelAndView acosPromote() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/promote");
+        return mv;
+    }
+    @GetMapping("/acosBackground")
+    public ModelAndView acosBackground() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/background");
+        return mv;
+    }
+    @GetMapping("/acosTechnology")
+    public ModelAndView acosTechnology() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/technology");
+        return mv;
+    }
+    @GetMapping("/acosCustomer")
+    public ModelAndView acosCustomer() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/customer");
+        return mv;
+    }
     @GetMapping("/sys/email/email_info/{id}")
     public ModelAndView emailInfo(@PathVariable Integer id) {
         ModelAndView mv = new ModelAndView();
