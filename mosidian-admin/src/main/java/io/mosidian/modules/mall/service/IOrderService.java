@@ -49,4 +49,5 @@ public interface IOrderService extends IService<Order> {
 
     Order selectByOrderNo(Long orderNo);
 
+    ResponseVo<OrderVo> activate(Integer userId);
 }

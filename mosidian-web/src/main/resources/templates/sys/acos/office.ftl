@@ -271,7 +271,7 @@
     </div>
     <!--莫斯蒂恩，网络服务 -->
     <div class="nav-banner" style="background-image: url(./img/acos/office/banner1.png)">
-        <p class="nav-banner-title">莫斯蒂恩&nbsp;&nbsp;以人为本</p>
+        <p class="nav-banner-title">莫斯蒂恩&nbsp;&nbsp;随时办公</p>
     </div>
     <!--团队协同办公-->
     <div class="our-services-contain">

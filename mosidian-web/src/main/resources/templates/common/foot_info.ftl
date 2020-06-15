@@ -262,6 +262,9 @@
                             <li>
                                 <a id="register"><i class="fa fa-angle-right"></i>用户开卡</a>
                             </li>
+                            <li>
+                                <a id="active_member"><i class="fa fa-angle-right"></i>会员激活</a>
+                            </li>
                             <li><a data-toggle="modal" data-target="#myModal"><i class="fa fa-angle-right"></i>账号管理</a>
                             </li>
                             <li><a data-toggle="modal" data-target="#myModal"><i class="fa fa-angle-right"></i>充值付款</a>
@@ -793,8 +796,8 @@
 
 <!--====== COPYRIGHT PART START ======-->
 <div   class="copyright text-center pt-15 pb-15">
-    <a onclick="legalNotices()" style="color:#9a9a9a;cursor: pointer">
-        <p>法律声明 隐私政策 版权所有 &copy; 2020 <span><a href="#"></a>Mosidian</span> All rights reserved. </p>
+    <p style="color:#9a9a9a;cursor: pointer">
+        <a onclick="legalNotices1()">法律声明</a> <a onclick="legalNotices2()">隐私政策</a>  版权所有 &copy; 2020 <span><a href="#"></a>Mosidian</span> All rights reserved. </p>
     </a>
     <p style="font-size: 10px"><a style="color: #9a9a9a" href="http://beian.miit.gov.cn">沪ICP备20015652号-1</a></p>
     <!--    <p style="font-size: 10px">苏ICP备17040376号-32 苏B2-20130048号 苏公网安备 32011402010636号</p>-->
@@ -804,11 +807,16 @@
 <#include "/common/footer.ftl">
 <script>
     //法律协议
-    function legalNotices (){
-        dolphin.iframe("/sys/legal_notices/legal_notice", "法律协议", "700px", "650px")
+    function legalNotices1 (){
+        dolphin.iframe("/sys/legal_notices/legal_notice1", "法律声明", "800px", "600px")
+    }
+    function legalNotices2 (){
+        dolphin.iframe("/sys/legal_notices/legal_notice2", "隐私政策", "800px", "600px")
     }
     $(function () {
-
+        $("#active_member").click(function () {
+            window.location.href="http://www.mosidian.com/mosidian-admin/#/home"
+        })
     })
 </script>
 </html>

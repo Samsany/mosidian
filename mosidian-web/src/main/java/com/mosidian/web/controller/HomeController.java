@@ -142,6 +142,24 @@ public class HomeController {
         mv.setViewName("sys/acos/customer");
         return mv;
     }
+    @GetMapping("/acosCard")
+    public ModelAndView acosCard() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/card");
+        return mv;
+    }
+    @GetMapping("/sys/legal_notices/legal_notice1")
+    public ModelAndView legal_notices1() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/legal_notices/legal_notice1");
+        return mv;
+    }
+    @GetMapping("/sys/legal_notices/legal_notice2")
+    public ModelAndView legal_notices2() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/legal_notices/legal_notice2");
+        return mv;
+    }
     @GetMapping("/sys/email/email_info/{id}")
     public ModelAndView emailInfo(@PathVariable Integer id) {
         ModelAndView mv = new ModelAndView();

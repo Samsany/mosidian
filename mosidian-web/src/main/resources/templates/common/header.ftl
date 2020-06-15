@@ -9,6 +9,6 @@
     <link rel="stylesheet" type="text/css" href="/layui/css/modules/laydate/default/laydate.css"/>
     <link rel="stylesheet" type="text/css" href="/layui/css/layui.css"/>
     <link rel="stylesheet" type="text/css" href="/js/cropper/cropper.css">
-
+    <link href="/css/fileinput.css" rel="stylesheet" type="text/css">
 
 

@@ -60,4 +60,25 @@ public class RechargeController extends AbstractController {
         }
     }
 
+    /**
+     * 账户激活
+     */
+    @GetMapping("/activate")
+    public ModelAndView activate(@RequestParam("userId") Integer userId,
+                                 Map<String, Object> map) {
+
+        ResponseVo<OrderVo> responseVo = orderService.activate(userId);
+
+        if (responseVo.getCode() == 0) {
+
+            OrderVo orderVo = responseVo.getData();
+            PayResponse response = iPayService.create(String.valueOf(userId), String.valueOf(orderVo.getOrderNo()), orderVo.getPayment(), BestPayTypeEnum.ALIPAY_PC);
+            map.put("body", response.getBody());
+            return new ModelAndView("/pay/alipayPc", map);
+
+        } else {
+            throw new MallException(ResponseEnum.ERROR);
+        }
+    }
+
 }

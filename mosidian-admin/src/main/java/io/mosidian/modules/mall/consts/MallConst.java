@@ -13,5 +13,7 @@ public class MallConst {
 
     public static final String ORDER_TYPE_MEMBER = "会员充值";
 
+    public static final String ORDER_TYPE_MEMBER_ACTIVE = "会员激活";
+
     public static final String ORDER_SUCCESS = "SUCCESS";
 }

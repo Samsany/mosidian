@@ -74,6 +74,7 @@
     .company-name {
         font-size: 18px;
         letter-spacing: 10px;
+        color: white;
     }
     .company-pinyin {
         margin-left:-10px;

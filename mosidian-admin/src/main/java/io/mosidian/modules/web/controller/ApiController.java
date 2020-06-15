@@ -56,23 +56,45 @@ public class ApiController {
     @RequestMapping("/upload")
     public R upload(@RequestParam("file") MultipartFile uploadFile, HttpServletRequest req){
 
-        //  实际地址
-        File folder=new File("E://upload");
-        if (!folder.isDirectory()){
-            folder.mkdirs();
-        }
-        String oldName=uploadFile.getOriginalFilename();
-        String newName= UUID.randomUUID().toString() + oldName.substring(oldName.lastIndexOf("."),oldName.length());
-        try {
-            uploadFile.transferTo(new File(folder,newName));
-            String filePath=req.getScheme()+"://"+req.getServerName()+
-                    ":"+req.getServerPort()+"/mosidian/upload/"+newName;
+        String os = System.getProperty("os.name");
+        //  如果是Windows系统
+        if (os.toLowerCase().startsWith("win")) {
+            //实际地址
+            File folder=new File("E://upload");
+            if (!folder.isDirectory()){
+                folder.mkdirs();
+            }
+            String oldName=uploadFile.getOriginalFilename();
+            String newName= UUID.randomUUID().toString() + oldName.substring(oldName.lastIndexOf("."),oldName.length());
+            try {
+                uploadFile.transferTo(new File(folder,newName));
+                String filePath=req.getScheme()+"://"+req.getServerName()+
+                        ":"+req.getServerPort()+"/mosidian/upload/"+newName;
 
-            return R.ok().put("imgUrl",filePath);
-        } catch (IOException e) {
-            e.printStackTrace();
+                return R.ok().put("imgUrl",filePath);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return R.error("上传失败");
+        } else {
+            //实际地址
+            File folder=new File("//data//www//upload//images");
+            if (!folder.isDirectory()){
+                folder.mkdirs();
+            }
+            String oldName=uploadFile.getOriginalFilename();
+            String newName= UUID.randomUUID().toString() + oldName.substring(oldName.lastIndexOf("."),oldName.length());
+            try {
+                uploadFile.transferTo(new File(folder,newName));
+                String filePath=req.getScheme()+"://"+req.getServerName()+
+                        ":"+req.getServerPort()+"/mosidian/upload/"+newName;
+
+                return R.ok().put("imgUrl",filePath);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return R.error("上传失败");
         }
-        return R.error("上传失败");
     }
 
     @PostMapping(value = "/contact/us")

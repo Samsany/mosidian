@@ -50,12 +50,24 @@ public class PayMsgListener {
         queryWrapper.eq("order_no", payInfo.getOrderNo());
         OrderItem orderItem = orderItemService.getOne(queryWrapper);
 
+        // 充值
         if (MallConst.ORDER_TYPE_MEMBER.equals(orderItem.getProductName())) {
             QueryWrapper<MemberEntity> memberEntityQueryWrapper = new QueryWrapper<>();
             memberEntityQueryWrapper.eq("user_id", payInfo.getUserId());
 
             MemberEntity member = memberService.getOne(memberEntityQueryWrapper);
             member.setBalance(payInfo.getPayAmount().add(member.getBalance()));
+
+            memberService.updateById(member);
+        }
+
+        // 激活
+        if (MallConst.ORDER_TYPE_MEMBER_ACTIVE.equals(orderItem.getProductName())) {
+            QueryWrapper<MemberEntity> memberEntityQueryWrapper = new QueryWrapper<>();
+            memberEntityQueryWrapper.eq("user_id", payInfo.getUserId());
+
+            MemberEntity member = memberService.getOne(memberEntityQueryWrapper);
+            member.setMonetary(payInfo.getPayAmount().add(member.getMonetary()));
 
             memberService.updateById(member);
         }

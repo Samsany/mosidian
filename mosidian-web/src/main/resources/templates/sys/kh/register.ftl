@@ -176,7 +176,11 @@
                         </div>
                     </div>
                 </div>
+                <input id="input-3" name="file" type="file" class="file-loading">
+                <input type="hidden" id="avatar" name="avatar" value="" >
 
+                <input id="input-2" name="file" type="file" class="file-loading">
+                <input type="hidden" id="enlicense" name="enlicense" value="" >
 
                 <div class="me-btn-toolbar text-center">
                     <button type="button" class="btn btn-primary mr-2 save">申请</button>
@@ -244,6 +248,68 @@
             }
             return uuid.join('');
         }
+
+        $("#input-2").fileinput({
+            uploadUrl: "http://localhost:8080/mosidian/api/upload",
+            previewFileType: "image",
+            uploadAsync: true,
+            showCaption: false,
+            allowedFileExtensions: ["png", "jpg", "jpeg", "ico", "bmp", "gif"],
+            maxFileCount: 1,
+            maxFileSize: 3072,
+            showBrowse: true,
+            dropZoneTitle: '拖拽营业执照照片到这里...',
+            browseLabel: "选择营业执照照片",
+            uploadClass: "btn btn-info",
+            uploadLabel: "上传",
+            removeClass: "btn btn-danger",
+            autoReplace: true,
+            removeLabel: "移除",
+            msgSizeTooLarge: '图片文件太大！',
+            msgFilesTooMany: "选择上传的文件数量为({n}) 超过允许的最大数值({m})！",
+            msgUploadEnd: '图片上传成功！',
+            msgUploadBegin: '初始化中...',
+            msgZoomModalHeading: '图片详情预览',
+            msgInvalidFileExtension: '非法文件扩展名 "{name}"！ 仅支持 "{extensions}" 的文件扩展名！'
+        }).on('fileerror', function (event,msg) {
+            alert('图片上传失败！' + msg);
+        }).on('fileuploaded', function (event, data) {//异步上传成功结果处理
+            $("#enlicense").val(data.response.imgUrl);
+        }).on('fileclear', function (event) {
+            alert("图片被清除啦！");
+        });
+        ;
+
+        $("#input-3").fileinput({
+            uploadUrl: "http://localhost:8080/mosidian/api/upload",
+            previewFileType: "image",
+            uploadAsync: true,
+            showCaption: false,
+            allowedFileExtensions: ["png", "jpg", "jpeg", "ico", "bmp", "gif"],
+            maxFileCount: 1,
+            maxFileSize: 3072,
+            showBrowse: true,
+            dropZoneTitle: '拖拽公司logo到这里...',
+            browseLabel: "选择公司logo照片",
+            uploadClass: "btn btn-info",
+            uploadLabel: "上传",
+            removeClass: "btn btn-danger",
+            autoReplace: true,
+            removeLabel: "移除",
+            msgSizeTooLarge: '图片文件太大！',
+            msgFilesTooMany: "选择上传的文件数量为({n}) 超过允许的最大数值({m})！",
+            msgUploadEnd: '图片上传成功！',
+            msgUploadBegin: '初始化中...',
+            msgZoomModalHeading: '图片详情预览',
+            msgInvalidFileExtension: '非法文件扩展名 "{name}"！ 仅支持 "{extensions}" 的文件扩展名！'
+        }).on('fileerror', function (event,msg) {
+            alert('图片上传失败！' + msg);
+        }).on('fileuploaded', function (event, data) {//异步上传成功结果处理
+            $("#avatar").val(data.response.imgUrl);
+        }).on('fileclear', function (event) {
+            alert("图片被清除啦！");
+        });
+        ;
 
     })
 

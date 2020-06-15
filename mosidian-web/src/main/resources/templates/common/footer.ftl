@@ -6,3 +6,5 @@
 <script src="/js/dolphin.js" type="text/javascript" charset="utf-8"></script>
 <script src="/js/cropper/cropper.js"></script>
 <script src="/layui/lay/modules/upload.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/js/fileinput.js" ></script>
+<script type="text/javascript" src="/js/zh.js" ></script>

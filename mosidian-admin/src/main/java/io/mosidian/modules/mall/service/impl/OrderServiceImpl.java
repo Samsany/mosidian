@@ -54,6 +54,58 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     @Resource
     private IOrderItemService orderItemService;
 
+    /**
+     * 账户激活
+     * @param userId
+     * @return
+     */
+    @Override
+    public ResponseVo<OrderVo> activate(Integer userId) {
+
+        List<OrderItem> orderItems = new ArrayList<>();
+
+        // 1.创建激活订单号
+        Long orderNo = Long.valueOf(GenerateCodeFactory.getOrderCode(Long.valueOf(userId)).substring(0,19));
+
+        // 2.生成激活订单
+        Product product = productService.getById(30);
+        Order order = new Order();
+        order.setUserId(userId);
+        order.setOrderNo(orderNo);
+        order.setStatus(10);
+        order.setPostage(0);
+        order.setPaymentType(1);
+        order.setPayment(product.getPrice());
+
+        boolean orderSave = orderService.save(order);
+        if (!orderSave) {
+            throw new MallException(ResponseEnum.ERROR);
+        }
+
+        // 3.订单详情
+        OrderItem orderItem = new OrderItem();
+
+        orderItem.setUserId(userId);
+        orderItem.setOrderNo(orderNo);
+        orderItem.setProductName("会员激活");
+        orderItem.setCurrentUnitPrice(product.getPrice());
+        orderItem.setQuantity(1);
+
+        orderItem.setTotalPrice(product.getPrice().multiply(BigDecimal.ONE));
+
+        boolean orderItemSave = orderItemService.save(orderItem);
+        if (!orderItemSave) {
+            throw new MallException(ResponseEnum.ERROR);
+        }
+
+        orderItems.add(orderItem);
+
+        // 构造orderVo
+        OrderVo orderVo = buildOrderVo(order, orderItems, null);
+
+        return ResponseVo.successByData(orderVo);
+    }
+
 
     /**
      * 充值订单 账户充值服务
@@ -202,7 +254,6 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         for (Cart cart : cartList) {
             cartService.delete(uid, cart.getProductId());
         }
-
 
         // 构造orderVo
         OrderVo orderVo = buildOrderVo(order, orderItems, shipping);

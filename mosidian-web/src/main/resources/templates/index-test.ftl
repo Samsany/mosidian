@@ -286,70 +286,6 @@
 <!--====== 企业服务 COSE PART ENDS 旧版待定 ======-->
 <!--====== 企业服务 COSE PART ENDS 新版 ======-->
 
-<#--=====================注意===============================企业服务新版===================注意============-->
-<#--<div style="display: none" class="container pb-20 pt-95" data-scroll-index="1">-->
-<#--    <div class="row">-->
-<#--        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 enterprise-service-title">-->
-<#--            <h2>为什么选择莫斯蒂恩</h2>-->
-<#--            <p>莫斯蒂恩为企业提供多领域的服务，以专业服务弥补企业发展短板，帮助企业专注于核心业务，在自己的专业领域提升竞争力。世界专业而美好，莫斯蒂恩则致力于用服务让企业更专业。</p>-->
-<#--        </div>-->
-<#--    </div>-->
-<#--    <div class="row">-->
-<#--        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">-->
-<#--            <div class="about_text pt-70">-->
-<#--                <span>多维度客户需求全面感知</span>-->
-<#--                <h3>莫斯蒂恩深耕企业服务行业，是您企业值得依赖的合作伙伴</h3>-->
-<#--                <ul class="nav nav-tabs" id="myTab" role="tablist">-->
-<#--                    <li class="nav-item">-->
-<#--                        <a class="active" id="misson-tab" data-toggle="tab" href="#misson" role="tab"-->
-<#--                           aria-controls="misson" aria-selected="true">成就报销美学</a>-->
-<#--                    </li>-->
-<#--                    <li class="nav-item">-->
-<#--                        <a id="gol-tab" data-toggle="tab" href="#gol" role="tab" aria-controls="gol"-->
-<#--                           aria-selected="false">注入成长活力</a>-->
-<#--                    </li>-->
-<#--                    <li class="nav-item">-->
-<#--                        <a id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision"-->
-<#--                           aria-selected="false">践行极致体验</a>-->
-<#--                    </li>-->
-<#--                </ul>-->
-<#--                <div class="tab-content" id="myTabContent">-->
-<#--                    <div class="tab-pane fade show active" id="misson" role="tabpanel" aria-labelledby="misson-tab">-->
-<#--                        <p>大型企业 10000人及以上</p>-->
-<#--                        <p>为企业提供VIP咨询落地方案</p>-->
-<#--                        <p>提供定制版专业建议</p>-->
-<#--                        <p>集团化、精细化管理方案配套</p>-->
-<#--                    </div>-->
-<#--                    <div class="tab-pane fade" id="gol" role="tabpanel" aria-labelledby="gol-tab">-->
-<#--                        <p>中型企业 501-9999人</p>-->
-<#--                        <p>为企业提供行业化解决方案</p>-->
-<#--                        <p>专业化的实施团队</p>-->
-<#--                        <p>同行业优秀方案实践</p>-->
-<#--                    </div>-->
-<#--                    <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">-->
-<#--                        <p>小型企业 500人及以下</p>-->
-<#--                        <p>为企业提供VIP咨询落地方案</p>-->
-<#--                        <p> 统一、安全、标准化实施</p>-->
-<#--                        <p>助力企业管理升级</p>-->
-<#--                    </div>-->
-<#--                </div>-->
-<#--            </div>-->
-<#--        </div>-->
-<#--        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">-->
-<#--            <div class="about_video pt-70">-->
-<#--                <div class="ovarlay" data-overlay="5">-->
-<#--                    <img src="img/about/1.png" alt="About Video">-->
-<#--                </div>-->
-<#--                <div class="video_icon">-->
-<#--                    <a class="Video-popup" href="https://www.youtube.com/watch?v=Joz1xBi7ex8"><i-->
-<#--                                class="fa fa-play"></i></a>-->
-<#--                </div>-->
-<#--            </div>-->
-<#--        </div>-->
-<#--    </div>-->
-<#--</div>-->
-<#--=====================注意===============================企业服务新版==================注意=============-->
-
 <!--=================================== ACOS 业务系统 ========================================-->
 <div  style="background-color: #0b0b0b" data-scroll-index="2">
     <div class="acosPC section_title text-center">
@@ -358,20 +294,20 @@
             生产管理、多门店经营、风险预警、智能记帐等常见功能，打通企业管理的“人财货客”全链条</p>
         <div class="Grid"
              style="margin:0 auto; display: flex;width: 1140px;height: 200px; align-items:center;justify-content:space-around;">
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp1.jpg) 260px 150px">
+            <div style="width: 260px;height: 150px;background: url(./img/business/businessMp1.jpg) 260px 150px">
                 <p id="slide1" class="business-system-item">
                     <a href="acosWebService">科技为先</a>
                 </p>
             </div>
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp2.jpg) 260px 150px">
+            <div style="width: 260px;height: 150px;background: url(./img/business/businessMp2.jpg) 260px 150px">
                 <p id="slide2" class="business-system-item">
                     <a href="acosPerson">以人为本</a></p>
             </div>
-            <div style="width: 260px;height: 150px;background: url(img/business/businessMp3.jpg) 260px 150px">
+            <div style="width: 260px;height: 150px;background: url(./img/business/businessMp3.jpg) 260px 150px">
                 <p id="slide3" class="business-system-item">
                 <a href="acosOffice">随时办公</a></p>
             </div>
-            <div style="width: 260px;height: 159px;background: url(img/business/businessMp4.jpg) 260px 150px">
+            <div style="width: 260px;height: 159px;background: url(./img/business/businessMp4.jpg) 260px 150px">
                 <p id="slide4" class="business-system-item">
                     <a href="acosUrl">即时业务</a>
                 </p>
@@ -467,42 +403,25 @@
 <!--==================================== ACOS 业务系统 ========================================-->
 
 
-<!--==AIOS(招商)==-->
-<div class="aios pt-50" data-scroll-index="3">
-    <div class="container">
+<!--==AIOS(招商)莫斯蒂恩带您走向高端商业圈==-->
+<#--莫斯蒂恩带您走向高端商业圈--------新版-->
+<div class="aios-high-business-circle pt-50" data-scroll-index="3">
+    <div class="container-fluid high-business-circle-container">
         <div class="row aios">
             <div class="col-lg-8 offset-lg-2">
                 <div class="section_title text-center">
-                    <h2 class="">莫斯蒂恩带您走向高端商业圈</h2>
-                    <p>
-                        莫斯蒂恩为企业提供多领域的服务，以专业服务弥补企业发展短板，帮助企业专注于核心业务，在自己的专业领域提升竞争力。世界专业而美好，莫斯蒂恩则致力于用服务让企业更专业。</p>
+                    <h1 class="page-title">莫斯蒂恩带您走进高端商业圈</h1>
+                    <p class="high-business-circle-info">中国付费会员制高端商务品牌</p>
                 </div>
             </div>
         </div>
         <div class="row aios-advantages">
-            <!--            <img src="img/AIOS/service-advantages-bridge.png" style="width: auto;height: auto;max-width: 100%;max-height: 100%;"/>-->
             <div class="aios-content">
-                <div class="aios-ul">
-                    <img src="img/AIOS/service-advantages-pic1.png" alt=""/>
-                    <h4>资源优势</h4>
-                    <!-- <p>三大运营商直连通道，提供全网、全<br>周期的各种卡型</p>-->
-                    <p>三大运营商直连通道，提供全<br>网、全周期的各种数据保护，获得政府<br>和民众的支持</p>
-                </div>
-                <div class="aios-ul">
-                    <img src="img/AIOS/service-advantages-pic2.png" alt="">
-                    <h4>安全保障</h4>
-                    <p>提供独特的安全可视，提升全<br>过程的安全认知能力各种私有保障<br>零风险让业务更加安全</p>
-                </div>
-                <div class="aios-ul">
-                    <img src="img/AIOS/service-advantages-pic3.png" alt="">
-                    <h4>信誉保障</h4>
-                    <p>独有的保障系统<br>采用N+T赔付模式</p>
-                </div>
-                <div class="aios-ul">
-                    <img src="img/AIOS/service-advantages-pic4.png" alt="">
-                    <h4>售后服务</h4>
-                    <p>专业的售后服务团队，<br>7*24不间断服务，免除后续服务之忧</p>
-                </div>
+                <img class="aios-content-bg" src="./img/AIOS/membership_card.png" alt="">
+                <p class="high-business-date">布局于2015年</p>
+                <p class="high-business-date">成立于2020年</p>
+                <p class="high-business-date">是致力于打造全球高端商业生态圈得开拓者</p>
+                <a class="high-business-look-detail" href="acosCard">查看详情&nbsp;>&nbsp;></a>
             </div>
         </div>
     </div>
@@ -532,6 +451,7 @@
         </div>
     </div>
 </div>
+<#--莫斯蒂恩助您实现商业目标-->
 <div class="services pb-100 pt-90 gray-bg">
     <div class="container">
         <div class="row">
@@ -715,7 +635,7 @@
 <div  data-scroll-index="5" class="pb-40">
     <div class="col-lg-12">
         <div class="project_menu text-center pt-60 pb-40">
-            <h2>保障系统</h2>
+            <h2 style="margin-bottom: 20px">保障系统</h2>
             <h3>ICAS</h3>
             <ul>
                 <li><h3 id="safeguardButtenA" style="color: #1f8ffd">APS·ICAS&nbsp;</h3></li>
@@ -724,15 +644,15 @@
             </ul>
         </div>
         <div id="safeguardA" class="text-center col-lg-8 offset-lg-2">
-            <h3>A客户·保障协议</h3>
+            <h3>A客户端·保障协议</h3>
             <a class="btn h5-adapter" data-toggle="modal" data-target="#modalA" href="#" style="font-size: 20px">《上海莫斯蒂恩网络科技有限公司·APS·ICAS》</a>
         </div>
         <div id="safeguardB" class="text-center show-acos">
-            <h3>B数据·保障协议</h3>
+            <h3>B客户端·保障协议</h3>
             <a class="btn h5-adapter" data-toggle="modal" data-target="#modalB" href="#" style="font-size: 20px">《上海莫斯蒂恩网络科技有限公司·BPS·ICAS》</a>
         </div>
         <div id="safeguardC" class="text-center show-acos">
-            <h3>C数据·保障协议</h3>
+            <h3>C客户端·保障协议</h3>
             <a class="btn h5-adapter" data-toggle="modal" data-target="#modalC" href="#" style="font-size: 20px">《上海莫斯蒂恩网络科技有限公司·CPS·ICAS》</a>
         </div>
         <div class="project_menu text-center pt-60 pb-40">
@@ -773,167 +693,128 @@
             </div>
         </div>
         <div class="row team_main">
-            <div class="col-lg-4 col-md-6 team">
-                <div class="team_services text-center">
-                    <div class="team_img">
-                        <img src="img/team/01.png" alt="Business Plan">
-                    </div>
-                    <div class="team_content" >
-                        <h4>Dries</h4>
-                        <h5>CTO</h5>
-                        <p>Dries(郑祥祥) 精通大数据，深刻理解JavaWEB技术体系架构，精通SSH、SpringMVC、Spring Boot、JBPM、MyBatis、EJB等多种流行框架。</p>
-                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
-                                <a onclick="getUserEmail(1)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 team" style="">
-                <div class="team_services text-center">
-                    <div class="team_img">
-                        <img src="img/team/02.png" alt="Business Plan">
-                    </div>
-                    <div class="team_content">
-                        <h4>Tic</h4>
-                        <h5 style="color: #00A8FE">CEO</h5>
-                        <p>主持公司的日常经营、行政和业务活动
-                            努力营造良好的企业发展运营内外部环境，
-                            持公司的基本团队建设、拟订公司内部管
-                            理机构设方案和基本管理制度、规范内部
-                            管理，包括人、财、物、产、供、销等工作
-                            领导公司员工实现公司经营目标。</p>
-                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
-                                <a onclick="getUserEmail(2)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 team" style="">
-                <div class="team_services text-center">
-                    <div class="team_img">
-                        <img src="img/team/03.png" alt="Business Plan">
-                    </div>
-                    <div class="team_content">
-                        <h4>Micah</h4>
-                        <h5 style="color: #00A8FE">CDO</h5>
-                        <p>Micah (毛健)精通界面设计，深刻理解
-                            APP交互逻辑，精通Photosho P、
-                            llustrator、CINEMA 4D、CorelDraw.
-                            Axure RP、After Effects、Premiere 、
-                            XMind等多种设计软件。</p>
-                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
-                                <a onclick="getUserEmail(3)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 team">
-                <div class="team_services text-center">
-                    <div class="team_img">
-                        <img src="img/team/04.png" alt="Business Plan">
-                    </div>
-                    <div class="team_content">
-                        <h4>Alise</h4>
-                        <h5>COO</h5>
-                        <p>Alise(鲁燕)制定年度工作计划、商业投资经
-                            验丰富，投资预算精确，制定多个考核计划，
-                            以及运营系统整体设计方案的制作与实施。</p>
-                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
-                                <a onclick="getUserEmail(4)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 team" style="">
-                <div class="team_services text-center">
-                    <div class="team_img">
-                        <img src="img/team/05.png" alt="Business Plan">
-                    </div>
-                    <div class="team_content">
-                        <h4>Sean</h4>
-                        <h5>核心技术员</h5>
-                        <p>对JavaEE 技术体系结构、JavaWeb 原理有深刻理解，精通多种主流框架以及 Maven构建工具。</p>
-                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
-                                <a onclick="getUserEmail(5)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 team" style="">
-                <div class="team_services text-center">
-                    <div class="team_img">
-                        <img src="img/team/06.png" alt="Business Plan">
-                    </div>
-                    <div class="team_content">
-                        <h4>Ashley</h4>
-                        <h5>核心技术员</h5>
-                        <p>掌握SpringBoot、Mybatis、Spring等主流框架，熟悉Vue、BootStrap前端框架。</p>
-                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">
-                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">
-                                <a onclick="getUserEmail(6)"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
+            <div class="team-main-img col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-image: url(./img/team/team.jpg)"></div>
         </div>
+<#--        <div class="row team_main">-->
+<#--            <div class="col-lg-4 col-md-6 team">-->
+<#--                <div class="team_services text-center">-->
+<#--                    <div class="team_img">-->
+<#--                        <img src="img/team/01.png" alt="Business Plan">-->
+<#--                    </div>-->
+<#--                    <div class="team_content" >-->
+<#--                        <h4>Dries</h4>-->
+<#--                        <h5>CTO</h5>-->
+<#--                        <p>Dries(郑祥祥) 精通大数据，深刻理解JavaWEB技术体系架构，精通SSH、SpringMVC、Spring Boot、JBPM、MyBatis、EJB等多种流行框架。</p>-->
+<#--                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                                <a href="javascript:"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>-->
+<#--                            </p>-->
+<#--                        </div>-->
 
-        <#--        <div class="row">-->
-        <#--            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 h5-adapter-team-info">-->
-        <#--                <div class="team_img">-->
-        <#--                    <img  src="img/team/01.png" alt="Team" />-->
-        <#--                </div>-->
-        <#--                <div class="team_content">-->
-        <#--                    <h5>Dries</h5>-->
-        <#--                    <span>联合创始人</span>-->
-        <#--                    <p>Dries(郑祥祥) 精通大数据，深刻理解JavaWEB技术体系架构，精通SSH、SpringMVC、Spring Boot、JBPM、MyBatis、EJB等多种流行框架</p>-->
-        <#--                    <ul>-->
-        <#--                        <li><a href="#"><i class="fab fa-weibo"></i></a></li>-->
-        <#--                    </ul>-->
-        <#--                </div>-->
-        <#--            </div>-->
-        <#--            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 h5-adapter-team-info">-->
-        <#--                <div class="team_img">-->
-        <#--                    <img  src="img/team/tm02.png" alt="Team" />-->
-        <#--                </div>-->
-        <#--            </div>-->
-        <#--            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 h5-adapter-team-info">-->
-        <#--                <div class="team_img">-->
-        <#--                    <img  src="img/team/tm03.png" alt="Team" />-->
-        <#--                </div>-->
-        <#--            </div>-->
-        <#--            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 h5-adapter-team-info">-->
-        <#--                <div class="team_img">-->
-        <#--                    <img  src="img/team/tm04.png" alt="Team" />-->
-        <#--                </div>-->
-        <#--            </div>-->
-        <#--            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 h5-adapter-team-info">-->
-        <#--                <div class="team_img">-->
-        <#--                    <img  src="img/team/tm05.png" alt="Team" />-->
-        <#--                </div>-->
-        <#--            </div>-->
-        <#--            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 h5-adapter-team-info">-->
-        <#--                <div class="team_img">-->
-        <#--                    <img  src="img/team/tm06.png" alt="Team" />-->
-        <#--                </div>-->
-        <#--            </div>-->
-        <#--        </div>-->
+<#--                    </div>-->
+<#--                </div>-->
+<#--            </div>-->
+<#--            <div class="col-lg-4 col-md-6 team" style="">-->
+<#--                <div class="team_services text-center">-->
+<#--                    <div class="team_img">-->
+<#--                        <img src="img/team/02.png" alt="Business Plan">-->
+<#--                    </div>-->
+<#--                    <div class="team_content">-->
+<#--                        <h4>Tic</h4>-->
+<#--                        <h5 style="color: #00A8FE">CEO</h5>-->
+<#--                        <p>主持公司的日常经营、行政和业务活动-->
+<#--                            努力营造良好的企业发展运营内外部环境，-->
+<#--                            持公司的基本团队建设、拟订公司内部管-->
+<#--                            理机构设方案和基本管理制度、规范内部-->
+<#--                            管理，包括人、财、物、产、供、销等工作-->
+<#--                            领导公司员工实现公司经营目标。</p>-->
+<#--                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                                <a href="javascript:"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>-->
+<#--                            </p>-->
+<#--                        </div>-->
+
+<#--                    </div>-->
+<#--                </div>-->
+<#--            </div>-->
+<#--            <div class="col-lg-4 col-md-6 team" style="">-->
+<#--                <div class="team_services text-center">-->
+<#--                    <div class="team_img">-->
+<#--                        <img src="img/team/03.png" alt="Business Plan">-->
+<#--                    </div>-->
+<#--                    <div class="team_content">-->
+<#--                        <h4>Micah</h4>-->
+<#--                        <h5 style="color: #00A8FE">CDO</h5>-->
+<#--                        <p>Micah (毛健)精通界面设计，深刻理解-->
+<#--                            APP交互逻辑，精通Photosho P、-->
+<#--                            llustrator、CINEMA 4D、CorelDraw.-->
+<#--                            Axure RP、After Effects、Premiere 、-->
+<#--                            XMind等多种设计软件。</p>-->
+<#--                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                                <a href="javascript:"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>-->
+<#--                            </p>-->
+<#--                        </div>-->
+
+<#--                    </div>-->
+<#--                </div>-->
+<#--            </div>-->
+<#--            <div class="col-lg-4 col-md-6 team">-->
+<#--                <div class="team_services text-center">-->
+<#--                    <div class="team_img">-->
+<#--                        <img src="img/team/04.png" alt="Business Plan">-->
+<#--                    </div>-->
+<#--                    <div class="team_content">-->
+<#--                        <h4>Alise</h4>-->
+<#--                        <h5>COO</h5>-->
+<#--                        <p>Alise(鲁燕)制定年度工作计划、商业投资经-->
+<#--                            验丰富，投资预算精确，制定多个考核计划，-->
+<#--                            以及运营系统整体设计方案的制作与实施。</p>-->
+<#--                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                                <a href="javascript:"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>-->
+<#--                            </p>-->
+<#--                        </div>-->
+<#--                    </div>-->
+<#--                </div>-->
+<#--            </div>-->
+<#--            <div class="col-lg-4 col-md-6 team" style="">-->
+<#--                <div class="team_services text-center">-->
+<#--                    <div class="team_img">-->
+<#--                        <img src="img/team/05.png" alt="Business Plan">-->
+<#--                    </div>-->
+<#--                    <div class="team_content">-->
+<#--                        <h4>Sean</h4>-->
+<#--                        <h5>核心技术员</h5>-->
+<#--                        <p>对JavaEE 技术体系结构、JavaWeb 原理有深刻理解，精通多种主流框架以及 Maven构建工具。</p>-->
+<#--                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                                <a href="javascript:"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>-->
+<#--                            </p>-->
+<#--                        </div>-->
+
+<#--                    </div>-->
+<#--                </div>-->
+<#--            </div>-->
+<#--            <div class="col-lg-4 col-md-6 team" style="">-->
+<#--                <div class="team_services text-center">-->
+<#--                    <div class="team_img">-->
+<#--                        <img src="img/team/06.png" alt="Business Plan">-->
+<#--                    </div>-->
+<#--                    <div class="team_content">-->
+<#--                        <h4>Ashley</h4>-->
+<#--                        <h5>核心技术员</h5>-->
+<#--                        <p>掌握SpringBoot、Mybatis、Spring等主流框架，熟悉Vue、BootStrap前端框架。</p>-->
+<#--                        <div style="position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                            <p style="border: 1px solid #9F9F9F;border-radius: 50%;width: 40px;height: 40px;display: flex;flex-direction: row;align-items: center;justify-content: center">-->
+<#--                                <a href="javascript:"><i class="fa fa-angle-right iconfont iconyouxiang" style="font-size:20px;"></i></a>-->
+<#--                            </p>-->
+<#--                        </div>-->
+
+<#--                    </div>-->
+<#--                </div>-->
+<#--            </div>-->
+<#--        </div>-->
     </div>
 </div>
 <!--====== COWE 联系我们 ======-->
