@@ -84,8 +84,8 @@
                             <label class="col-sm-4 col-form-label me-t-r"><span style="color: red">*</span>企业类型：</label>
                             <div class="col-sm-8">
                                 <select name="companies" style="height:30px;">
-                                    <option value="4">企业服务公司</option>
                                     <option value="3">物流服务公司</option>
+                                    <option value="4">企业服务公司</option>
                                 </select>
                             </div>
                         </div>
@@ -250,7 +250,7 @@
         }
 
         $("#input-2").fileinput({
-            uploadUrl: "http://localhost:8080/mosidian/api/upload",
+            uploadUrl: "http://www.mosidian.com/mosidian/api/upload",
             previewFileType: "image",
             uploadAsync: true,
             showCaption: false,
@@ -281,7 +281,7 @@
         ;
 
         $("#input-3").fileinput({
-            uploadUrl: "http://localhost:8080/mosidian/api/upload",
+            uploadUrl: "http://www.mosidian.com/mosidian/api/upload",
             previewFileType: "image",
             uploadAsync: true,
             showCaption: false,

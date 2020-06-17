@@ -635,8 +635,8 @@
 <div  data-scroll-index="5" class="pb-40">
     <div class="col-lg-12">
         <div class="project_menu text-center pt-60 pb-40">
-            <h2 style="margin-bottom: 20px">保障系统</h2>
-            <h3>ICAS</h3>
+            <h2 style="margin-bottom: 20px"><b>保障系统</b></h2>
+            <h3 style="margin-bottom: 20px">客户端保障协议</h3>
             <ul>
                 <li><h3 id="safeguardButtenA" style="color: #1f8ffd">APS·ICAS&nbsp;</h3></li>
                 <li><h3 id="safeguardButtenB">BPS·ICAS&nbsp;</h3></li>
@@ -656,7 +656,7 @@
             <a class="btn h5-adapter" data-toggle="modal" data-target="#modalC" href="#" style="font-size: 20px">《上海莫斯蒂恩网络科技有限公司·CPS·ICAS》</a>
         </div>
         <div class="project_menu text-center pt-60 pb-40">
-            <h3>SEID</h3>
+            <h3 style="margin-bottom: 20px">数据协议</h3>
             <ul>
                 <li><h3 id="dataA" style="color: #1f8ffd">ICSE&nbsp;</h3></li>
                 <li><h3 id="dataB">ICID&nbsp;</h3></li>

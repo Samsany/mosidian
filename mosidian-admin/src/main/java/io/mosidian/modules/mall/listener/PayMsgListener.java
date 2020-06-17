@@ -68,6 +68,7 @@ public class PayMsgListener {
 
             MemberEntity member = memberService.getOne(memberEntityQueryWrapper);
             member.setMonetary(payInfo.getPayAmount().add(member.getMonetary()));
+            member.setAccountStatus(1);
 
             memberService.updateById(member);
         }

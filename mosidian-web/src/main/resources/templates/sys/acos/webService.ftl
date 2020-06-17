@@ -403,7 +403,7 @@
                     <h2 class="about-us-txt">关于我们</h2>
                     <span class="about-us-en">about us</span>
                 </div>
-                <p class="about-us-introduce">莫斯蒂恩网络服务，成立于2020年6月18日。迄今为止已在全国服务超过1420家公司，强大的建设团队，与公司的高效携作，使得建设工程进展迅速，获得业界好评。</p>
+                <p class="about-us-introduce">莫斯蒂恩网络服务，成立于2020年5月18日。迄今为止已在全国服务超过1420家公司，强大的建设团队，与公司的高效携作，使得建设工程进展迅速，获得业界好评。</p>
             </div>
         </div>
     </div>

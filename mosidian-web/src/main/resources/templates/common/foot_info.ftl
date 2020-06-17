@@ -44,7 +44,7 @@
                     <div class="info pt-30" style="width: 220px;font-size: 14px;color: gainsboro">
                         <span class="foot-font">免费咨询服务热线</span>
                         <div class="foot-numf">
-                            021-1234567
+                            187-2181-6682
                         </div>
                         <!--<div class="foot-numf numf">
                             400-008-0586
@@ -65,7 +65,7 @@
                         </div>
                         <div class="foot-font">
                             <span class="foot-title">邮编：</span>
-                            <span class="foot-detail">000000</span>
+                            <span class="foot-detail">201800</span>
                         </div>
                         <ul class="foot-code" style="height: 34px;">
                             <li>

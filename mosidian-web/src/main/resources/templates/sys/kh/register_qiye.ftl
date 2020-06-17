@@ -252,7 +252,7 @@
         }
 
         $("#input-2").fileinput({
-            uploadUrl: "http://localhost:8080/mosidian/api/upload",
+            uploadUrl: "http://www.mosidian.com/mosidian/api/upload",
             previewFileType: "image",
             uploadAsync: true,
             showCaption: false,
@@ -282,7 +282,7 @@
         });
 
         $("#input-3").fileinput({
-            uploadUrl: "http://localhost:8080/mosidian/api/upload",
+            uploadUrl: "http://www.mosidian.com/mosidian/api/upload",
             previewFileType: "image",
             uploadAsync: true,
             showCaption: false,

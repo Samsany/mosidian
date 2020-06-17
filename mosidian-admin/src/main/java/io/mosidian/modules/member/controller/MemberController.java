@@ -91,6 +91,7 @@ public class MemberController extends AbstractController {
     @RequiresPermissions("member:save")
     public R save(@RequestBody MemberVo member){
 
+        log.info("===================================>" + member.getBalance());
         SysUserEntity user = new SysUserEntity();
         user.setPassword("2020");
         //sha256加密

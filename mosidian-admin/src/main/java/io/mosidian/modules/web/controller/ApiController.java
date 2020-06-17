@@ -78,7 +78,7 @@ public class ApiController {
             return R.error("上传失败");
         } else {
             //实际地址
-            File folder=new File("//data//www//upload//images");
+            File folder=new File("/data/www/upload/images/");
             if (!folder.isDirectory()){
                 folder.mkdirs();
             }
@@ -87,7 +87,7 @@ public class ApiController {
             try {
                 uploadFile.transferTo(new File(folder,newName));
                 String filePath=req.getScheme()+"://"+req.getServerName()+
-                        ":"+req.getServerPort()+"/mosidian/upload/"+newName;
+                        ":"+req.getServerPort()+"/mosidian/upload/images/"+newName;
 
                 return R.ok().put("imgUrl",filePath);
             } catch (IOException e) {

@@ -8,7 +8,7 @@
     }
 
     .email-info {
-        font-size: 25px;
+        font-size: 18px;
     }
 
 </style>
