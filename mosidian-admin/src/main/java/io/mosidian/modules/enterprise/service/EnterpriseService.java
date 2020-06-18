@@ -31,5 +31,7 @@ public interface EnterpriseService extends IService<EnterpriseEntity> {
     EnterpriseVo getEnterpriseById(String valueOf);
 
     int removeByUserIds(List<String> asList);
+
+    R updateByEnterprise(EnterpriseVo enterprise);
 }
 

@@ -4,12 +4,12 @@ package io.mosidian.modules.enterprise.controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import io.mosidian.common.utils.R;
-import io.mosidian.modules.enterprise.entity.EnterpriseEntity;
 import io.mosidian.modules.enterprise.service.EnterpriseService;
 import io.mosidian.modules.enterprise.vo.EnterpriseVo;
 import io.mosidian.modules.sys.controller.AbstractController;
 import io.mosidian.modules.sys.entity.SysUserEntity;
 import io.mosidian.modules.sys.service.SysUserService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.crypto.hash.Sha256Hash;
@@ -27,6 +27,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/enterprise")
+@Slf4j
 public class EnterpriseController extends AbstractController {
 
     @Autowired
@@ -104,9 +105,9 @@ public class EnterpriseController extends AbstractController {
     /**
      * 信息
      */
-    @RequestMapping("/info/{enId}")
+    @RequestMapping("/info/{id}")
     @RequiresPermissions("enterprise:info")
-    public R info(@PathVariable("userId") String userId) {
+    public R info(@PathVariable("id") String userId) {
         EnterpriseVo enterprise = enterpriseService.getEnterpriseById(userId);
 
         return R.ok().put("enterprise", enterprise);
@@ -136,12 +137,21 @@ public class EnterpriseController extends AbstractController {
      */
     @RequestMapping("/update")
     @RequiresPermissions("enterprise:update")
-    public R update(@RequestBody EnterpriseEntity enterprise) {
-        enterpriseService.updateById(enterprise);
+    public R update(@RequestBody EnterpriseVo enterprise) {
+        enterpriseService.updateByEnterprise(enterprise);
 
         return R.ok();
     }
-
+//    /**
+//     * 修改
+//     */
+//    @RequestMapping("/update")
+//    @RequiresPermissions("enterprise:update")
+//    public R update(@RequestBody EnterpriseVo enterprise) {
+//        enterpriseService.updateById(enterprise);
+//
+//        return R.ok();
+//    }
     /**
      * 删除
      */

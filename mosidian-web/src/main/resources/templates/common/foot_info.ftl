@@ -33,7 +33,7 @@
 </head>
 <body>
 <!--====== FOOTER PART START ======-->
-<div   class="footer black-bg pt-30 pb-95">
+<div class="footer black-bg pt-30 pb-95">
     <div class="container">
         <div class="row">
             <div class="footer-flex">
@@ -57,7 +57,7 @@
                         <#--                        <span class="foot-font">邮编：000000</span>-->
                         <div class="foot-font">
                             <span class="foot-title">邮箱：</span>
-                            <span class="foot-detail">ticzuo@dingtalk.com</span>
+                            <span class="foot-detail">mosidian.dingtalk.com</span>
                         </div>
                         <div class="foot-font">
                             <span class="foot-title">地址：</span>
@@ -69,13 +69,13 @@
                         </div>
                         <ul class="foot-code" style="height: 34px;">
                             <li>
-                                <a><i class="iconfont icon-weixin"></i></a>
+                                <a id="weixinUrl"><i class="iconfont icon-weixin"></i></a>
                             </li>
                             <#-- <li>
-                                 <a><i class="fab fa-weibo"></i></a>
+                                 <a><i class="fab fa-weibo"></i></ a>
                              </li>-->
                             <li>
-                                <a> <i class="iconfont icon-youxiang1"></i></a>
+                                <a onclick="getUserEmail(1)"> <i class="iconfont icon-youxiang1"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -405,8 +405,8 @@
                     </div>
                     <div class="footer-widget-list pt-30">
                         <ul>
-                            <li><a  href="javascript:" data-toggle="modal"
-                                    data-target=".bs-mosidian-modal-lg"><i class="fa fa-angle-right"></i>公司简介</a>
+                            <li><a href="javascript:" data-toggle="modal"
+                                   data-target=".bs-mosidian-modal-lg"><i class="fa fa-angle-right"></i>公司简介</a>
                             </li>
                             <!--<li><a data-toggle="modal" data-target="#myModal"><i class="fa fa-angle-right"></i>首页</a></li>-->
                             <li><a href="meLogin"><i class="fa fa-angle-right"></i>会员系统</a>
@@ -492,7 +492,7 @@
 </div>
 </div>
 <!-- foot modal -->
-<div   class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -513,7 +513,7 @@
 </div>
 <!--====== FOOTER PART ENDS ======-->
 <!--=======公司价值观modal======-->
-<div  class="modal fade bs-mosidian-modal-lg" id="valueModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade bs-mosidian-modal-lg" id="valueModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <!--<div class="modal-header">
@@ -606,8 +606,8 @@
 </div>
 
 <!--=======招贤纳士modal======-->
-<div  class="modal fade bs-mosidian-modal-lg" id="recruitmentModal" tabindex="-1" role="dialog"
-      aria-labelledby="myModalLabel">
+<div class="modal fade bs-mosidian-modal-lg" id="recruitmentModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <!--<div class="modal-header">
@@ -701,7 +701,7 @@
 </div>
 
 <!--=======招商计划modal======-->
-<div  class="modal fade bs-mosidian-modal-lg" id="aiosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade bs-mosidian-modal-lg" id="aiosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <!--<div class="modal-header">
@@ -795,9 +795,10 @@
 </div>
 
 <!--====== COPYRIGHT PART START ======-->
-<div   class="copyright text-center pt-15 pb-15">
+<div class="copyright text-center pt-15 pb-15">
     <p style="color:#9a9a9a;cursor: pointer">
-        <a onclick="legalNotices1()">法律声明</a> <a onclick="legalNotices2()">隐私政策</a>  版权所有 &copy; 2020 <span><a href="#"></a>Mosidian</span> All rights reserved. </p>
+        <a onclick="legalNotices1()">法律声明</a> <a onclick="legalNotices2()">隐私政策</a> 版权所有 &copy; 2020 <span><a
+                    href="#"></a>Mosidian</span> All rights reserved. </p>
     </a>
     <p style="font-size: 10px"><a style="color: #9a9a9a" href="http://beian.miit.gov.cn">沪ICP备20015652号-1</a></p>
     <!--    <p style="font-size: 10px">苏ICP备17040376号-32 苏B2-20130048号 苏公网安备 32011402010636号</p>-->
@@ -806,16 +807,25 @@
 </body>
 <#include "/common/footer.ftl">
 <script>
+    function getUserEmail(id) {
+        dolphin.iframe("/sys/email/email_info/" + id, "邮箱信息", "200px", "200px")
+    }
+
     //法律协议
-    function legalNotices1 (){
+    function legalNotices1() {
         dolphin.iframe("/sys/legal_notices/legal_notice1", "法律声明", "800px", "600px")
     }
-    function legalNotices2 (){
+
+    function legalNotices2() {
         dolphin.iframe("/sys/legal_notices/legal_notice2", "隐私政策", "800px", "600px")
     }
+
     $(function () {
         $("#active_member").click(function () {
-            window.location.href="http://www.mosidian.com/mosidian-admin/#/home"
+            window.location.href = "http://www.mosidian.com/mosidian-admin/#/home"
+        })
+        $("#weixinUrl").click(function () {
+            dolphin.iframe("/sys/acos/consult2", "微信联系", "375px", "410px")
         })
     })
 </script>

@@ -197,18 +197,16 @@
         </div>
         <div class="singel_slider d-flex align-items-center bg_cover" data-overlay="7"
              style="background-image: url(img/swiper/swiper3.jpg)">
-            <div class="container">
-                <div class="row">
+            <div class="container container-1">
+                <div class="row row-1">
                     <div class="col-lg-8 offset-lg-4">
                         <div class="caption text-right">
-                            <h4 style="color: white">团队介绍
-
+                            <h4 style="color: white; margin-top: 230px">战略合作
                             </h4>
-
-                            <p> 我们是一支专业的团队。我们的成员拥有多年的网站专业技术背景</br>
-                                我们是一支年轻的团队。充满了朝气和创新精神</br>
-                                我们是一支专注的团队。我们坚信，品质源自客户的信任。只有专注，才能做好品质</p>
-                            <a href="#"><h4>关于我们 ></h4></a>
+                            <p> 我们为国内知名企业提供专业的创意综合性服务<br>
+                                业务范围涵盖“品牌管理及运营、创意设计、会展营销服务、展厅设计搭建<br>
+                                公关活动演艺演出、媒体整合传播、广告设计制作、制药机械设备智能康养产品”等领域。</p >
+                            <a href="cooperationPDF1"><h4>查看详情 ></h4></a>
 
                         </div>
                     </div>
@@ -531,7 +529,7 @@
             </div>
         </div>
         <div class="client-slied" style="margin-top:50px;">
-            <img src="img/logobg.png" alt="" >
+            <img style="border-radius: 100%;width: 100%;height: 371px" src="img/logobg.png" alt="" >
         </div>
 <#--        需保存的原始代码 --------->
         <div class="client-slied" style="display: none">
@@ -1102,15 +1100,15 @@
 <script type="text/javascript">
 
     function getUserEmail(id) {
-        dolphin.iframe("/sys/email/email_info/" + id, "邮箱信息", "300px", "200px")
+        dolphin.iframe("/sys/email/email_info/" + id, "邮箱信息", "25%", "200px")
     }
     //为什么选择莫斯蒂恩-敬请期待弹窗
     function serviceModulel(id){
-        dolphin.iframe("/sys/enterprise_service/service_module/" + id, "企业服务", "550px", "400px")
+        dolphin.iframe("/sys/enterprise_service/service_module/" + id, "企业服务", "47%", "400px")
     }
     //法律协议
     function legalNotices (){
-        dolphin.iframe("/sys/legal_notices/legal_notice", "法律协议", "700px", "650px")
+        dolphin.iframe("/sys/legal_notices/legal_notice", "法律协议", "60%", "650px")
     }
     $(function () {
         $("#outlet").click(function () {
@@ -1118,19 +1116,19 @@
         })
 
         $("#register").click(function () {
-            dolphin.iframe("/sys/register", "会员注册", "750px", "600px")
+            dolphin.iframe("/sys/register", "会员注册", "64%", "600px")
         })
 
         $("#registerUser").click(function () {
-            dolphin.iframe("/sys/register", "会员注册", "750px", "600px")
+            dolphin.iframe("/sys/register", "会员注册", "64%", "600px")
         })
 
         $("#registerKH").click(function () {
-            dolphin.iframe("/sys/kh/register", "会员注册", "1050px", "600px")
+            dolphin.iframe("/sys/kh/register", "会员注册", "90%", "600px")
         })
 
         $("#userRegister").click(function () {
-            dolphin.iframe("/sys/kh/register_qiye", "企业入驻", "1050px", "600px")
+            dolphin.iframe("/sys/kh/register_qiye", "企业入驻", "90%", "600px")
         })
 
         //中文点击
@@ -1150,7 +1148,7 @@
         })
 
         window.showCard = function (id) {
-            dolphin.iframe("/sys/user/card/" + id, "会员卡", "500px", "600px")
+            dolphin.iframe("/sys/user/card/" + id, "会员卡", "42%", "600px")
         }
 
         window.callbackMessage = function (res) {

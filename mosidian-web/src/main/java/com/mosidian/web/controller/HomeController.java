@@ -103,6 +103,12 @@ public class HomeController {
         mv.setViewName("sys/acos/webService");
         return mv;
     }
+    @GetMapping("/sys/acos/consult2")
+    public ModelAndView consult2() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("/sys/acos/consult2");
+        return mv;
+    }
 
     @GetMapping("/acosPerson")
     public ModelAndView acosPerson() {
@@ -110,8 +116,12 @@ public class HomeController {
         mv.setViewName("sys/acos/person");
         return mv;
     }
-
-
+    @GetMapping("/cooperationPDF1")
+    public ModelAndView cooperationPDF1() {
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("sys/acos/cooperationPDF1");
+        return mv;
+    }
     @GetMapping("/acosOffice")
     public ModelAndView acosOffice() {
         ModelAndView mv = new ModelAndView();
@@ -154,12 +164,14 @@ public class HomeController {
         mv.setViewName("sys/legal_notices/legal_notice1");
         return mv;
     }
+
     @GetMapping("/sys/legal_notices/legal_notice2")
     public ModelAndView legal_notices2() {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("sys/legal_notices/legal_notice2");
         return mv;
     }
+
     @GetMapping("/sys/email/email_info/{id}")
     public ModelAndView emailInfo(@PathVariable Integer id) {
         ModelAndView mv = new ModelAndView();

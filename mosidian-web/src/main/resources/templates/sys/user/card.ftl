@@ -11,11 +11,11 @@
                     <div class="col-md-12">
                         <div class="form-group row">
                             <#if id == 1 >
-                                <img src="http://www.mosidian.com/web/img/card/aps-aic.png" style="height: 260px;width: 400px"/>
+                                <img src="http://www.mosidian.com/web/img/card/card.png" style="height: 260px;width: 400px"/>
                             <#elseif id == 2>
-                                <img src="http://www.mosidian.com/web/img/card/bps-bic.png" style="height: 260px;width: 400px"/>
+                                <img src="http://www.mosidian.com/web/img/card/card.png" style="height: 260px;width: 400px"/>
                             <#else>
-                                <img src="http://www.mosidian.com/web/img/card/cps-cic.png" style="height: 260px;width: 400px"/>
+                                <img src="http://www.mosidian.com/web/img/card/card.png" style="height: 260px;width: 400px"/>
                             </#if>
                         </div>
                     </div>

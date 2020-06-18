@@ -1,5 +1,6 @@
 package io.mosidian.modules.logistics.vo;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -34,6 +35,7 @@ public class LogisticsVo {
     /*** 信誉分（默认：600）*/
     private Integer credits;
     private Date createTime;
+    @TableField(update = "now()")
     private Date updateTime;
     /*** 企业全称*/
     private String name;
@@ -69,6 +71,11 @@ public class LogisticsVo {
     private String enlicenseId;
     /*** 营业执照*/
     private String enlicense;
+    /**
+     * 状态
+     */
+
+    private Integer audit;
     /**
      * 账户余额（默认：288）
      */
@@ -106,7 +113,7 @@ public class LogisticsVo {
         this.level = level;
     }
 
-    public LogisticsVo(String username, String website, String scale, String corporation, String reason, String eserver, String companies, String name, String headName, String sector, String eposition, String headCard, String emobile, String eemail, String enlicenseId) {
+    public LogisticsVo(String username, String website, String scale, String corporation, String reason, String eserver, String companies, String name, String headName, String sector, String eposition, String headCard, String emobile, String eemail, String enlicenseId,String avatar, String enlicense) {
         this.username = username;
         this.name = name;
         this.website = website;
@@ -122,5 +129,7 @@ public class LogisticsVo {
         this.emobile = emobile;
         this.eemail = eemail;
         this.enlicenseId = enlicenseId;
+        this.avatar = avatar;
+        this.enlicense = enlicense;
     }
 }

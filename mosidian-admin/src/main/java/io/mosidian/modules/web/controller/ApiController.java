@@ -176,7 +176,9 @@ public class ApiController {
                        @RequestParam(value = "headCard") String headCard,
                        @RequestParam(value = "emobile") String emobile,
                        @RequestParam(value = "eemail") String eemail,
-                       @RequestParam(value = "enlicenseId") String enlicenseId) {
+                       @RequestParam(value = "enlicenseId") String enlicenseId,
+                       @RequestParam(value = "avatar") String avatar,
+                       @RequestParam(value = "enlicense") String enlicense) {
         SysUserEntity user = new SysUserEntity();
         user.setFlag(3);
         user.setPassword("2020");
@@ -185,7 +187,7 @@ public class ApiController {
         user.setPassword(new Sha256Hash(user.getPassword(), salt).toHex());
         user.setSalt(salt);
         LogisticsVo logisticsVo = new LogisticsVo(
-                username, website, scale, corporation, reason, eserver, companies, name, headName, sector, eposition, headCard, emobile, eemail,enlicenseId
+                username, website, scale, corporation, reason, eserver, companies, name, headName, sector, eposition, headCard, emobile, eemail,enlicenseId,avatar,enlicense
         );
         logisticsVo.setSynopsis("物流服务");
         return logisticsService.saveLogisticsVo(logisticsVo, user);
@@ -212,7 +214,9 @@ public class ApiController {
                        @RequestParam(value = "headCard") String headCard,
                        @RequestParam(value = "emobile") String emobile,
                        @RequestParam(value = "eemail") String eemail,
-                       @RequestParam(value = "enlicenseId") String enlicenseId) {
+                       @RequestParam(value = "enlicenseId") String enlicenseId,
+                       @RequestParam(value = "avatar") String avatar,
+                       @RequestParam(value = "enlicense") String enlicense) {
         SysUserEntity user = new SysUserEntity();
         user.setFlag(4);
         user.setPassword("2020");
@@ -220,7 +224,7 @@ public class ApiController {
         String salt = RandomStringUtils.randomAlphanumeric(20);
         user.setPassword(new Sha256Hash(user.getPassword(), salt).toHex());
         user.setSalt(salt);
-        EnterpriseVo enterpriseVo = new EnterpriseVo(username, website, scale, corporation, reason, eserver, companies, name, headName, sector, eposition, headCard, emobile, eemail,enlicenseId);
+        EnterpriseVo enterpriseVo = new EnterpriseVo(username, website, scale, corporation, reason, eserver, companies, name, headName, sector, eposition, headCard, emobile, eemail,enlicenseId,avatar,enlicense);
         enterpriseVo.setSynopsis("企业服务");
         return enterpriseService.saveEnterpriseVo(enterpriseVo, user);
     }

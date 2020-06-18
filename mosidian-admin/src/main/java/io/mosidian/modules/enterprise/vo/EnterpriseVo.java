@@ -1,5 +1,6 @@
 package io.mosidian.modules.enterprise.vo;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -34,6 +35,7 @@ public class EnterpriseVo {
     /*** 信誉分（默认：600）*/
     private Integer credits;
     private Date createTime;
+    @TableField(update = "now()")
     private Date updateTime;
     /*** 企业全称*/
     private String name;
@@ -73,6 +75,11 @@ public class EnterpriseVo {
      * 账户余额（默认：288）
      */
     private BigDecimal balance;
+    /**
+     * 状态
+     */
+
+    private Integer audit;
 
     /**
      * 消费总金额（默认：600）
@@ -106,7 +113,7 @@ public class EnterpriseVo {
         this.level = level;
     }
 
-    public EnterpriseVo(String username, String website, String scale, String corporation,String reason, String eserver, String companies, String name, String headName, String sector, String eposition, String headCard, String emobile, String eemail,String enlicenseId) {
+    public EnterpriseVo(String username, String website, String scale, String corporation,String reason, String eserver, String companies, String name, String headName, String sector, String eposition, String headCard, String emobile, String eemail,String enlicenseId,String avatar, String enlicense) {
         this.username = username;
         this.name = name;
         this.website = website;
@@ -122,5 +129,7 @@ public class EnterpriseVo {
         this.emobile = emobile;
         this.eemail = eemail;
         this.enlicenseId = enlicenseId;
+        this.avatar = avatar;
+        this.enlicense = enlicense;
     }
 }

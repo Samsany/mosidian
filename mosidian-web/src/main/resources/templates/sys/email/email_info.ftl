@@ -39,7 +39,7 @@
     <div class="container-fluid container-bg office-efficiency-index">
 		<#if id == 1>
 			<div class="row  office-header">
-				<span class="email-info" id="text">1471128199@qq.com</span>
+				<span class="email-info" id="text">mosidian.dingtalk.com</span>
 				<textarea id="input"></textarea>
 				<button class="email-copy" onclick="copyText()">复制</button>
 			</div>

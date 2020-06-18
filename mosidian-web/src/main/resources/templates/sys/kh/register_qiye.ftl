@@ -210,7 +210,7 @@
                             parent.layer.close(index); //再执行关闭
                         })
                     } else {
-                        dolphin.alert(result.info);
+                        dolphin.alert(result.msg);
                         getCaptcha()
                     }
                 })

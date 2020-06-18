@@ -1700,8 +1700,9 @@ p.form-message.error {
     filter: alpha(opacity=80);
     -moz-opacity: 0.8;
     -khtml-opacity: 0.8;
-    opacity: 0.8;
-    background: url("../img/AIOS/free-application-bg.png") center center no-repeat;
+    /*opacity: 0.8;*/
+   /*background: url("../img/AIOS/free-application-bg.png") center center no-repeat;*/
+    background-color: #000000;
 }
 
 .free-img {

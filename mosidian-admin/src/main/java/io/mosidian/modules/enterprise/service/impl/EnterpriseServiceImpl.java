@@ -132,5 +132,22 @@ public class EnterpriseServiceImpl extends ServiceImpl<EnterpriseDao, Enterprise
         return enterpriseDao.removeByUserIds(asList);
     }
 
+    @Override
+    public R updateByEnterprise(EnterpriseVo enterprise) {
+        EnterpriseEntity enterpriseEntity = new EnterpriseEntity();
+        SysUserEntity userEntity = new SysUserEntity();
+
+        BeanUtils.copyProperties(enterprise, enterpriseEntity);
+        BeanUtils.copyProperties(enterprise, userEntity);
+
+        int i = enterpriseDao.updateById(enterpriseEntity);
+        boolean b = sysUserService.updateById(userEntity);
+
+        if (i == 1 && b) {
+            return R.ok();
+        } else {
+            return R.error("更新失败");
+        }
+    }
 
 }
